@@ -1,0 +1,5 @@
+set disablesites=mail.google.com,reader.google.com,teradatanet4.teradata.com/owa/
+set enable_vrome_key=<C-z>
+unmap <C-p>
+set showstatus=0
+set show_disabled_text=0
