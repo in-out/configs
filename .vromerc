@@ -9,3 +9,8 @@ unmap <C-u>
 unmap <C-a>
 unmap <C-x>
 unmap <`>
+
+
+" customize next/prev page pattern
+set nextpattern=["Next Page", "^\\s*Next\\s*$", "^>$", "^More$", "(^(>>|››|»)\\|?)|((»|››|>>)\\|?$)"]
+set previouspattern=["Previous Page", "^\\s*Prev(ious)?\\s*$", "^<$", "(^(<<|‹‹|«)\\|?)|((<<|‹‹|«)\\|?$)"]
