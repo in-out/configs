@@ -1,9 +1,11 @@
-set disablesites=mail.google.com, drive.google.com,www.feedly.com,153.65.86.50, feedspot.com,theoldreader.com,rssminer.net,newsblur.com,www.shanbay.com,www.inoreader.com,cloud.feedly.com,www.newszeit.com,digg.com/reader,www.inoreader.com,replaydalian.td.teradata.com/replay/,www.commafeed.com,www.goread.io/,blu176.mail.live.com,www.zeitblog.com/
+set disablesites=mail.google.com, drive.google.com,www.feedly.com,153.65.86.50, feedspot.com,theoldreader.com,rssminer.net,newsblur.com,www.shanbay.com,www.inoreader.com,cloud.feedly.com,www.newszeit.com,digg.com/reader,www.inoreader.com,replaydalian.td.teradata.com/replay,www.commafeed.com,www.goread.io,blu176.mail.live.com,www.zeitblog.com,teradatanet4.teradata.com/owa,teradatanet0.teradata.com,feedly.com,beta.inoreader.com
 set enable_vrome_key=<C-z>
 set useletters=1
 set showstatus=0
-set hintkeys=jlkhfsdagwerui
+set show_disabled_text=0
 unmap <C-p>
 unmap <C-v>
 unmap <C-u>
+unmap <C-a>
+unmap <C-x>
 unmap <`>
