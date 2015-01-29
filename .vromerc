@@ -15,3 +15,16 @@ unmap <`>
 " customize next/prev page pattern
 set nextpattern=["Next Page", "^\\s*Next\\s*$", "^>$", "^More$", "(^(>>|››|»)\\|?)|((»|››|>>)\\|?$)"]
 set previouspattern=["Previous Page", "^\\s*Prev(ious)?\\s*$", "^<$", "(^(<<|‹‹|«)\\|?)|((<<|‹‹|«)\\|?$)"]
+
+"set nextpattern+=^NextPage|??|下一页|Next$|>|>>|下页|下页>
+"set previouspattern+=^PrevPage|??|上一页|Prev$|<|<<|上页|<上页
+"set nextpattern=['次(の|へ)?(ページ)?', '^Next(Page)?$', '^>>$', '^>$']
+"set previouspattern=["^前へ$","^Prev(ious)?(Page)?$","^‹‹$"]
+"set nextpattern+=^NextPage|››$
+"set previouspattern+=^PrevPage|‹‹$
+
+begin_custom_css
+.__vim_hint_highlight_span {
+text-transform: uppercase;
+}
+end_custom_css
