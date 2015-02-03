@@ -6,10 +6,12 @@ var switch_byip = false;
 
 function FindProxyForURL(url, host) {
     if (switch_byip) {
-        if (shExpMatch(myIpAddress(), "192.*"))
+        if (shExpMatch(myIpAddress(), "192.*")){
             return proxy_ss;
-        else
+        }
+        else{
             return proxy_ga;
+        }
     } else {
         return proxy_ss;
     }
