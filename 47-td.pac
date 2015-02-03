@@ -2,7 +2,7 @@
 // https://github.com/clowwindy/gfwlist2pac
 
 var proxy_ss = "SOCKS5 127.0.0.1:1080; SOCKS 127.0.0.1:1080;";
-var proxy_goagent = "PROXY 127.0.0.1:8087;";
+var proxy_ga = "PROXY 127.0.0.1:8087;";
 
 var domains = {
   "4shared.com": 1, 
@@ -2702,7 +2702,7 @@ function FindProxyForURL(url, host) {
                 if (shExpMatch(myIpAddress(), "192.*")){
                     return proxy_ss;
                 } else {
-                    return proxy_goagent;
+                    return proxy_ga;
                 }
                 //return proxy;
             } else {
@@ -2715,7 +2715,7 @@ function FindProxyForURL(url, host) {
             if (shExpMatch(myIpAddress(), "192.*")){
                 return proxy_ss;
             } else {
-                return proxy_goagent;
+                return proxy_ga;
             }
         }
         pos = host.lastIndexOf('.', pos - 1);
