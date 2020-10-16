@@ -9,7 +9,7 @@ enableAutoFocus=false;
 // -----------------------------------------------------------------------------------------------------------------------
 // Change hints styles
 // -----------------------------------------------------------------------------------------------------------------------
-//Hints.characters = "asdfgqwertvbn";
+Hints.characters = "asdfgqwertvbn";
 
 //Hints.style('border: solid 0px #ff79c6; color:#44475a; background: #f1fa8c; background-color: #f1fa8c; font-size: 9pt; font-family: "Microsoft YaHei", "Inconsolata", "Tahoma", "SimSun", "FontAwesome", "Segoe UI", "Segoe UI Symbol", "Symbola", "Meiryo", "Malgun Gothic", "NSimSun", "FZSongS", "方正宋体S-超大字符集", "Arial Unicode MS"');
 //Hints.style("border: solid 0px #ff79c6; padding: 1px; background: #7FAB97; font-size: 9pt; font-family: 'Microsoft YaHei', 'Inconsolata', 'Tahoma', 'SimSun', 'FontAwesome', 'Segoe UI', 'Segoe UI Symbol', 'Symbola', 'Meiryo', 'Malgun Gothic', 'NSimSun', 'FZSongS', '方正宋体S-超大字符集', 'Arial Unicode MS'", "text");
