@@ -71,6 +71,7 @@ addSearchAliasX('db', 'douban', 'https://www.douban.com/search?source=suggest&q=
 addSearchAliasX('dm', 'douban movie', 'https://www.douban.com/search?source=suggest&cat=1002&q=', 's');
 //addSearchAliasX('t', 'translate', 'https://translate.google.cn/?source=osdd#auto/zh-CN/', 's');
 addSearchAliasX('sm', 'smzdm', 'https://search.smzdm.com/?c=post&s=', 's');
+addSearchAliasX('sx', 'searx', 'https://searx.info/?q=', 's');
 addSearchAliasX('st', 'stackoverflow', 'https://stackoverflow.com/search?q=', 's');
 addSearchAliasX('md', 'mdn', 'https://developer.mozilla.org/zh-CN/search?q=', 's');
 addSearchAliasX('j', 'jd', 'https://search.jd.com/Search?enc=utf-8&keyword=', 's');
@@ -79,6 +80,12 @@ addSearchAliasX('do', 'doge', 'https://www.dogedoge.com/results?q=', 's');
 addSearchAliasX('t', 'rarbg', 'https://rarbg.to/torrents.php?search=', 's');
 addSearchAliasX('ms', 'mengso', 'https://mengso.com/search?q=', 's');
 
+mapkey('osx', 'call searx', function() {
+	Front.openOmnibar({
+		type: "SearchEngine",
+		extra: 'sx'
+	});
+});
 mapkey('osm', 'call smzdm search', function() {
 	Front.openOmnibar({
 		type: "SearchEngine",
