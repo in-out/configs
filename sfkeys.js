@@ -72,7 +72,7 @@ addSearchAliasX('dm', 'douban movie', 'https://www.douban.com/search?source=sugg
 //addSearchAliasX('t', 'translate', 'https://translate.google.cn/?source=osdd#auto/zh-CN/', 's');
 addSearchAliasX('sm', 'smzdm', 'https://search.smzdm.com/?c=post&s=', 's');
 //addSearchAliasX('sx', 'searx', 'https://searx.info/?q=', 's');
-addSearchAliasX('sx', 'searx', 'https://searx.be/?q=', 's');
+addSearchAliasX('sx', 'searx', 'https://searx.fmac.xyz/?q=', 's');
 //addSearchAliasX('sx', 'searx', 'https://searx.fmac.xyz/?q=', 's');
 addSearchAliasX('st', 'stackoverflow', 'https://stackoverflow.com/search?q=', 's');
 addSearchAliasX('md', 'mdn', 'https://developer.mozilla.org/zh-CN/search?q=', 's');
