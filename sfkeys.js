@@ -71,6 +71,7 @@ addSearchAliasX('db', 'douban', 'https://www.douban.com/search?source=suggest&q=
 addSearchAliasX('dm', 'douban movie', 'https://www.douban.com/search?source=suggest&cat=1002&q=', 's');
 //addSearchAliasX('t', 'translate', 'https://translate.google.cn/?source=osdd#auto/zh-CN/', 's');
 addSearchAliasX('sm', 'smzdm', 'https://search.smzdm.com/?c=post&s=', 's');
+addSearchAliasX('sb', 'bing', 'https://www.bing.com/search?q=', 's');
 //addSearchAliasX('sx', 'searx', 'https://searx.info/?q=', 's');
 addSearchAliasX('sx', 'searx', 'https://searx.info/?q=', 's');
 //addSearchAliasX('sx', 'searx', 'https://searx.fmac.xyz/?q=', 's');
@@ -92,6 +93,12 @@ mapkey('osm', 'call smzdm search', function() {
 	Front.openOmnibar({
 		type: "SearchEngine",
 		extra: 'sm'
+	});
+});
+mapkey('osm', 'call bing search', function() {
+	Front.openOmnibar({
+		type: "SearchEngine",
+		extra: 'sb'
 	});
 });
 mapkey('ost', 'call stackoverflow search', function() {
