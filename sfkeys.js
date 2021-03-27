@@ -65,7 +65,7 @@ unmap('sm');
 //unmap('f');
 // search engine
 addSearchAliasX('z', 'zhihu', 'https://www.zhihu.com/search?type=question&q=', 's');
-addSearchAliasX('p', 'panc', 'https://www.panc.cc/m/s/?s=', 's');
+//addSearchAliasX('p', 'panc', 'https://www.panc.cc/m/s/?s=', 's');
 addSearchAliasX('dd', 'duckduckgo', 'https://duckduckgo.com/?q=', 's');
 addSearchAliasX('db', 'douban', 'https://www.douban.com/search?source=suggest&q=', 's');
 addSearchAliasX('dm', 'douban movie', 'https://www.douban.com/search?source=suggest&cat=1002&q=', 's');
@@ -95,7 +95,7 @@ mapkey('osm', 'call smzdm search', function() {
 		extra: 'sm'
 	});
 });
-mapkey('osm', 'call bing search', function() {
+mapkey('osb', 'call bing search', function() {
 	Front.openOmnibar({
 		type: "SearchEngine",
 		extra: 'sb'
@@ -149,12 +149,12 @@ mapkey('odd', 'call dockduckgo search', function() {
 		extra: 'dd'
 	});
 });
-mapkey('op', 'call pancc search', function() {
+/**mapkey('op', 'call pancc search', function() {
 	Front.openOmnibar({
 		type: "SearchEngine",
 		extra: 'p'
 	});
-});
+});**/
 mapkey('oz', 'call zhihu search', function() {
 	Front.openOmnibar({
 		type: "SearchEngine",
