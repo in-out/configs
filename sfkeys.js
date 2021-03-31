@@ -61,6 +61,7 @@ unmap('ar');
 unmap('od');
 unmap('sd');
 unmap('om');
+unmap('os');
 unmap('sm');
 //unmap('f');
 // search engine
