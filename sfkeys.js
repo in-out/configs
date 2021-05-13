@@ -175,7 +175,7 @@ mapkey('ot', 'call rarbg search', function() {
 	});
 });
 map('or', ':openSession r');
-mapkey("=j", "google translate", () => {
+mapkey("-j", "google translate", () => {
   const selection = window.getSelection().toString();
   if (selection === "") {
      tabOpenLink(
@@ -190,7 +190,7 @@ mapkey("=j", "google translate", () => {
   }
 });
 
-mapkey("=c", "google translate", () => {
+mapkey("-c", "google translate", () => {
   const selection = window.getSelection().toString();
   if (selection === "") {
      tabOpenLink(
@@ -205,7 +205,7 @@ mapkey("=c", "google translate", () => {
   }
 });
 
-mapkey("=e", "google translate", () => {
+mapkey("-e", "google translate", () => {
   const selection = window.getSelection().toString();
   if (selection === "") {
      tabOpenLink(
