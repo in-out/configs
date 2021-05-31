@@ -59,6 +59,7 @@ unmap('as');
 unmap('aa');
 unmap('ar');
 unmap('od');
+unmap('oe');
 unmap('sd');
 unmap('om');
 unmap('ss');
@@ -66,6 +67,7 @@ unmap('sm');
 //unmap('f');
 // search engine
 addSearchAliasX('z', 'zhihu', 'https://www.zhihu.com/search?type=question&q=', 's');
+addSearchAliasX('e', 'ecosia', 'https://www.ecosia.org/search?q=', 's');
 //addSearchAliasX('p', 'panc', 'https://www.panc.cc/m/s/?s=', 's');
 addSearchAliasX('dd', 'duckduckgo', 'https://duckduckgo.com/?q=', 's');
 addSearchAliasX('db', 'douban', 'https://www.douban.com/search?source=suggest&q=', 's');
@@ -130,6 +132,12 @@ mapkey('oc', 'call github search', function() {
 	Front.openOmnibar({
 		type: "SearchEngine",
 		extra: 'c'
+	});
+});
+mapkey('oe', 'call ecosia search', function() {
+	Front.openOmnibar({
+		type: "SearchEngine",
+		extra: 'e'
 	});
 });
 mapkey('odb', 'call douban search', function() {
