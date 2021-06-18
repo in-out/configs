@@ -482,7 +482,7 @@ input {
 
 .sk_theme #sk_omnibarSearchArea {
   border-top-color: var(--border);
-  border-bottom-color: translate;
+  border-bottom-color: transparent;
 }
 
 .sk_theme #sk_omnibarSearchArea input,
