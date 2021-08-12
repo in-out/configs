@@ -74,6 +74,7 @@ unmap('sd');
 unmap('om');
 unmap('ss');
 unmap('sm');
+unmap('.');
 //unmap('f');
 // search engine
 addSearchAliasX('z', 'zhihu', 'https://www.zhihu.com/search?type=question&q=', 's');
