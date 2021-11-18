@@ -91,9 +91,10 @@ addSearchAliasX('sx', 'searx', 'https://searx.info/?q=', 's');
 //addSearchAliasX('sx', 'searx', 'https://searx.fmac.xyz/?q=', 's');
 addSearchAliasX('st', 'stackoverflow', 'https://stackoverflow.com/search?q=', 's');
 addSearchAliasX('md', 'mdn', 'https://developer.mozilla.org/zh-CN/search?q=', 's');
-addSearchAliasX('j', 'jd', 'https://search.jd.com/Search?enc=utf-8&keyword=', 's');
+addSearchAliasX('jd', 'jd', 'https://search.jd.com/Search?enc=utf-8&keyword=', 's');
+addSearchAliasX('jj', 'juejin', 'https://juejin.cn/search?query=', 's');
 addSearchAliasX('c', 'github', 'https://github.com/search?q=', 's');
-addSearchAliasX('do', 'doge', 'https://www.dogedoge.com/results?q=', 's');
+//addSearchAliasX('do', 'doge', 'https://www.dogedoge.com/results?q=', 's');
 addSearchAliasX('t', 'rarbg', 'https://rarbg.to/torrents.php?search=', 's');
 addSearchAliasX('ms', 'mengso', 'https://mengso.com/search?q=', 's');
 
@@ -133,7 +134,13 @@ mapkey('oms', 'call mengso search', function() {
 		extra: 'ms'
 	});
 });
-mapkey('oj', 'call jd search', function() {
+mapkey('ojd', 'call jd search', function() {
+	Front.openOmnibar({
+		type: "SearchEngine",
+		extra: 'j'
+	});
+});
+mapkey('ojj', 'call juejin search', function() {
 	Front.openOmnibar({
 		type: "SearchEngine",
 		extra: 'j'
@@ -181,12 +188,12 @@ mapkey('oz', 'call zhihu search', function() {
 		extra: 'z'
 	});
 });
-mapkey('odo', 'call dogedoge search', function() {
-	Front.openOmnibar({
-		type: "SearchEngine",
-		extra: 'do'
-	});
-});
+// mapkey('odo', 'call dogedoge search', function() {
+// 	Front.openOmnibar({
+// 		type: "SearchEngine",
+// 		extra: 'do'
+// 	});
+// });
 mapkey('ot', 'call rarbg search', function() {
 	Front.openOmnibar({
 		type: "SearchEngine",
