@@ -72,6 +72,7 @@ unmap('od');
 unmap('oe');
 unmap('sd');
 unmap('om');
+unmap('oj');
 unmap('ss');
 unmap('sm');
 unmap('.');
