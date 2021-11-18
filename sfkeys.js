@@ -93,7 +93,7 @@ addSearchAliasX('st', 'stackoverflow', 'https://stackoverflow.com/search?q=', 's
 addSearchAliasX('md', 'mdn', 'https://developer.mozilla.org/zh-CN/search?q=', 's');
 addSearchAliasX('jd', 'jd', 'https://search.jd.com/Search?enc=utf-8&keyword=', 's');
 addSearchAliasX('jj', 'juejin', 'https://juejin.cn/search?query=', 's');
-addSearchAliasX('hb', 'github', 'https://github.com/search?q=', 's');
+addSearchAliasX('vg', 'github', 'https://github.com/search?q=', 's');
 addSearchAliasX('tr', 'rarbg', 'https://rarbg.to/torrents.php?search=', 's');
 addSearchAliasX('ms', 'mengso', 'https://mengso.com/search?q=', 's');
 
@@ -145,10 +145,10 @@ mapkey('ojj', 'call juejin search', function() {
 		extra: 'jj'
 	});
 });
-mapkey('ohb', 'call github search', function() {
+mapkey('ovg', 'call github search', function() {
 	Front.openOmnibar({
 		type: "SearchEngine",
-		extra: 'hb'
+		extra: 'vg'
 	});
 });
 mapkey('oe', 'call ecosia search', function() {
