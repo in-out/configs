@@ -72,13 +72,12 @@ unmap('od');
 unmap('oe');
 unmap('sd');
 unmap('om');
-unmap('oj');
 unmap('ss');
 unmap('sm');
 unmap('.');
 //unmap('f');
 // search engine
-addSearchAliasX('z', 'zhihu', 'https://www.zhihu.com/search?type=question&q=', 's');
+addSearchAliasX('zh', 'zhihu', 'https://www.zhihu.com/search?type=question&q=', 's');
 addSearchAliasX('e', 'ecosia', 'https://www.ecosia.org/search?q=', 's');
 //addSearchAliasX('p', 'panc', 'https://www.panc.cc/m/s/?s=', 's');
 addSearchAliasX('dd', 'duckduckgo', 'https://duckduckgo.com/?q=', 's');
@@ -92,10 +91,10 @@ addSearchAliasX('sx', 'searx', 'https://searx.info/?q=', 's');
 //addSearchAliasX('sx', 'searx', 'https://searx.fmac.xyz/?q=', 's');
 addSearchAliasX('st', 'stackoverflow', 'https://stackoverflow.com/search?q=', 's');
 addSearchAliasX('md', 'mdn', 'https://developer.mozilla.org/zh-CN/search?q=', 's');
-// addSearchAliasX('jd', 'jd', 'https://search.jd.com/Search?enc=utf-8&keyword=', 's');
+addSearchAliasX('jd', 'jd', 'https://search.jd.com/Search?enc=utf-8&keyword=', 's');
 addSearchAliasX('jj', 'juejin', 'https://juejin.cn/search?query=', 's');
-addSearchAliasX('c', 'github', 'https://github.com/search?q=', 's');
-addSearchAliasX('t', 'rarbg', 'https://rarbg.to/torrents.php?search=', 's');
+addSearchAliasX('hb', 'github', 'https://github.com/search?q=', 's');
+addSearchAliasX('tr', 'rarbg', 'https://rarbg.to/torrents.php?search=', 's');
 addSearchAliasX('ms', 'mengso', 'https://mengso.com/search?q=', 's');
 
 mapkey('osx', 'call searx', function() {
@@ -134,22 +133,22 @@ mapkey('oms', 'call mengso search', function() {
 		extra: 'ms'
 	});
 });
-// mapkey('ojd', 'call jd search', function() {
-// 	Front.openOmnibar({
-// 		type: "SearchEngine",
-// 		extra: 'j'
-// 	});
-// });
+mapkey('ojd', 'call jd search', function() {
+	Front.openOmnibar({
+		type: "SearchEngine",
+		extra: 'jd'
+	});
+});
 mapkey('ojj', 'call juejin search', function() {
 	Front.openOmnibar({
 		type: "SearchEngine",
-		extra: 'j'
+		extra: 'jj'
 	});
 });
-mapkey('oc', 'call github search', function() {
+mapkey('ohb', 'call github search', function() {
 	Front.openOmnibar({
 		type: "SearchEngine",
-		extra: 'c'
+		extra: 'hb'
 	});
 });
 mapkey('oe', 'call ecosia search', function() {
@@ -182,16 +181,16 @@ mapkey('odd', 'call dockduckgo search', function() {
 		extra: 'p'
 	});
 });**/
-mapkey('oz', 'call zhihu search', function() {
+mapkey('ozh', 'call zhihu search', function() {
 	Front.openOmnibar({
 		type: "SearchEngine",
-		extra: 'z'
+		extra: 'zh'
 	});
 });
-mapkey('ot', 'call rarbg search', function() {
+mapkey('otr', 'call rarbg search', function() {
 	Front.openOmnibar({
 		type: "SearchEngine",
-		extra: 't'
+		extra: 'tr'
 	});
 });
 map('or', ':openSession r');
@@ -308,7 +307,6 @@ settings.theme = `
     /* -------------- */
   /* --- THEMES --- */
   /* -------------- */
-
   /* -------------------- */
   /* -- Tomorrow Night -- */
   /* -------------------- */
@@ -322,13 +320,11 @@ settings.theme = `
   --info-fg: #AC7BBA;
   --select: #585858;
   -- DELETE LINE TO ENABLE THEME */
-
   /* Unused Alternate Colors */
   /* --cyan: #4CB3BC; */
   /* --orange: #DE935F; */
   /* --red: #CC6666; */
   /* --yellow: #CBCA77; */
-
   /* -------------------- */
   /* --      NORD      -- */
   /* -------------------- */
@@ -342,12 +338,10 @@ settings.theme = `
   --info-fg: #5E81AC;
   --select: #4C566A;
   -- DELETE LINE TO ENABLE THEME */
-
   /* Unused Alternate Colors */
   /* --orange: #D08770; */
   /* --red: #BF616A; */
   /* --yellow: #EBCB8B; */
-
   /* -------------------- */
   /* --    DOOM ONE    -- */
   /* -------------------- */
@@ -359,14 +353,12 @@ settings.theme = `
   --accent-fg: #98be65;
   --info-fg: #C678DD;
   --select: #4C566A;
-
   /* Unused Alternate Colors */
   /* --border-alt: #282C34; */
   /* --cyan: #46D9FF; */
   /* --orange: #DA8548; */
   /* --red: #FF6C6B; */
   /* --yellow: #ECBE7B; */
-
   /* -------------------- */
   /* --    MONOKAI    -- */
   /* -------------------- */
@@ -380,7 +372,6 @@ settings.theme = `
   --info-fg: #A6E22E;
   --select: #556172;
   -- DELETE LINE TO ENABLE THEME */
-
   /* Unused Alternate Colors */
   /* --red: #E74C3C; */
   /* --orange: #FD971F; */
@@ -388,7 +379,6 @@ settings.theme = `
   /* --violet: #9C91E4; */
   /* --cyan: #66D9EF; */
 }
-
 /* ---------- Generic ---------- */
 .sk_theme {
 background: var(--bg);
@@ -399,103 +389,81 @@ color: var(--fg);
   font-size: var(--font-size);
   font-weight: var(--font-weight);
 }
-
 input {
   font-family: var(--font);
   font-weight: var(--font-weight);
 }
-
 .sk_theme tbody {
   color: var(--fg);
 }
-
 .sk_theme input {
   color: var(--fg);
 }
-
 /* Hints */
 #sk_hints .begin {
   color: var(--accent-fg) !important;
 }
-
 #sk_tabs .sk_tab {
   background: var(--bg-dark);
   border: 1px solid var(--border);
 }
-
 #sk_tabs .sk_tab_title {
   color: var(--fg);
 }
-
 #sk_tabs .sk_tab_url {
   color: var(--main-fg);
 }
-
 #sk_tabs .sk_tab_hint {
   background: var(--bg);
   border: 1px solid var(--border);
   color: var(--accent-fg);
 }
-
 .sk_theme #sk_frame {
   background: var(--bg);
   opacity: 0.2;
   color: var(--accent-fg);
 }
-
 /* ---------- Omnibar ---------- */
 /* Uncomment this and use settings.omnibarPosition = 'bottom' for Pentadactyl/Tridactyl style bottom bar */
 /* .sk_theme#sk_omnibar {
   width: 100%;
   left: 0;
 } */
-
 .sk_theme .title {
   color: var(--accent-fg);
 }
-
 .sk_theme .url {
   color: var(--main-fg);
 }
-
 .sk_theme .annotation {
   color: var(--accent-fg);
 }
-
 .sk_theme .omnibar_highlight {
   color: var(--accent-fg);
 }
-
 .sk_theme .omnibar_timestamp {
   color: var(--info-fg);
 }
-
 .sk_theme .omnibar_visitcount {
   color: var(--accent-fg);
 }
-
 .sk_theme #sk_omnibarSearchResult ul li:nth-child(odd) {
   background: var(--bg-dark);
 }
-
 .sk_theme #sk_omnibarSearchResult ul li.focused {
   background: var(--border);
 }
-
 .sk_theme #sk_omnibarSearchArea {
   border-top-color: var(--border);
   border-bottom-color: transparent;
 }
-
 .sk_theme #sk_omnibarSearchArea input,
 .sk_theme #sk_omnibarSearchArea span {
   font-size: var(--font-size);
 }
-
 .sk_theme .separator {
   color: var(--accent-fg);
 }
-
 /* ---------- Popup Notification Banner ---------- */
 #sk_banner {
   font-family: var(--font);
@@ -506,100 +474,81 @@ input {
   color: var(--fg);
   opacity: 0.9;
 }
-
 /* ---------- Popup Keys ---------- */
 #sk_keystroke {
   background-color: var(--bg);
 }
-
 .sk_theme kbd .candidates {
   color: var(--info-fg);
 }
-
 .sk_theme span.annotation {
   color: var(--accent-fg);
 }
-
 /* ---------- Popup Translation Bubble ---------- */
 #sk_bubble {
   background-color: var(--bg) !important;
   color: var(--fg) !important;
   border-color: var(--border) !important;
 }
-
 #sk_bubble * {
   color: var(--fg) !important;
 }
-
 #sk_bubble div.sk_arrow div:nth-of-type(1) {
   border-top-color: var(--border) !important;
   border-bottom-color: var(--border) !important;
 }
-
 #sk_bubble div.sk_arrow div:nth-of-type(2) {
   border-top-color: var(--bg) !important;
   border-bottom-color: var(--bg) !important;
 }
-
 /* ---------- Search ---------- */
 #sk_status,
 #sk_find {
   font-size: var(--font-size);
   border-color: var(--border);
 }
-
 .sk_theme kbd {
   background: var(--bg-dark);
   border-color: var(--border);
   box-shadow: none;
   color: var(--fg);
 }
-
 .sk_theme .feature_name span {
   color: var(--main-fg);
 }
-
 /* ---------- ACE Editor ---------- */
 #sk_editor {
   background: var(--bg-dark) !important;
   height: 50% !important;
   /* Remove this to restore the default editor size */
 }
-
 .ace_dialog-bottom {
   border-top: 1px solid var(--bg) !important;
 }
-
 .ace-chrome .ace_print-margin,
 .ace_gutter,
 .ace_gutter-cell,
 .ace_dialog {
   background: var(--bg) !important;
 }
-
 .ace-chrome {
   color: var(--fg) !important;
 }
-
 .ace_gutter,
 .ace_dialog {
   color: var(--fg) !important;
 }
-
 .ace_cursor {
   color: var(--fg) !important;
 }
-
 .normal-mode .ace_cursor {
   background-color: var(--fg) !important;
   border: var(--fg) !important;
   opacity: 0.7 !important;
 }
-
 .ace_marker-layer .ace_selection {
   background: var(--select) !important;
 }
-
 .ace_editor,
 .ace_dialog span,
 .ace_dialog input {
