@@ -261,7 +261,7 @@ mapkey("-e", "google translate", () => {
     mapkey('gc', '#12Open Chrome Configure', function() {
         tabOpenLink("chrome://settings/");
     });
-settings.blacklistPattern = /.*mail.google.com.*|.*inbox.google.com.*|trello.com|inoreader.com|route.asus.com|localhost/i;
+settings.blacklistPattern = /.*mail.google.com.*|.*inbox.google.com.*|trello.com|feishu.cn|inoreader.com|route.asus.com|localhost/i;
 settings.nextLinkRegex = /((>>|下一页|next|older posts|older entries|forward|>|>>|❯|›|»|more|下一张|下页|(阅读)?下一章|次へ)+)/i;
 settings.prevLinkRegex = /((<<|上一页|prev(ious)?|newer posts|newer entries|back|<|❮|<<«|less|‹|上一张|(阅读)?上一章|前へ)+)/i;
 
