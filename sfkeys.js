@@ -206,7 +206,7 @@ mapkey('ozh', 'call zhihu search', function() {
 mapkey('orr', 'call rarbg search', function() {
 	Front.openOmnibar({
 		type: "SearchEngine",
-		extra: 'tr'
+		extra: 'rr'
 	});
 });
 map('or', ':openSession r');
