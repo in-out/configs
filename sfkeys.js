@@ -71,6 +71,7 @@ unmap('ar');
 unmap('od');
 unmap('oe');
 unmap('sd');
+unmap('sg');
 unmap('om');
 unmap('ss');
 unmap('sm');
@@ -94,9 +95,10 @@ addSearchAliasX('st', 'stackoverflow', 'https://stackoverflow.com/search?q=', 's
 addSearchAliasX('md', 'mdn', 'https://developer.mozilla.org/zh-CN/search?q=', 's');
 addSearchAliasX('jd', 'jd', 'https://search.jd.com/Search?enc=utf-8&keyword=', 's');
 addSearchAliasX('jj', 'juejin', 'https://juejin.cn/search?query=', 's');
-addSearchAliasX('vg', 'github', 'https://github.com/search?q=', 's');
-addSearchAliasX('tr', 'rarbg', 'https://rarbg.to/torrents.php?search=', 's');
+addSearchAliasX('gh', 'github', 'https://github.com/search?q=', 's');
+addSearchAliasX('rr', 'rarbg', 'https://rarbg.to/torrents.php?search=', 's');
 addSearchAliasX('ms', 'mengso', 'https://mengso.com/search?q=', 's');
+addSearchAliasX('gg', 'google', 'https://www.google.com/search?q=', 's');
 
 mapkey('osx', 'call searx', function() {
 	Front.openOmnibar({
@@ -146,10 +148,16 @@ mapkey('ojj', 'call juejin search', function() {
 		extra: 'jj'
 	});
 });
-mapkey('ovg', 'call github search', function() {
+mapkey('ogh', 'call github search', function() {
 	Front.openOmnibar({
 		type: "SearchEngine",
-		extra: 'vg'
+		extra: 'gh'
+	});
+});
+mapkey('ogg', 'call google search', function() {
+	Front.openOmnibar({
+		type: "SearchEngine",
+		extra: 'gg'
 	});
 });
 mapkey('oe', 'call ecosia search', function() {
@@ -194,7 +202,7 @@ mapkey('ozh', 'call zhihu search', function() {
 		extra: 'zh'
 	});
 });
-mapkey('otr', 'call rarbg search', function() {
+mapkey('orr', 'call rarbg search', function() {
 	Front.openOmnibar({
 		type: "SearchEngine",
 		extra: 'tr'
