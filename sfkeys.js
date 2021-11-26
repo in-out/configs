@@ -70,6 +70,7 @@ unmap('aa');
 unmap('ar');
 unmap('od');
 unmap('oe');
+unmap('og');
 unmap('sd');
 unmap('sg');
 unmap('om');
