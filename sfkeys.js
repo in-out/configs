@@ -71,6 +71,7 @@ unmap('ar');
 unmap('od');
 unmap('oe');
 unmap('og');
+unmap('or');
 unmap('sd');
 unmap('sg');
 unmap('om');
@@ -209,7 +210,7 @@ mapkey('orr', 'call rarbg search', function() {
 		extra: 'rr'
 	});
 });
-map('or', ':openSession r');
+//map('or', ':openSession r');
 mapkey("-j", "google translate", () => {
   const selection = window.getSelection().toString();
   if (selection === "") {
