@@ -97,6 +97,7 @@ addSearchAliasX('st', 'stackoverflow', 'https://stackoverflow.com/search?q=', 's
 addSearchAliasX('md', 'mdn', 'https://developer.mozilla.org/zh-CN/search?q=', 's');
 addSearchAliasX('jd', 'jd', 'https://search.jd.com/Search?enc=utf-8&keyword=', 's');
 addSearchAliasX('jj', 'juejin', 'https://juejin.cn/search?query=', 's');
+addSearchAliasX('js', 'jianshu', 'https://www.jianshu.com/search?q=', 's');
 addSearchAliasX('gh', 'github', 'https://github.com/search?q=', 's');
 addSearchAliasX('rr', 'rarbg', 'https://rarbg.to/torrents.php?search=', 's');
 addSearchAliasX('ms', 'mengso', 'https://mengso.com/search?q=', 's');
@@ -148,6 +149,12 @@ mapkey('ojj', 'call juejin search', function() {
 	Front.openOmnibar({
 		type: "SearchEngine",
 		extra: 'jj'
+	});
+});
+mapkey('ojs', 'call jianshu search', function() {
+	Front.openOmnibar({
+		type: "SearchEngine",
+		extra: 'js'
 	});
 });
 mapkey('ogh', 'call github search', function() {
