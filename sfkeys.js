@@ -91,24 +91,24 @@ addSearchAliasX('dm', 'douban movie', 'https://www.douban.com/search?source=sugg
 addSearchAliasX('sm', 'smzdm', 'https://search.smzdm.com/?c=post&s=', 's');
 addSearchAliasX('sb', 'bing', 'https://www.bing.com/search?q=', 's');
 //addSearchAliasX('sx', 'searx', 'https://searx.info/?q=', 's');
-addSearchAliasX('sx', 'searx', 'https://searx.info/?q=', 's');
+//addSearchAliasX('sx', 'searx', 'https://searx.info/?q=', 's');
 //addSearchAliasX('sx', 'searx', 'https://searx.fmac.xyz/?q=', 's');
-addSearchAliasX('st', 'stackoverflow', 'https://stackoverflow.com/search?q=', 's');
+addSearchAliasX('sf', 'stackoverflow', 'https://stackoverflow.com/search?q=', 's');
 addSearchAliasX('md', 'mdn', 'https://developer.mozilla.org/zh-CN/search?q=', 's');
 addSearchAliasX('jd', 'jd', 'https://search.jd.com/Search?enc=utf-8&keyword=', 's');
 addSearchAliasX('jj', 'juejin', 'https://juejin.cn/search?query=', 's');
 addSearchAliasX('js', 'jianshu', 'https://www.jianshu.com/search?q=', 's');
 addSearchAliasX('gh', 'github', 'https://github.com/search?q=', 's');
 addSearchAliasX('rr', 'rarbg', 'https://rarbg.to/torrents.php?search=', 's');
-addSearchAliasX('ms', 'mengso', 'https://mengso.com/search?q=', 's');
+//addSearchAliasX('ms', 'mengso', 'https://mengso.com/search?q=', 's');
 addSearchAliasX('gg', 'google', 'https://www.google.com/search?q=', 's');
 
-mapkey('osx', 'call searx', function() {
-	Front.openOmnibar({
-		type: "SearchEngine",
-		extra: 'sx'
-	});
-});
+//mapkey('osx', 'call searx', function() {
+//	Front.openOmnibar({
+//		type: "SearchEngine",
+//		extra: 'sx'
+//	});
+//});
 mapkey('osm', 'call smzdm search', function() {
 	Front.openOmnibar({
 		type: "SearchEngine",
@@ -121,10 +121,10 @@ mapkey('osb', 'call bing search', function() {
 		extra: 'sb'
 	});
 });
-mapkey('ost', 'call stackoverflow search', function() {
+mapkey('osf', 'call stackoverflow search', function() {
 	Front.openOmnibar({
 		type: "SearchEngine",
-		extra: 'st'
+		extra: 'sf'
 	});
 });
 mapkey('omd', 'call mdn search', function() {
@@ -133,12 +133,12 @@ mapkey('omd', 'call mdn search', function() {
 		extra: 'md'
 	});
 });
-mapkey('oms', 'call mengso search', function() {
-	Front.openOmnibar({
-		type: "SearchEngine",
-		extra: 'ms'
-	});
-});
+//mapkey('oms', 'call mengso search', function() {
+//	Front.openOmnibar({
+//		type: "SearchEngine",
+//		extra: 'ms'
+//	});
+//});
 mapkey('ojd', 'call jd search', function() {
 	Front.openOmnibar({
 		type: "SearchEngine",
