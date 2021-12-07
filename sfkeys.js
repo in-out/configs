@@ -89,11 +89,12 @@ addSearchAliasX('db', 'douban', 'https://www.douban.com/search?source=suggest&q=
 addSearchAliasX('dm', 'douban movie', 'https://www.douban.com/search?source=suggest&cat=1002&q=', 's');
 //addSearchAliasX('t', 'translate', 'https://translate.google.cn/?source=osdd#auto/zh-CN/', 's');
 addSearchAliasX('sm', 'smzdm', 'https://search.smzdm.com/?c=post&s=', 's');
+addSearchAliasX('sf', 'SegmentFault', 'https://segmentfault.com/search?type=all&q=', 's');
 addSearchAliasX('sb', 'bing', 'https://www.bing.com/search?q=', 's');
 //addSearchAliasX('sx', 'searx', 'https://searx.info/?q=', 's');
 //addSearchAliasX('sx', 'searx', 'https://searx.info/?q=', 's');
 //addSearchAliasX('sx', 'searx', 'https://searx.fmac.xyz/?q=', 's');
-addSearchAliasX('sf', 'stackoverflow', 'https://stackoverflow.com/search?q=', 's');
+addSearchAliasX('so', 'stackoverflow', 'https://stackoverflow.com/search?q=', 's');
 addSearchAliasX('md', 'mdn', 'https://developer.mozilla.org/zh-CN/search?q=', 's');
 addSearchAliasX('jd', 'jd', 'https://search.jd.com/Search?enc=utf-8&keyword=', 's');
 addSearchAliasX('jj', 'juejin', 'https://juejin.cn/search?query=', 's');
@@ -121,7 +122,13 @@ mapkey('osb', 'call bing search', function() {
 		extra: 'sb'
 	});
 });
-mapkey('osf', 'call stackoverflow search', function() {
+mapkey('oso', 'call stackoverflow search', function() {
+	Front.openOmnibar({
+		type: "SearchEngine",
+		extra: 'so'
+	});
+});
+mapkey('osf', 'call segmentfault search', function() {
 	Front.openOmnibar({
 		type: "SearchEngine",
 		extra: 'sf'
