@@ -5,6 +5,7 @@ mapkey('<Ctrl-y>', 'Show me the money', function() {
 
 stealFocusOnLoad=true;
 enableAutoFocus=false;
+omnibarSuggestion=true;
 
 // -----------------------------------------------------------------------------------------------------------------------
 // Change hints styles
