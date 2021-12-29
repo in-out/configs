@@ -1,5 +1,6 @@
 const {
     aceVimMap,
+    unmap,
     mapkey,
     imap,
     imapkey,
