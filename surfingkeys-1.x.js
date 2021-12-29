@@ -9,7 +9,6 @@ const {
     map,
     cmap,
     addSearchAlias,
-    addSearchAliasX,
     removeSearchAlias,
     tabOpenLink,
     readText,
@@ -102,29 +101,29 @@ unmap('sm');
 unmap('.');
 //unmap('f');
 // search engine
-addSearchAliasX('zh', 'zhihu', 'https://www.zhihu.com/search?type=question&q=', 's');
-addSearchAliasX('e', 'ecosia', 'https://www.ecosia.org/search?q=', 's');
-addSearchAliasX('f', 'fsou', 'https://fsou.cc/search?q=', 's');
-//addSearchAliasX('p', 'panc', 'https://www.panc.cc/m/s/?s=', 's');
-addSearchAliasX('dd', 'duckduckgo', 'https://duckduckgo.com/?q=', 's');
-addSearchAliasX('db', 'douban', 'https://www.douban.com/search?source=suggest&q=', 's');
-addSearchAliasX('dm', 'douban movie', 'https://www.douban.com/search?source=suggest&cat=1002&q=', 's');
-//addSearchAliasX('t', 'translate', 'https://translate.google.cn/?source=osdd#auto/zh-CN/', 's');
-addSearchAliasX('sm', 'smzdm', 'https://search.smzdm.com/?c=post&s=', 's');
-addSearchAliasX('sf', 'SegmentFault', 'https://segmentfault.com/search?type=all&q=', 's');
-addSearchAliasX('sb', 'bing', 'https://www.bing.com/search?q=', 's');
-//addSearchAliasX('sx', 'searx', 'https://searx.info/?q=', 's');
-//addSearchAliasX('sx', 'searx', 'https://searx.info/?q=', 's');
-//addSearchAliasX('sx', 'searx', 'https://searx.fmac.xyz/?q=', 's');
-addSearchAliasX('so', 'stackoverflow', 'https://stackoverflow.com/search?q=', 's');
-addSearchAliasX('md', 'mdn', 'https://developer.mozilla.org/zh-CN/search?q=', 's');
-addSearchAliasX('jd', 'jd', 'https://search.jd.com/Search?enc=utf-8&keyword=', 's');
-addSearchAliasX('jj', 'juejin', 'https://juejin.cn/search?query=', 's');
-addSearchAliasX('js', 'jianshu', 'https://www.jianshu.com/search?q=', 's');
-addSearchAliasX('gh', 'github', 'https://github.com/search?q=', 's');
-addSearchAliasX('rr', 'rarbg', 'https://rarbg.to/torrents.php?search=', 's');
-//addSearchAliasX('ms', 'mengso', 'https://mengso.com/search?q=', 's');
-addSearchAliasX('gg', 'google', 'https://www.google.com/search?pws=0&gl=us&gws_rd=cr&q=', 's');
+addSearchAlias('zh', 'zhihu', 'https://www.zhihu.com/search?type=question&q=', 's');
+addSearchAlias('e', 'ecosia', 'https://www.ecosia.org/search?q=', 's');
+addSearchAlias('f', 'fsou', 'https://fsou.cc/search?q=', 's');
+//addSearchAlias('p', 'panc', 'https://www.panc.cc/m/s/?s=', 's');
+addSearchAlias('dd', 'duckduckgo', 'https://duckduckgo.com/?q=', 's');
+addSearchAlias('db', 'douban', 'https://www.douban.com/search?source=suggest&q=', 's');
+addSearchAlias('dm', 'douban movie', 'https://www.douban.com/search?source=suggest&cat=1002&q=', 's');
+//addSearchAlias('t', 'translate', 'https://translate.google.cn/?source=osdd#auto/zh-CN/', 's');
+addSearchAlias('sm', 'smzdm', 'https://search.smzdm.com/?c=post&s=', 's');
+addSearchAlias('sf', 'SegmentFault', 'https://segmentfault.com/search?type=all&q=', 's');
+addSearchAlias('sb', 'bing', 'https://www.bing.com/search?q=', 's');
+//addSearchAlias('sx', 'searx', 'https://searx.info/?q=', 's');
+//addSearchAlias('sx', 'searx', 'https://searx.info/?q=', 's');
+//addSearchAlias('sx', 'searx', 'https://searx.fmac.xyz/?q=', 's');
+addSearchAlias('so', 'stackoverflow', 'https://stackoverflow.com/search?q=', 's');
+addSearchAlias('md', 'mdn', 'https://developer.mozilla.org/zh-CN/search?q=', 's');
+addSearchAlias('jd', 'jd', 'https://search.jd.com/Search?enc=utf-8&keyword=', 's');
+addSearchAlias('jj', 'juejin', 'https://juejin.cn/search?query=', 's');
+addSearchAlias('js', 'jianshu', 'https://www.jianshu.com/search?q=', 's');
+addSearchAlias('gh', 'github', 'https://github.com/search?q=', 's');
+addSearchAlias('rr', 'rarbg', 'https://rarbg.to/torrents.php?search=', 's');
+//addSearchAlias('ms', 'mengso', 'https://mengso.com/search?q=', 's');
+addSearchAlias('gg', 'google', 'https://www.google.com/search?pws=0&gl=us&gws_rd=cr&q=', 's');
 
 //mapkey('osx', 'call searx', function() {
 //	Front.openOmnibar({
