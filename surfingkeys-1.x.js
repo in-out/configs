@@ -9,6 +9,7 @@ const {
     map,
     cmap,
     addSearchAlias,
+    addSearchAliasX,
     removeSearchAlias,
     tabOpenLink,
     readText,
