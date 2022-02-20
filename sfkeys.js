@@ -101,7 +101,7 @@ addSearchAliasX('jd', 'jd', 'https://search.jd.com/Search?enc=utf-8&keyword=', '
 addSearchAliasX('jj', 'juejin', 'https://juejin.cn/search?query=', 's');
 addSearchAliasX('js', 'jianshu', 'https://www.jianshu.com/search?q=', 's');
 addSearchAliasX('gh', 'github', 'https://github.com/search?q=', 's');
-addSearchAliasX('rr', 'rarbg', 'https://rarbg.to/torrents.php?search=', 's');
+addSearchAliasX('rr', 'rarbg', 'https://rarbgto.org/torrents.php?search=', 's');
 //addSearchAliasX('ms', 'mengso', 'https://mengso.com/search?q=', 's');
 addSearchAliasX('gg', 'google', 'https://www.google.com/search?pws=0&gl=us&gws_rd=cr&q=', 's');
 
