@@ -98,6 +98,7 @@ unmap('sg');
 unmap('om');
 unmap('ss');
 unmap('sm');
+unmap('os')
 unmap('.');
 //unmap('f');
 // search engine
