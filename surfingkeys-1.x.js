@@ -44,356 +44,6 @@ Hints.characters = "asdfgqwertvbn";
 // Hints have to be defined separately
 // Uncomment to enable
 
-// Tomorrow-Night
-/* -- DELETE LINE TO ENABLE THEME
-Hints.style('border: solid 2px #373B41; color:#52C196; background: initial; background-color: #1D1F21;');
-Hints.style("border: solid 2px #373B41 !important; padding: 1px !important; color: #C5C8C6 !important; background: #1D1F21 !important;", "text");
-Visual.style('marks', 'background-color: #52C19699;');
-Visual.style('cursor', 'background-color: #81A2BE;');
--- DELETE LINE TO ENABLE THEME */
-
-// Nord
-/* -- DELETE LINE TO ENABLE THEME
-Hints.style('border: solid 2px #4C566A; color:#A3BE8C; background: initial; background-color: #3B4252;');
-Hints.style("border: solid 2px #4C566A !important; padding: 1px !important; color: #E5E9F0 !important; background: #3B4252 !important;", "text");
-Visual.style('marks', 'background-color: #A3BE8C99;');
-Visual.style('cursor', 'background-color: #88C0D0;');
--- DELETE LINE TO ENABLE THEME */
-
-// Doom One
-Hints.style('border: solid 2px #282C34; color:#98be65; background: initial; background-color: #2E3440;');
-Hints.style("border: solid 2px #282C34 !important; padding: 1px !important; color: #51AFEF !important; background: #2E3440 !important;", "text");
-Visual.style('marks', 'background-color: #98be6599;');
-Visual.style('cursor', 'background-color: #51AFEF;');
-
-// Monokai
-/* -- DELETE LINE TO ENABLE THEME
-Hints.style('border: solid 2px #2D2E2E; color:#F92660; background: initial; background-color: #272822;');
-Hints.style("border: solid 2px #2D2E2E !important; padding: 1px !important; color: #A6E22E !important; background: #272822 !important;", "text");
-Visual.style('marks', 'background-color: #A6E22E99;');
-Visual.style('cursor', 'background-color: #F92660;');
--- DELETE LINE TO ENABLE THEME */
-
-//mapkey('H', '#4Go back in history', 'history.go(-1)');
-//mapkey('L', '#4Go forward in history', 'history.go(1)');
-// an example to remove mapkey `Ctrl-i`
-// unmap('<Ctrl-i>');
-unmap('gr');
-unmap('spa');
-unmap('spb');
-unmap('spd');
-unmap('sps');
-unmap('spc');
-unmap('F');
-unmap('gc');
-unmap('as');
-unmap('aa');
-unmap('ar');
-unmap('od');
-unmap('oe');
-unmap('og');
-unmap('or');
-unmap('sd');
-unmap('sg');
-unmap('om');
-unmap('ss');
-unmap('sm');
-unmap('os')
-unmap('.');
-//unmap('f');
-// search engine
-addSearchAlias('zh', 'zhihu', 'https://www.zhihu.com/search?type=question&q=', 's');
-addSearchAlias('e', 'ecosia', 'https://www.ecosia.org/search?q=', 's');
-addSearchAlias('f', 'fsou', 'https://fsou.cc/search?q=', 's');
-//addSearchAlias('p', 'panc', 'https://www.panc.cc/m/s/?s=', 's');
-addSearchAlias('dd', 'duckduckgo', 'https://duckduckgo.com/?q=', 's');
-addSearchAlias('db', 'douban', 'https://www.douban.com/search?source=suggest&q=', 's');
-addSearchAlias('dm', 'douban movie', 'https://www.douban.com/search?source=suggest&cat=1002&q=', 's');
-//addSearchAlias('t', 'translate', 'https://translate.google.cn/?source=osdd#auto/zh-CN/', 's');
-addSearchAlias('sm', 'smzdm', 'https://search.smzdm.com/?c=post&s=', 's');
-addSearchAlias('sf', 'SegmentFault', 'https://segmentfault.com/search?type=all&q=', 's');
-addSearchAlias('sb', 'bing', 'https://www.bing.com/search?q=', 's');
-//addSearchAlias('sx', 'searx', 'https://searx.info/?q=', 's');
-//addSearchAlias('sx', 'searx', 'https://searx.info/?q=', 's');
-//addSearchAlias('sx', 'searx', 'https://searx.fmac.xyz/?q=', 's');
-addSearchAlias('so', 'stackoverflow', 'https://stackoverflow.com/search?q=', 's');
-addSearchAlias('md', 'mdn', 'https://developer.mozilla.org/zh-CN/search?q=', 's');
-addSearchAlias('jd', 'jd', 'https://search.jd.com/Search?enc=utf-8&keyword=', 's');
-addSearchAlias('jj', 'juejin', 'https://juejin.cn/search?query=', 's');
-addSearchAlias('js', 'jianshu', 'https://www.jianshu.com/search?q=', 's');
-addSearchAlias('gh', 'github', 'https://github.com/search?q=', 's');
-addSearchAlias('rr', 'rarbg', 'https://rarbgto.org/torrents.php?search=', 's');
-//addSearchAlias('ms', 'mengso', 'https://mengso.com/search?q=', 's');
-addSearchAlias('gg', 'google', 'https://www.google.com/search?pws=0&gl=us&gws_rd=cr&q=', 's');
-
-//mapkey('osx', 'call searx', function() {
-//	Front.openOmnibar({
-//		type: "SearchEngine",
-//		extra: 'sx'
-//	});
-//});
-mapkey('osm', 'call smzdm search', function() {
-	Front.openOmnibar({
-		type: "SearchEngine",
-		extra: 'sm'
-	});
-});
-mapkey('osb', 'call bing search', function() {
-	Front.openOmnibar({
-		type: "SearchEngine",
-		extra: 'sb'
-	});
-});
-mapkey('oso', 'call stackoverflow search', function() {
-	Front.openOmnibar({
-		type: "SearchEngine",
-		extra: 'so'
-	});
-});
-mapkey('osf', 'call segmentfault search', function() {
-	Front.openOmnibar({
-		type: "SearchEngine",
-		extra: 'sf'
-	});
-});
-mapkey('omd', 'call mdn search', function() {
-	Front.openOmnibar({
-		type: "SearchEngine",
-		extra: 'md'
-	});
-});
-//mapkey('oms', 'call mengso search', function() {
-//	Front.openOmnibar({
-//		type: "SearchEngine",
-//		extra: 'ms'
-//	});
-//});
-mapkey('ojd', 'call jd search', function() {
-	Front.openOmnibar({
-		type: "SearchEngine",
-		extra: 'jd'
-	});
-});
-mapkey('ojj', 'call juejin search', function() {
-	Front.openOmnibar({
-		type: "SearchEngine",
-		extra: 'jj'
-	});
-});
-mapkey('ojs', 'call jianshu search', function() {
-	Front.openOmnibar({
-		type: "SearchEngine",
-		extra: 'js'
-	});
-});
-mapkey('ogh', 'call github search', function() {
-	Front.openOmnibar({
-		type: "SearchEngine",
-		extra: 'gh'
-	});
-});
-mapkey('ogg', 'call google search', function() {
-	Front.openOmnibar({
-		type: "SearchEngine",
-		extra: 'gg'
-	});
-});
-mapkey('oe', 'call ecosia search', function() {
-	Front.openOmnibar({
-		type: "SearchEngine",
-		extra: 'e'
-	});
-});
-mapkey('of', 'call fsou search', function() {
-	Front.openOmnibar({
-		type: "SearchEngine",
-		extra: 'f'
-	});
-});
-mapkey('odb', 'call douban search', function() {
-	Front.openOmnibar({
-		type: "SearchEngine",
-		extra: 'db'
-	});
-});
-mapkey('odm', 'call douban movie search', function() {
-	Front.openOmnibar({
-		type: "SearchEngine",
-		extra: 'dm'
-	});
-});
-mapkey('odd', 'call dockduckgo search', function() {
-	Front.openOmnibar({
-		type: "SearchEngine",
-		extra: 'dd'
-	});
-});
-/**mapkey('op', 'call pancc search', function() {
-	Front.openOmnibar({
-		type: "SearchEngine",
-		extra: 'p'
-	});
-});**/
-mapkey('ozh', 'call zhihu search', function() {
-	Front.openOmnibar({
-		type: "SearchEngine",
-		extra: 'zh'
-	});
-});
-mapkey('orr', 'call rarbg search', function() {
-	Front.openOmnibar({
-		type: "SearchEngine",
-		extra: 'rr'
-	});
-});
-//map('or', ':openSession r');
-mapkey("-j", "google translate", () => {
-  const selection = window.getSelection().toString();
-  if (selection === "") {
-     tabOpenLink(
-      `http://translate.google.com/translate?u=${window.location.href}`
-    );
-  } else {
-     tabOpenLink(
-      `https://translate.google.com/?sl=auto&tl=ja&text=${encodeURIComponent(
-        selection
-      )}`
-    );
-  }
-});
-
-mapkey("-c", "google translate", () => {
-  const selection = window.getSelection().toString();
-  if (selection === "") {
-     tabOpenLink(
-      `http://translate.google.com/translate?u=${window.location.href}`
-    );
-  } else {
-     tabOpenLink(
-      `https://translate.google.com/?sl=auto&tl=zh-CN&text=${encodeURIComponent(
-        selection
-      )}`
-    );
-  }
-});
-
-mapkey("-e", "google translate", () => {
-  const selection = window.getSelection().toString();
-  if (selection === "") {
-     tabOpenLink(
-      `http://translate.google.com/translate?u=${window.location.href}`
-    );
-  } else {
-     tabOpenLink(
-      `https://translate.google.com/?sl=auto&tl=en&text=${encodeURIComponent(
-        selection
-      )}`
-    );
-  }
-});
-
-//Front.registerInlineQuery({
-//    url: function(q) {
-//        return `http://dict.youdao.com/w/eng/${q}/#keyfrom=dict2.index`;
-//    },
-//    parseResult: function(res) {
-//        var parser = new DOMParser();
-//        var doc = parser.parseFromString(res.text, "text/html");
-//        var collinsResult = doc.querySelector("#collinsResult");
-//        var authTransToggle = doc.querySelector("#authTransToggle");
-//        var examplesToggle = doc.querySelector("#examplesToggle");
-//        if (collinsResult) {
-//            collinsResult.querySelectorAll("div>span.collinsOrder").forEach(function(span) {
-//                span.nextElementSibling.prepend(span);
-//            });
-//            collinsResult.querySelectorAll("div.examples").forEach(function(div) {
-//                div.innerHTML = div.innerHTML.replace(/<p/gi, "<span").replace(/<\/p>/gi, "</span>");
-//            });
-//            var exp = collinsResult.innerHTML;
-//            return exp;
-//        } else if (authTransToggle) {
-//            authTransToggle.querySelector("div.via.ar").remove();
-//            return authTransToggle.innerHTML;
-//        } else if (examplesToggle) {
-//            return examplesToggle.innerHTML;
-//        }
-//    }
-//});
-const {
-    aceVimMap,
-    unmap,
-    mapkey,
-    imap,
-    imapkey,
-    getClickableElements,
-    vmapkey,
-    map,
-    cmap,
-    addSearchAlias,
-    removeSearchAlias,
-    tabOpenLink,
-    readText,
-    Clipboard,
-    Front,
-    Hints,
-    Visual,
-    RUNTIME
-} = api;
-// an example to create a new mapping `ctrl-y`
-mapkey('<Ctrl-y>', 'Show me the money', function() {
-	Normal.showPopup('a well-known phrase uttered by characters in the 1996 film Jerry Maguire (Escape to close).');
-});
-
-stealFocusOnLoad=true;
-enableAutoFocus=false;
-omnibarSuggestion=true;
-
-// -----------------------------------------------------------------------------------------------------------------------
-// Change hints styles
-// -----------------------------------------------------------------------------------------------------------------------
-Hints.characters = "asdfgqwertvbn";
-
-//Hints.style('border: solid 0px #ff79c6; color:#44475a; background: #f1fa8c; background-color: #f1fa8c; font-size: 9pt; font-family: "Microsoft YaHei", "Inconsolata", "Tahoma", "SimSun", "FontAwesome", "Segoe UI", "Segoe UI Symbol", "Symbola", "Meiryo", "Malgun Gothic", "NSimSun", "FZSongS", "方正宋体S-超大字符集", "Arial Unicode MS"');
-//Hints.style("border: solid 0px #ff79c6; padding: 1px; background: #7FAB97; font-size: 9pt; font-family: 'Microsoft YaHei', 'Inconsolata', 'Tahoma', 'SimSun', 'FontAwesome', 'Segoe UI', 'Segoe UI Symbol', 'Symbola', 'Meiryo', 'Malgun Gothic', 'NSimSun', 'FZSongS', '方正宋体S-超大字符集', 'Arial Unicode MS'", "text");
-// -----------------------------------------------------------------------------------------------------------------------
-// Change search marks and cursor
-// -----------------------------------------------------------------------------------------------------------------------
-//Visual.style('marks', 'background-color: #f1fa8c;');
-//Visual.style('cursor', 'background-color: #6272a4; color: #f8f8f2');
-
-// ---- Hints ----
-// Hints have to be defined separately
-// Uncomment to enable
-
-// Tomorrow-Night
-/* -- DELETE LINE TO ENABLE THEME
-Hints.style('border: solid 2px #373B41; color:#52C196; background: initial; background-color: #1D1F21;');
-Hints.style("border: solid 2px #373B41 !important; padding: 1px !important; color: #C5C8C6 !important; background: #1D1F21 !important;", "text");
-Visual.style('marks', 'background-color: #52C19699;');
-Visual.style('cursor', 'background-color: #81A2BE;');
--- DELETE LINE TO ENABLE THEME */
-
-// Nord
-/* -- DELETE LINE TO ENABLE THEME
-Hints.style('border: solid 2px #4C566A; color:#A3BE8C; background: initial; background-color: #3B4252;');
-Hints.style("border: solid 2px #4C566A !important; padding: 1px !important; color: #E5E9F0 !important; background: #3B4252 !important;", "text");
-Visual.style('marks', 'background-color: #A3BE8C99;');
-Visual.style('cursor', 'background-color: #88C0D0;');
--- DELETE LINE TO ENABLE THEME */
-
-// Doom One
-Hints.style('border: solid 2px #282C34; color:#98be65; background: initial; background-color: #2E3440;');
-Hints.style("border: solid 2px #282C34 !important; padding: 1px !important; color: #51AFEF !important; background: #2E3440 !important;", "text");
-Visual.style('marks', 'background-color: #98be6599;');
-Visual.style('cursor', 'background-color: #51AFEF;');
-
-// Monokai
-/* -- DELETE LINE TO ENABLE THEME
-Hints.style('border: solid 2px #2D2E2E; color:#F92660; background: initial; background-color: #272822;');
-Hints.style("border: solid 2px #2D2E2E !important; padding: 1px !important; color: #A6E22E !important; background: #272822 !important;", "text");
-Visual.style('marks', 'background-color: #A6E22E99;');
-Visual.style('cursor', 'background-color: #F92660;');
--- DELETE LINE TO ENABLE THEME */
 
 //mapkey('H', '#4Go back in history', 'history.go(-1)');
 //mapkey('L', '#4Go forward in history', 'history.go(1)');
@@ -664,39 +314,34 @@ settings.prevLinkRegex = /((<<|上一页|prev(ious)?|newer posts|newer entries|�
 settings.smartPageBoundary = false;
 settings.stealFocusOnLoad = false;
 
-// set theme
+// Tomorrow-Night
+Hints.style('border: solid 2px #373B41; color:#52C196; background: initial; background-color: #1D1F21;');
+Hints.style("border: solid 2px #373B41 !important; padding: 1px !important; color: #C5C8C6 !important; background: #1D1F21 !important;", "text");
+Visual.style('marks', 'background-color: #52C19699;');
+Visual.style('cursor', 'background-color: #81A2BE;');
+
+// Nord
 /* -- DELETE LINE TO ENABLE THEME
-settings.theme = `
-.sk_theme {
-	background: #100a14dd;
-	color: #4f97d7;
-}
-.sk_theme tbody {
-	color: #292d;
-}
-.sk_theme input {
-	color: #d9dce0;
-}
-.sk_theme .url {
-	color: #2d9574;
-}
-.sk_theme .annotation {
-	color: #a31db1;
-}
-.sk_theme .omnibar_highlight {
-	color: #333;
-	background: #ffff00aa;
-}
-.sk_theme #sk_omnibarSearchResult ul li:nth-child(odd) {
-	background: #5d4d7a55;
-}
-.sk_theme #sk_omnibarSearchResult ul li.focused {
-	background: #5d4d7aaa;
-}
-.sk_theme #sk_omnibarSearchResult .omnibar_folder {
-	color: #a31db1;
-}
-`;
+Hints.style('border: solid 2px #4C566A; color:#A3BE8C; background: initial; background-color: #3B4252;');
+Hints.style("border: solid 2px #4C566A !important; padding: 1px !important; color: #E5E9F0 !important; background: #3B4252 !important;", "text");
+Visual.style('marks', 'background-color: #A3BE8C99;');
+Visual.style('cursor', 'background-color: #88C0D0;');
+-- DELETE LINE TO ENABLE THEME */
+
+// Doom One
+/* -- DELETE LINE TO ENABLE THEME
+Hints.style('border: solid 2px #282C34; color:#98be65; background: initial; background-color: #2E3440;');
+Hints.style("border: solid 2px #282C34 !important; padding: 1px !important; color: #51AFEF !important; background: #2E3440 !important;", "text");
+Visual.style('marks', 'background-color: #98be6599;');
+Visual.style('cursor', 'background-color: #51AFEF;');
+-- DELETE LINE TO ENABLE THEME */
+
+// Monokai
+/* -- DELETE LINE TO ENABLE THEME
+Hints.style('border: solid 2px #2D2E2E; color:#F92660; background: initial; background-color: #272822;');
+Hints.style("border: solid 2px #2D2E2E !important; padding: 1px !important; color: #A6E22E !important; background: #272822 !important;", "text");
+Visual.style('marks', 'background-color: #A6E22E99;');
+Visual.style('cursor', 'background-color: #F92660;');
 -- DELETE LINE TO ENABLE THEME */
 
 settings.theme = `
@@ -712,6 +357,7 @@ settings.theme = `
   /* -------------------- */
   /* -- Tomorrow Night -- */
   /* -------------------- */
+  /* -- DELETE LINE TO ENABLE THEME
   --fg: #C5C8C6;
   --bg: #282A2E;
   --bg-dark: #1D1F21;
@@ -720,6 +366,7 @@ settings.theme = `
   --accent-fg: #52C196;
   --info-fg: #AC7BBA;
   --select: #585858;
+  -- DELETE LINE TO ENABLE THEME */
   /* Unused Alternate Colors */
   /* --cyan: #4CB3BC; */
   /* --orange: #DE935F; */
@@ -728,7 +375,6 @@ settings.theme = `
   /* -------------------- */
   /* --      NORD      -- */
   /* -------------------- */
-  /* -- DELETE LINE TO ENABLE THEME
   --fg: #E5E9F0;
   --bg: #3B4252;
   --bg-dark: #2E3440;
@@ -737,7 +383,6 @@ settings.theme = `
   --accent-fg: #A3BE8C;
   --info-fg: #5E81AC;
   --select: #4C566A;
-  -- DELETE LINE TO ENABLE THEME */
   /* Unused Alternate Colors */
   /* --orange: #D08770; */
   /* --red: #BF616A; */
@@ -754,13 +399,13 @@ settings.theme = `
   --accent-fg: #98be65;
   --info-fg: #C678DD;
   --select: #4C566A;
+  -- DELETE LINE TO ENABLE THEME */
   /* Unused Alternate Colors */
   /* --border-alt: #282C34; */
   /* --cyan: #46D9FF; */
   /* --orange: #DA8548; */
   /* --red: #FF6C6B; */
   /* --yellow: #ECBE7B; */
-  -- DELETE LINE TO ENABLE THEME */
   /* -------------------- */
   /* --    MONOKAI    -- */
   /* -------------------- */
