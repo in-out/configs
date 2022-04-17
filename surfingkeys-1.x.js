@@ -70,45 +70,41 @@ unmap('om');
 unmap('ss');
 unmap('sm');
 unmap('os')
-unmap('ob')
-unmap('sb')
-unmap('sw')
-unmap('ow')
-unmap('sf')
-unmap('of')
-unmap('se')
-unmap('oe')
-unmap('sy')
-unmap('oy')
 unmap('.');
+unmap('sb');
+unmap('ob');
+unmap('sf');
+unmap('of');
+unmap('sw');
+unmap('ow');
 //unmap('f');
 // search engine
+addSearchAlias('zh', 'zhihu', 'https://www.zhihu.com/search?type=question&q=', 's');
 addSearchAlias('es', 'ecosia', 'https://www.ecosia.org/search?q=', 's');
 addSearchAlias('dd', 'duckduckgo', 'https://duckduckgo.com/?q=', 's');
-addSearchAlias('bg', 'bing', 'https://www.bing.com/search?q=', 's');
-addSearchAlias('bd, 'bing', 'https://www.baidu.com/s?ie=UTF-8&wd=', 's');
-addSearchAlias('zh', 'zhihu', 'https://www.zhihu.com/search?type=question&q=', 's');
 addSearchAlias('db', 'douban', 'https://www.douban.com/search?source=suggest&q=', 's');
 addSearchAlias('dm', 'douban movie', 'https://www.douban.com/search?source=suggest&cat=1002&q=', 's');
 addSearchAlias('sf', 'SegmentFault', 'https://segmentfault.com/search?type=all&q=', 's');
+addSearchAlias('bd', 'baidu', 'https://www.baidu.com/s?ie=UTF-8&wd=', 's');
+addSearchAlias('bg', 'bing', 'https://www.baidu.com/search?q=', 's');
 addSearchAlias('so', 'stackoverflow', 'https://stackoverflow.com/search?q=', 's');
 addSearchAlias('md', 'mdn', 'https://developer.mozilla.org/zh-CN/search?q=', 's');
-addSearchAlias('gh', 'github', 'https://github.com/search?q=', 's');
+addSearchAlias('jd', 'jd', 'https://search.jd.com/Search?enc=utf-8&keyword=', 's');
 addSearchAlias('jj', 'juejin', 'https://juejin.cn/search?query=', 's');
 addSearchAlias('js', 'jianshu', 'https://www.jianshu.com/search?q=', 's');
-addSearchAlias('jd', 'jd', 'https://search.jd.com/Search?enc=utf-8&keyword=', 's');
+addSearchAlias('gh', 'github', 'https://github.com/search?q=', 's');
 addSearchAlias('rr', 'rarbg', 'https://rarbgto.org/torrents.php?search=', 's');
 addSearchAlias('gg', 'google', 'https://www.google.com/search?pws=0&gl=us&gws_rd=cr&q=', 's');
-addSearchAlias('gy, 'youtube', 'https://www.youtube.com/results?search_query=', 's');
-addSearchAlias('dk, 'docker', 'https://hub.docker.com/search?q=', 's');
+addSearchAlias('gy', 'youtube', 'https://www.youtube.com/results?search_query=', 's');
+addSearchAlias('dk', 'docker', 'https://hub.docker.com/search?q=', 's');
+//addSearchAlias('ms', 'mengso', 'https://mengso.com/search?q=', 's');
 //addSearchAlias('p', 'panc', 'https://www.panc.cc/m/s/?s=', 's');
-//addSearchAlias('t', 'translate', 'https://translate.google.cn/?source=osdd#auto/zh-CN/', 's');
-//addSearchAlias('sm', 'smzdm', 'https://search.smzdm.com/?c=post&s=', 's');
 //addSearchAlias('sx', 'searx', 'https://searx.info/?q=', 's');
 //addSearchAlias('sx', 'searx', 'https://searx.info/?q=', 's');
 //addSearchAlias('sx', 'searx', 'https://searx.fmac.xyz/?q=', 's');
-//addSearchAlias('ms', 'mengso', 'https://mengso.com/search?q=', 's');
-//addSearchAlias('sf', 'fsou', 'https://fsou.cc/search?q=', 's');
+//addSearchAlias('t', 'translate', 'https://translate.google.cn/?source=osdd#auto/zh-CN/', 's');
+//addSearchAlias('sm', 'smzdm', 'https://search.smzdm.com/?c=post&s=', 's');
+//addSearchAlias('f', 'fsou', 'https://fsou.cc/search?q=', 's');
 
 //mapkey('osx', 'call searx', function() {
 //	Front.openOmnibar({
@@ -126,6 +122,12 @@ mapkey('obg', 'call bing search', function() {
 	Front.openOmnibar({
 		type: "SearchEngine",
 		extra: 'bg'
+	});
+});
+mapkey('obd', 'call baidu search', function() {
+	Front.openOmnibar({
+		type: "SearchEngine",
+		extra: 'bd'
 	});
 });
 mapkey('oso', 'call stackoverflow search', function() {
@@ -182,6 +184,12 @@ mapkey('ogg', 'call google search', function() {
 		extra: 'gg'
 	});
 });
+mapkey('ogy', 'call youtube search', function() {
+	Front.openOmnibar({
+		type: "SearchEngine",
+		extra: 'gy'
+	});
+});
 mapkey('oes', 'call ecosia search', function() {
 	Front.openOmnibar({
 		type: "SearchEngine",
@@ -212,12 +220,6 @@ mapkey('odd', 'call dockduckgo search', function() {
 		extra: 'dd'
 	});
 });
-mapkey('odk', 'call docker search', function() {
-	Front.openOmnibar({
-		type: "SearchEngine",
-		extra: 'dk'
-	});
-});
 /**mapkey('op', 'call pancc search', function() {
 	Front.openOmnibar({
 		type: "SearchEngine",
@@ -236,10 +238,10 @@ mapkey('orr', 'call rarbg search', function() {
 		extra: 'rr'
 	});
 });
-mapkey('ogy', 'call youtube search', function() {
+mapkey('odk', 'call docker search', function() {
 	Front.openOmnibar({
 		type: "SearchEngine",
-		extra: 'gy'
+		extra: 'dk'
 	});
 });
 //map('or', ':openSession r');
