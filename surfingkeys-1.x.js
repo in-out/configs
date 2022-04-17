@@ -100,6 +100,7 @@ addSearchAlias('jd', 'jd', 'https://search.jd.com/Search?enc=utf-8&keyword=', 's
 addSearchAlias('rr', 'rarbg', 'https://rarbgto.org/torrents.php?search=', 's');
 addSearchAlias('gg', 'google', 'https://www.google.com/search?pws=0&gl=us&gws_rd=cr&q=', 's');
 addSearchAlias('gy, 'youtube', 'https://www.youtube.com/results?search_query=', 's');
+addSearchAlias('dk, 'docker', 'https://hub.docker.com/search?q=', 's');
 //addSearchAlias('p', 'panc', 'https://www.panc.cc/m/s/?s=', 's');
 //addSearchAlias('t', 'translate', 'https://translate.google.cn/?source=osdd#auto/zh-CN/', 's');
 //addSearchAlias('sm', 'smzdm', 'https://search.smzdm.com/?c=post&s=', 's');
@@ -209,6 +210,12 @@ mapkey('odd', 'call dockduckgo search', function() {
 	Front.openOmnibar({
 		type: "SearchEngine",
 		extra: 'dd'
+	});
+});
+mapkey('odk', 'call docker search', function() {
+	Front.openOmnibar({
+		type: "SearchEngine",
+		extra: 'dk'
 	});
 });
 /**mapkey('op', 'call pancc search', function() {
