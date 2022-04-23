@@ -86,7 +86,7 @@ addSearchAlias('db', 'douban', 'https://www.douban.com/search?source=suggest&q='
 addSearchAlias('dm', 'douban movie', 'https://www.douban.com/search?source=suggest&cat=1002&q=', 's');
 addSearchAlias('sf', 'SegmentFault', 'https://segmentfault.com/search?type=all&q=', 's');
 addSearchAlias('bd', 'baidu', 'https://www.baidu.com/s?ie=UTF-8&wd=', 's');
-addSearchAlias('bg', 'bing', 'https://www.baidu.com/search?q=', 's');
+addSearchAlias('bg', 'bing', 'https://cn.bing.com/search?q=', 's');
 addSearchAlias('so', 'stackoverflow', 'https://stackoverflow.com/search?q=', 's');
 addSearchAlias('md', 'mdn', 'https://developer.mozilla.org/zh-CN/search?q=', 's');
 addSearchAlias('jd', 'jd', 'https://search.jd.com/Search?enc=utf-8&keyword=', 's');
