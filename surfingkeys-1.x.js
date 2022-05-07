@@ -30,7 +30,8 @@ omnibarSuggestion=true;
 // -----------------------------------------------------------------------------------------------------------------------
 // Change hints styles
 // -----------------------------------------------------------------------------------------------------------------------
-Hints.characters = "asdfgqwertvbn";
+//Hints.characters = "asdfgqwertvbn";
+Hints.setCharacters("asdfgqwertvbn")
 
 //Hints.style('border: solid 0px #ff79c6; color:#44475a; background: #f1fa8c; background-color: #f1fa8c; font-size: 9pt; font-family: "Microsoft YaHei", "Inconsolata", "Tahoma", "SimSun", "FontAwesome", "Segoe UI", "Segoe UI Symbol", "Symbola", "Meiryo", "Malgun Gothic", "NSimSun", "FZSongS", "方正宋体S-超大字符集", "Arial Unicode MS"');
 //Hints.style("border: solid 0px #ff79c6; padding: 1px; background: #7FAB97; font-size: 9pt; font-family: 'Microsoft YaHei', 'Inconsolata', 'Tahoma', 'SimSun', 'FontAwesome', 'Segoe UI', 'Segoe UI Symbol', 'Symbola', 'Meiryo', 'Malgun Gothic', 'NSimSun', 'FZSongS', '方正宋体S-超大字符集', 'Arial Unicode MS'", "text");
@@ -79,6 +80,7 @@ unmap('sw');
 unmap('ow');
 //unmap('f');
 // search engine
+removeSearchAlias('bg');
 addSearchAlias('zh', 'zhihu', 'https://www.zhihu.com/search?type=question&q=', 's');
 addSearchAlias('es', 'ecosia', 'https://www.ecosia.org/search?q=', 's');
 addSearchAlias('dd', 'duckduckgo', 'https://duckduckgo.com/?q=', 's');
@@ -97,6 +99,7 @@ addSearchAlias('rr', 'rarbg', 'https://rarbgto.org/torrents.php?search=', 's');
 addSearchAlias('gg', 'google', 'https://www.google.com/search?pws=0&gl=us&gws_rd=cr&q=', 's');
 addSearchAlias('gy', 'youtube', 'https://www.youtube.com/results?search_query=', 's');
 addSearchAlias('dk', 'docker', 'https://hub.docker.com/search?q=', 's');
+addSearchAlias('jb', 'jable', 'https://jable.tv/search/{0}/', 's');
 //addSearchAlias('ms', 'mengso', 'https://mengso.com/search?q=', 's');
 //addSearchAlias('p', 'panc', 'https://www.panc.cc/m/s/?s=', 's');
 //addSearchAlias('sx', 'searx', 'https://searx.info/?q=', 's');
@@ -118,6 +121,17 @@ addSearchAlias('dk', 'docker', 'https://hub.docker.com/search?q=', 's');
 //		extra: 'sm'
 //	});
 //});
+mapkey("av", "add to view later", function() {
+    var btn = document.querySelectorAll('[data-fav-type="1"]')[0];
+    btn.click();
+}, {domain: /jable.tv.com/i});
+
+mapkey('ojb', 'call jable search', function() {
+	Front.openOmnibar({
+		type: "SearchEngine",
+		extra: 'jb'
+	});
+});
 mapkey('obg', 'call bing search', function() {
 	Front.openOmnibar({
 		type: "SearchEngine",
@@ -366,7 +380,7 @@ Front.registerInlineQuery({
     mapkey('gc', '#12Open Chrome Configure', function() {
         tabOpenLink("chrome://settings/");
     });
-settings.blacklistPattern = /.*mail.google.com.*|.*inbox.google.com.*|trello.com|feishu.cn|inoreader.com|route.asus.com|localhost/i;
+settings.blocklistPattern = /.*mail.google.com.*|.*inbox.google.com.*|trello.com|feishu.cn|inoreader.com|route.asus.com|localhost/i;
 settings.nextLinkRegex = /((>>|下一页|next|older posts|older entries|forward|Next »|>|>>|❯|›|»|more|下一张|下页|(阅读)?下一章|下一章|次へ)+)/i;
 settings.prevLinkRegex = /((<<|上一页|prev(ious)?|newer posts|newer entries|« Previous|back|<|❮|<<«|less|‹|上一张|(阅读)?上一章|上一章|前へ)+)/i;
 
