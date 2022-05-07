@@ -123,8 +123,10 @@ addSearchAlias('jb', 'jable', 'https://jable.tv/search/{0}/', 's');
 //});
 mapkey("av", "add to view later", function() {
     var btn = document.querySelectorAll('[data-fav-type="1"]')[0];
-    btn.click();
-}, {domain: /jable.tv.com/i});
+    if (btn) btn.click();
+}
+//, {domain: /jable.tv.com/i}
+);
 
 mapkey('ojb', 'call jable search', function() {
 	Front.openOmnibar({
