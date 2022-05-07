@@ -121,7 +121,7 @@ addSearchAlias('jb', 'jable', 'https://jable.tv/search/{0}/', 's');
 //		extra: 'sm'
 //	});
 //});
-mapkey("av", "add to view later", function() {
+mapkey("aa", "add to view later", function() {
     var btn = document.querySelectorAll('[data-fav-type="1"]')[0];
     if (btn) btn.click();
 }
