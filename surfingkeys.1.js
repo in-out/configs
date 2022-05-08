@@ -1,31 +1,31 @@
 const {
-    aceVimMap,
-    unmap,
-    mapkey,
-    imap,
-    imapkey,
-    getClickableElements,
-    vmapkey,
-    map,
-    cmap,
-    addSearchAlias,
-    removeSearchAlias,
-    tabOpenLink,
-    readText,
-    Clipboard,
-    Front,
-    Hints,
-    Visual,
-    RUNTIME
+  aceVimMap,
+  unmap,
+  mapkey,
+  imap,
+  imapkey,
+  getClickableElements,
+  vmapkey,
+  map,
+  cmap,
+  addSearchAlias,
+  removeSearchAlias,
+  tabOpenLink,
+  readText,
+  Clipboard,
+  Front,
+  Hints,
+  Visual,
+  RUNTIME
 } = api;
 // an example to create a new mapping `ctrl-y`
-mapkey('<Ctrl-y>', 'Show me the money', function() {
-	Normal.showPopup('a well-known phrase uttered by characters in the 1996 film Jerry Maguire (Escape to close).');
+mapkey('<Ctrl-y>', 'Show me the money', function () {
+  Normal.showPopup('a well-known phrase uttered by characters in the 1996 film Jerry Maguire (Escape to close).');
 });
 
-stealFocusOnLoad=true;
-enableAutoFocus=false;
-omnibarSuggestion=true;
+stealFocusOnLoad = true;
+enableAutoFocus = false;
+omnibarSuggestion = true;
 
 // -----------------------------------------------------------------------------------------------------------------------
 // Change hints styles
@@ -121,48 +121,80 @@ addSearchAlias('jb', 'jable', 'https://jable.tv/search/{0}/', 's');
 //		extra: 'sm'
 //	});
 //});
-mapkey("aa", "add to view later", function() {
-    var btn = document.querySelectorAll('[data-fav-type="1"]')[0];
-    if (btn) btn.click();
+
+function getEleByTextContent(content) {
+  var aTags = document.getElementsByTagName("a");
+  var searchText = content;
+  var found;
+
+  for (var i = 0; i < aTags.length; i++) {
+    if (aTags[i].textContent == searchText) {
+      return aTags[i];
+    }
+  }
+  return undefined;
 }
-//, {domain: /jable.tv.com/i}
+
+mapkey("ww", "add to nsfw", function () {
+  var ele = getEleByTextContent('NSFW');
+  if (ele) ele.click;
+}
 );
 
-mapkey('ojb', 'call jable search', function() {
-	Front.openOmnibar({
-		type: "SearchEngine",
-		extra: 'jb'
-	});
+mapkey("wa", "add to art", function () {
+  var ele = getEleByTextContent('art');
+  if (ele) ele.click;
+}
+);
+
+mapkey("wg", "add to girls", function () {
+  var ele = getEleByTextContent('girls');
+  if (ele) ele.click;
+}
+);
+
+mapkey("aa", "add to view later", function () {
+  var btn = document.querySelectorAll('[data-fav-type="1"]')[0];
+  if (btn) btn.click();
+}
+  //, {domain: /jable.tv.com/i}
+);
+
+mapkey('ojb', 'call jable search', function () {
+  Front.openOmnibar({
+    type: "SearchEngine",
+    extra: 'jb'
+  });
 });
-mapkey('obg', 'call bing search', function() {
-	Front.openOmnibar({
-		type: "SearchEngine",
-		extra: 'bg'
-	});
+mapkey('obg', 'call bing search', function () {
+  Front.openOmnibar({
+    type: "SearchEngine",
+    extra: 'bg'
+  });
 });
-mapkey('obd', 'call baidu search', function() {
-	Front.openOmnibar({
-		type: "SearchEngine",
-		extra: 'bd'
-	});
+mapkey('obd', 'call baidu search', function () {
+  Front.openOmnibar({
+    type: "SearchEngine",
+    extra: 'bd'
+  });
 });
-mapkey('oso', 'call stackoverflow search', function() {
-	Front.openOmnibar({
-		type: "SearchEngine",
-		extra: 'so'
-	});
+mapkey('oso', 'call stackoverflow search', function () {
+  Front.openOmnibar({
+    type: "SearchEngine",
+    extra: 'so'
+  });
 });
-mapkey('osf', 'call segmentfault search', function() {
-	Front.openOmnibar({
-		type: "SearchEngine",
-		extra: 'sf'
-	});
+mapkey('osf', 'call segmentfault search', function () {
+  Front.openOmnibar({
+    type: "SearchEngine",
+    extra: 'sf'
+  });
 });
-mapkey('omd', 'call mdn search', function() {
-	Front.openOmnibar({
-		type: "SearchEngine",
-		extra: 'md'
-	});
+mapkey('omd', 'call mdn search', function () {
+  Front.openOmnibar({
+    type: "SearchEngine",
+    extra: 'md'
+  });
 });
 //mapkey('oms', 'call mengso search', function() {
 //	Front.openOmnibar({
@@ -170,47 +202,47 @@ mapkey('omd', 'call mdn search', function() {
 //		extra: 'ms'
 //	});
 //});
-mapkey('ojd', 'call jd search', function() {
-	Front.openOmnibar({
-		type: "SearchEngine",
-		extra: 'jd'
-	});
+mapkey('ojd', 'call jd search', function () {
+  Front.openOmnibar({
+    type: "SearchEngine",
+    extra: 'jd'
+  });
 });
-mapkey('ojj', 'call juejin search', function() {
-	Front.openOmnibar({
-		type: "SearchEngine",
-		extra: 'jj'
-	});
+mapkey('ojj', 'call juejin search', function () {
+  Front.openOmnibar({
+    type: "SearchEngine",
+    extra: 'jj'
+  });
 });
-mapkey('ojs', 'call jianshu search', function() {
-	Front.openOmnibar({
-		type: "SearchEngine",
-		extra: 'js'
-	});
+mapkey('ojs', 'call jianshu search', function () {
+  Front.openOmnibar({
+    type: "SearchEngine",
+    extra: 'js'
+  });
 });
-mapkey('ogh', 'call github search', function() {
-	Front.openOmnibar({
-		type: "SearchEngine",
-		extra: 'gh'
-	});
+mapkey('ogh', 'call github search', function () {
+  Front.openOmnibar({
+    type: "SearchEngine",
+    extra: 'gh'
+  });
 });
-mapkey('ogg', 'call google search', function() {
-	Front.openOmnibar({
-		type: "SearchEngine",
-		extra: 'gg'
-	});
+mapkey('ogg', 'call google search', function () {
+  Front.openOmnibar({
+    type: "SearchEngine",
+    extra: 'gg'
+  });
 });
-mapkey('ogy', 'call youtube search', function() {
-	Front.openOmnibar({
-		type: "SearchEngine",
-		extra: 'gy'
-	});
+mapkey('ogy', 'call youtube search', function () {
+  Front.openOmnibar({
+    type: "SearchEngine",
+    extra: 'gy'
+  });
 });
-mapkey('oes', 'call ecosia search', function() {
-	Front.openOmnibar({
-		type: "SearchEngine",
-		extra: 'es'
-	});
+mapkey('oes', 'call ecosia search', function () {
+  Front.openOmnibar({
+    type: "SearchEngine",
+    extra: 'es'
+  });
 });
 //mapkey('of', 'call fsou search', function() {
 //	Front.openOmnibar({
@@ -218,57 +250,57 @@ mapkey('oes', 'call ecosia search', function() {
 //		extra: 'f'
 //	});
 //});
-mapkey('odb', 'call douban search', function() {
-	Front.openOmnibar({
-		type: "SearchEngine",
-		extra: 'db'
-	});
+mapkey('odb', 'call douban search', function () {
+  Front.openOmnibar({
+    type: "SearchEngine",
+    extra: 'db'
+  });
 });
-mapkey('odm', 'call douban movie search', function() {
-	Front.openOmnibar({
-		type: "SearchEngine",
-		extra: 'dm'
-	});
+mapkey('odm', 'call douban movie search', function () {
+  Front.openOmnibar({
+    type: "SearchEngine",
+    extra: 'dm'
+  });
 });
-mapkey('odd', 'call dockduckgo search', function() {
-	Front.openOmnibar({
-		type: "SearchEngine",
-		extra: 'dd'
-	});
+mapkey('odd', 'call dockduckgo search', function () {
+  Front.openOmnibar({
+    type: "SearchEngine",
+    extra: 'dd'
+  });
 });
 /**mapkey('op', 'call pancc search', function() {
-	Front.openOmnibar({
-		type: "SearchEngine",
-		extra: 'p'
-	});
+  Front.openOmnibar({
+    type: "SearchEngine",
+    extra: 'p'
+  });
 });**/
-mapkey('ozh', 'call zhihu search', function() {
-	Front.openOmnibar({
-		type: "SearchEngine",
-		extra: 'zh'
-	});
+mapkey('ozh', 'call zhihu search', function () {
+  Front.openOmnibar({
+    type: "SearchEngine",
+    extra: 'zh'
+  });
 });
-mapkey('orr', 'call rarbg search', function() {
-	Front.openOmnibar({
-		type: "SearchEngine",
-		extra: 'rr'
-	});
+mapkey('orr', 'call rarbg search', function () {
+  Front.openOmnibar({
+    type: "SearchEngine",
+    extra: 'rr'
+  });
 });
-mapkey('odk', 'call docker search', function() {
-	Front.openOmnibar({
-		type: "SearchEngine",
-		extra: 'dk'
-	});
+mapkey('odk', 'call docker search', function () {
+  Front.openOmnibar({
+    type: "SearchEngine",
+    extra: 'dk'
+  });
 });
 //map('or', ':openSession r');
 mapkey("-j", "google translate", () => {
   const selection = window.getSelection().toString();
   if (selection === "") {
-     tabOpenLink(
+    tabOpenLink(
       `http://translate.google.com/translate?u=${window.location.href}`
     );
   } else {
-     tabOpenLink(
+    tabOpenLink(
       `https://translate.google.com/?sl=auto&tl=ja&text=${encodeURIComponent(
         selection
       )}`
@@ -279,11 +311,11 @@ mapkey("-j", "google translate", () => {
 mapkey("-c", "google translate", () => {
   const selection = window.getSelection().toString();
   if (selection === "") {
-     tabOpenLink(
+    tabOpenLink(
       `http://translate.google.com/translate?u=${window.location.href}`
     );
   } else {
-     tabOpenLink(
+    tabOpenLink(
       `https://translate.google.com/?sl=auto&tl=zh-CN&text=${encodeURIComponent(
         selection
       )}`
@@ -294,11 +326,11 @@ mapkey("-c", "google translate", () => {
 mapkey("-e", "google translate", () => {
   const selection = window.getSelection().toString();
   if (selection === "") {
-     tabOpenLink(
+    tabOpenLink(
       `http://translate.google.com/translate?u=${window.location.href}`
     );
   } else {
-     tabOpenLink(
+    tabOpenLink(
       `https://translate.google.com/?sl=auto&tl=en&text=${encodeURIComponent(
         selection
       )}`
@@ -307,31 +339,31 @@ mapkey("-e", "google translate", () => {
 });
 
 Front.registerInlineQuery({
-    url: function(q) {
-        return `http://dict.youdao.com/w/eng/${q}/#keyfrom=dict2.index`;
-    },
-    parseResult: function(res) {
-        var parser = new DOMParser();
-        var doc = parser.parseFromString(res.text, "text/html");
-        var collinsResult = doc.querySelector("#collinsResult");
-        var authTransToggle = doc.querySelector("#authTransToggle");
-        var examplesToggle = doc.querySelector("#examplesToggle");
-        if (collinsResult) {
-            collinsResult.querySelectorAll("div>span.collinsOrder").forEach(function(span) {
-                span.nextElementSibling.prepend(span);
-            });
-            collinsResult.querySelectorAll("div.examples").forEach(function(div) {
-                div.innerHTML = div.innerHTML.replace(/<p/gi, "<span").replace(/<\/p>/gi, "</span>");
-            });
-            var exp = collinsResult.innerHTML;
-            return exp;
-        } else if (authTransToggle) {
-            authTransToggle.querySelector("div.via.ar").remove();
-            return authTransToggle.innerHTML;
-        } else if (examplesToggle) {
-            return examplesToggle.innerHTML;
-        }
+  url: function (q) {
+    return `http://dict.youdao.com/w/eng/${q}/#keyfrom=dict2.index`;
+  },
+  parseResult: function (res) {
+    var parser = new DOMParser();
+    var doc = parser.parseFromString(res.text, "text/html");
+    var collinsResult = doc.querySelector("#collinsResult");
+    var authTransToggle = doc.querySelector("#authTransToggle");
+    var examplesToggle = doc.querySelector("#examplesToggle");
+    if (collinsResult) {
+      collinsResult.querySelectorAll("div>span.collinsOrder").forEach(function (span) {
+        span.nextElementSibling.prepend(span);
+      });
+      collinsResult.querySelectorAll("div.examples").forEach(function (div) {
+        div.innerHTML = div.innerHTML.replace(/<p/gi, "<span").replace(/<\/p>/gi, "</span>");
+      });
+      var exp = collinsResult.innerHTML;
+      return exp;
+    } else if (authTransToggle) {
+      authTransToggle.querySelector("div.via.ar").remove();
+      return authTransToggle.innerHTML;
+    } else if (examplesToggle) {
+      return examplesToggle.innerHTML;
     }
+  }
 });
 
 //Front.registerInlineQuery({
@@ -379,9 +411,9 @@ Front.registerInlineQuery({
 // Tabs
 //mapkey('gT', '#3Go one tab left', 'RUNTIME("previousTab")');
 //mapkey('gt', '#3Go one tab right', 'RUNTIME("nextTab")');
-    mapkey('gc', '#12Open Chrome Configure', function() {
-        tabOpenLink("chrome://settings/");
-    });
+mapkey('gc', '#12Open Chrome Configure', function () {
+  tabOpenLink("chrome://settings/");
+});
 settings.blocklistPattern = /.*mail.google.com.*|.*inbox.google.com.*|trello.com|feishu.cn|inoreader.com|route.asus.com|localhost/i;
 settings.nextLinkRegex = /((>>|下一页|next|older posts|older entries|forward|Next »|>|>>|❯|›|»|more|下一张|下页|(阅读)?下一章|下一章|次へ)+)/i;
 settings.prevLinkRegex = /((<<|上一页|prev(ious)?|newer posts|newer entries|« Previous|back|<|❮|<<«|less|‹|上一张|(阅读)?上一章|上一章|前へ)+)/i;
