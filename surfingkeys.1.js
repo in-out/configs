@@ -138,19 +138,19 @@ function getEleByTextContent(content) {
 
 mapkey("ww", "add to nsfw", function () {
   var ele = getEleByTextContent('NSFW');
-  if (ele) ele.click;
+  if (ele) ele.click();
 }
 );
 
 mapkey("wa", "add to art", function () {
   var ele = getEleByTextContent('art');
-  if (ele) ele.click;
+  if (ele) ele.click();
 }
 );
 
 mapkey("wg", "add to girls", function () {
   var ele = getEleByTextContent('girls');
-  if (ele) ele.click;
+  if (ele) ele.click();
 }
 );
 
