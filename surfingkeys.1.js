@@ -50,7 +50,7 @@ Hints.setCharacters("asdfgqwertvbn")
 //mapkey('L', '#4Go forward in history', 'history.go(1)');
 // an example to remove mapkey `Ctrl-i`
 // unmap('<Ctrl-i>');
-map('w','wm');
+unmap('w');
 unmap('gr');
 unmap('spa');
 unmap('spb');
