@@ -101,6 +101,7 @@ addSearchAlias('gg', 'google', 'https://www.google.com/search?pws=0&gl=us&gws_rd
 addSearchAlias('gy', 'youtube', 'https://www.youtube.com/results?search_query=', 's');
 addSearchAlias('dk', 'docker', 'https://hub.docker.com/search?q=', 's');
 addSearchAlias('jb', 'jable', 'https://jable.tv/search/{0}/', 's');
+addSearchAlias('zz', 'zhaoziyuan', 'https://zhaoziyuan.me/so?filename=', 's');
 //addSearchAlias('ms', 'mengso', 'https://mengso.com/search?q=', 's');
 //addSearchAlias('p', 'panc', 'https://www.panc.cc/m/s/?s=', 's');
 //addSearchAlias('sx', 'searx', 'https://searx.info/?q=', 's');
@@ -160,6 +161,13 @@ mapkey("aa", "add to view later", function () {
 }
   //, {domain: /jable.tv.com/i}
 );
+
+mapkey('ozz', 'call zhaoziyuan search', function () {
+  Front.openOmnibar({
+    type: "SearchEngine",
+    extra: 'zz'
+  });
+});
 
 mapkey('ojb', 'call jable search', function () {
   Front.openOmnibar({
