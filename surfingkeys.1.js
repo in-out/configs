@@ -103,7 +103,7 @@ addSearchAlias('dk', 'docker', 'https://hub.docker.com/search?q=', 's');
 addSearchAlias('jb', 'jable', 'https://jable.tv/search/{0}/', 's');
 addSearchAlias('zz', 'zhaoziyuan', 'https://zhaoziyuan.me/so?filename=', 's');
 addSearchAlias('zs', 'assrt', 'https://assrt.net/sub/?searchword=', 's');
-addSearchAlias('zh', 'subhd', 'https://subhd.tv/search/', 's');
+addSearchAlias('zd', 'subhd', 'https://subhd.tv/search/', 's');
 addSearchAlias('za', 'a4k', 'https://www.a4k.net/search?term=', 's');
 //addSearchAlias('ms', 'mengso', 'https://mengso.com/search?q=', 's');
 //addSearchAlias('p', 'panc', 'https://www.panc.cc/m/s/?s=', 's');
@@ -172,7 +172,7 @@ mapkey('ozs', 'call assrt search', function () {
   });
 });
 
-mapkey('ozh', 'call subhd search', function () {
+mapkey('ozd', 'call subhd search', function () {
   Front.openOmnibar({
     type: "SearchEngine",
     extra: 'zh'
