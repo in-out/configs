@@ -102,6 +102,9 @@ addSearchAlias('gy', 'youtube', 'https://www.youtube.com/results?search_query=',
 addSearchAlias('dk', 'docker', 'https://hub.docker.com/search?q=', 's');
 addSearchAlias('jb', 'jable', 'https://jable.tv/search/{0}/', 's');
 addSearchAlias('zz', 'zhaoziyuan', 'https://zhaoziyuan.me/so?filename=', 's');
+addSearchAlias('zs', 'assrt', 'https://assrt.net/sub/?searchword=', 's');
+addSearchAlias('zh', 'subhd', 'https://subhd.tv/search/', 's');
+addSearchAlias('za', 'a4k', 'https://www.a4k.net/search?term=', 's');
 //addSearchAlias('ms', 'mengso', 'https://mengso.com/search?q=', 's');
 //addSearchAlias('p', 'panc', 'https://www.panc.cc/m/s/?s=', 's');
 //addSearchAlias('sx', 'searx', 'https://searx.info/?q=', 's');
@@ -161,6 +164,27 @@ mapkey("aa", "add to view later", function () {
 }
   //, {domain: /jable.tv.com/i}
 );
+
+mapkey('ozs', 'call assrt search', function () {
+  Front.openOmnibar({
+    type: "SearchEngine",
+    extra: 'zs'
+  });
+});
+
+mapkey('ozh', 'call subhd search', function () {
+  Front.openOmnibar({
+    type: "SearchEngine",
+    extra: 'zh'
+  });
+});
+
+mapkey('oza', 'call a4k search', function () {
+  Front.openOmnibar({
+    type: "SearchEngine",
+    extra: 'za'
+  });
+});
 
 mapkey('ozz', 'call zhaoziyuan search', function () {
   Front.openOmnibar({
