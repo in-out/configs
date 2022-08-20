@@ -489,7 +489,7 @@ settings.theme = `
 :root {
   /* Font */
   --font: 'Source Code Pro', Ubuntu, sans;
-  --font-size: 18;
+  --font-size: 1.5em;
   --font-weight: bold;
   /* -------------- */
   /* --- THEMES --- */
