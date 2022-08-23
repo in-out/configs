@@ -647,6 +647,7 @@ input {
 .sk_theme #sk_omnibarSearchArea input,
 .sk_theme #sk_omnibarSearchArea span {
   font-size: var(--font-size);
+  display: flex;
 }
 .sk_theme .separator {
   color: var(--accent-fg);
