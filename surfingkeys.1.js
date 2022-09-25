@@ -183,7 +183,7 @@ mapkey('ozs', 'call assrt search', function () {
 mapkey('ozd', 'call subhd search', function () {
   Front.openOmnibar({
     type: "SearchEngine",
-    extra: 'zh'
+    extra: 'zd'
   });
 });
 
