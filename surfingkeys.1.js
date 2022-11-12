@@ -163,8 +163,6 @@ mapkey("aa", "add to view later", function () {
   var btn = document.querySelectorAll('[data-fav-type="1"]')[0];
   if (btn) {
     btn.click();
-  } else {
-    Clipboard.write(document.getElementsByTagName('audio')[0].src);
   }
 }
 );
