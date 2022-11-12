@@ -22,11 +22,6 @@ const {
 mapkey('<Ctrl-y>', 'Show me the money', function () {
   api.Front.showPopup('a well-known phrase uttered by characters in the 1996 film Jerry Maguire (Escape to close).');
 });
-
-mapkey('ea', 'copy source of first audio', function () {
-  Clipboard.write(document.getElementsByTagName('audio')[0].src);
-});
-
 stealFocusOnLoad = true;
 enableAutoFocus = false;
 omnibarSuggestion = true;
@@ -163,11 +158,15 @@ mapkey("wg", "add to girls", function () {
 }
 );
 
-mapkey("aa", "add to view later", function () {
+mapkey("aa", "add to view later or extract source fof first audio", function () {
   var btn = document.querySelectorAll('[data-fav-type="1"]')[0];
-  if (btn) btn.click();
-}
-  //, {domain: /jable.tv.com/i}
+  if (btn) {
+    //, {domain: /jable.tv.com/i}
+    btn.click();
+  } else {
+    //, {domain: /nekodict.com/i}
+  Clipboard.write(document.getElementsByTagName('audio')[0].src);
+  }
 );
 
 mapkey('oal', 'call 猫狸盘搜 search', function () {
