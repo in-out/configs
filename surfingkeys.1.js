@@ -167,6 +167,7 @@ mapkey("aa", "add to view later or extract source fof first audio", function () 
     //, {domain: /nekodict.com/i}
   Clipboard.write(document.getElementsByTagName('audio')[0].src);
   }
+}
 );
 
 mapkey('oal', 'call 猫狸盘搜 search', function () {
