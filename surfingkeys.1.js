@@ -20,7 +20,10 @@ const {
 } = api;
 // an example to create a new mapping `ctrl-y`
 mapkey('<Ctrl-y>', 'Show me the money', function () {
-  Normal.showPopup('a well-known phrase uttered by characters in the 1996 film Jerry Maguire (Escape to close).');
+  api.Front.showPopup('a well-known phrase uttered by characters in the 1996 film Jerry Maguire (Escape to close).');
+});
+mapkey('aa', 'copy source of first audio', function () {
+  Clipboard.write(document.getElementsByTagName('audio')[0].src);
 });
 
 stealFocusOnLoad = true;
@@ -60,7 +63,6 @@ unmap('spc');
 unmap('F');
 unmap('gc');
 unmap('as');
-unmap('aa');
 unmap('ar');
 unmap('od');
 unmap('oe');
