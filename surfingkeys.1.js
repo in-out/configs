@@ -158,14 +158,12 @@ mapkey("wg", "add to girls", function () {
 }
 );
 
-mapkey("aa", "add to view later or extract source fof first audio", function () {
+mapkey("aa", "add to view later", function () {
   var btn = document.querySelectorAll('[data-fav-type="1"]')[0];
   if (btn) {
-    //, {domain: /jable.tv.com/i}
     btn.click();
   } else {
-    //, {domain: /nekodict.com/i}
-  Clipboard.write(document.getElementsByTagName('audio')[0].src);
+    Clipboard.write(document.getElementsByTagName('audio')[0].src);
   }
 }
 );
