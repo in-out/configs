@@ -161,10 +161,9 @@ mapkey("wg", "add to girls", function () {
 
 mapkey("aa", "add to view later", function () {
   var btn = document.querySelectorAll('[data-fav-type="1"]')[0];
-  if (btn) {
-    btn.click();
-  }
+  if (btn) btn.click();
 }
+  //, {domain: /jable.tv.com/i}
 );
 
 mapkey('oal', 'call 猫狸盘搜 search', function () {
