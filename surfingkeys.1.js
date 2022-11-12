@@ -159,9 +159,14 @@ mapkey("wg", "add to girls", function () {
 }
 );
 
-mapkey("aa", "add to view later", function () {
-  var btn = document.querySelectorAll('[data-fav-type="1"]')[0];
-  if (btn) btn.click();
+mapkey("aa", "add to view later or extract audio source of first audio", function () {
+  var domain = document.domain;
+  if (domain == 'nekodict.com') {
+    Clipboard.write(document.getElementsByTagName('audio')[0].src);
+  } else {
+    var btn = document.querySelectorAll('[data-fav-type="1"]')[0];
+    if (btn) btn.click();
+  }
 }
   //, {domain: /jable.tv.com/i}
 );
