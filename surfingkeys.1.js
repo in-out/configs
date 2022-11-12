@@ -23,7 +23,7 @@ mapkey('<Ctrl-y>', 'Show me the money', function () {
   api.Front.showPopup('a well-known phrase uttered by characters in the 1996 film Jerry Maguire (Escape to close).');
 });
 
-mapkey('qa', 'copy source of first audio', function () {
+mapkey('ea', 'copy source of first audio', function () {
   Clipboard.write(document.getElementsByTagName('audio')[0].src);
 });
 
