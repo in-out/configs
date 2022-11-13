@@ -159,18 +159,6 @@ mapkey("wg", "add to girls", function () {
 }
 );
 
-mapkey("a1", "rotate 90 degrees", function () {
-  var artplayer = document.getElementsByClassName('art-video')[0];
-  if (artplayer) artplayer.style.transform = 'rotate(90deg)';
-}
-);
-
-mapkey("a2", "rotate 0 degrees", function () {
-  var artplayer = document.getElementsByClassName('art-video')[0];
-  if (artplayer) artplayer.style.transform = 'rotate(0deg)';
-}
-);
-
 mapkey("aa", "add to view later or extract audio source of first audio", function () {
   var domain = document.domain;
   if (domain == 'nekodict.com') {
