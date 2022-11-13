@@ -161,13 +161,13 @@ mapkey("wg", "add to girls", function () {
 
 mapkey("a1", "rotate 90 degrees", function () {
   var artplayer = document.getElementsByClassName('art-video');
-  if artplayer[0] artplayer[0][0].style.transform = 'rotate(90deg)';
+  if artplayer[0] artplayer[0].style.transform = 'rotate(90deg)';
 }
 );
 
 mapkey("a2", "rotate 0 degrees", function () {
   var artplayer = document.getElementsByClassName('art-video');
-  if artplayer[0] artplayer[0][0].style.transform = 'rotate(0deg)';
+  if artplayer[0] artplayer[0].style.transform = 'rotate(0deg)';
 }
 );
 
