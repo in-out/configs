@@ -673,6 +673,7 @@ input {
 .sk_theme #sk_omnibarSearchArea {
   border-top-color: var(--border);
   border-bottom-color: var(--border);
+  border-bottom: 0px;
 }
 .sk_theme #sk_omnibarSearchArea input,
 .sk_theme #sk_omnibarSearchArea span {
