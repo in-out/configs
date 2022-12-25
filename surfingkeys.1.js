@@ -171,22 +171,34 @@ mapkey("a2", "rotate 0 degrees", function () {
 }
 );
 
-mapkey("aa", "add to view later or extract audio source of first audio", function () {
-  var domain = document.domain;
-  var meta = document.querySelector('meta[name="generator"]').content;
-  if (domain == 'nekodict.com') {
-    console.log('neko');
-    Clipboard.write(document.getElementsByTagName('audio')[0].src);
-  } else {
-    if (meta && meta.startsWith('AList')) {
-      console.log('alist');
-      document.getElementsByClassName('art-control-fullscreen')[0].click();
-    } else {
-      console.log('jav');
-      var btn = document.querySelectorAll('[data-fav-type="1"]')[0];
-      if (btn) btn.click();
-    }
-  }
+// mapkey("aa", "add to view later or extract audio source of first audio", function () {
+//   var domain = document.domain;
+//   var meta = document.querySelector('meta[name="generator"]').content;
+//   if (domain == 'nekodict.com') {
+//     console.log('neko');
+//     Clipboard.write(document.getElementsByTagName('audio')[0].src);
+//   } else {
+//     if (meta && meta.startsWith('AList')) {
+//       console.log('alist');
+//       document.getElementsByClassName('art-control-fullscreen')[0].click();
+//     } else {
+//       console.log('jav');
+//       var btn = document.querySelectorAll('[data-fav-type="1"]')[0];
+//       if (btn) btn.click();
+//     }
+//   }
+// }
+//   //, {domain: /jable.tv.com/i}
+// );
+mapkey("aa", "add to view later", function () {
+    var btn = document.querySelectorAll('[data-fav-type="1"]')[0];
+    if (btn) btn.click();
+}
+  //, {domain: /jable.tv.com/i}
+);
+mapkey("as", "add to view later", function () {
+    var btn = document.querySelectorAll('[data-fav-type="0"]')[0];
+    if (btn) btn.click();
 }
   //, {domain: /jable.tv.com/i}
 );
