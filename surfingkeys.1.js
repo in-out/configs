@@ -102,7 +102,7 @@ addSearchAlias('gg', 'google', 'https://www.google.com/search?pws=0&gl=us&gws_rd
 addSearchAlias('gy', 'youtube', 'https://www.youtube.com/results?search_query=', 's');
 addSearchAlias('dk', 'docker', 'https://hub.docker.com/search?q=', 's');
 addSearchAlias('jb', 'jable', 'https://jable.tv/search/{0}/', 's');
-addSearchAlias('zz', 'zhaoziyuan', 'https://zhaoziyuan.me/so?filename=', 's');
+addSearchAlias('zz', 'zhaoziyuan', 'https://zhaoziyuan.la/so?filename=', 's');
 addSearchAlias('zs', 'assrt', 'https://assrt.net/sub/?searchword=', 's');
 addSearchAlias('zd', 'subhd', 'https://subhd.tv/search/', 's');
 addSearchAlias('za', 'a4k', 'https://www.a4k.net/search?term=', 's');
