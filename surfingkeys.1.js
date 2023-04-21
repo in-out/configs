@@ -160,6 +160,12 @@ mapkey("wg", "add to girls", function () {
 }
 );
 
+mapkey("wf", "full screen", function () {
+  var ele = document.querySelector('[data-plyr=fullscreen]');
+  if (ele) ele.click();
+}
+);
+
 mapkey("a1", "rotate 90 degrees", function () {
   var ele = document.getElementsByClassName('art-video')[0];
   if (ele) ele.style.transform = 'rotate(90deg)';
