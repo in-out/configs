@@ -89,6 +89,7 @@ addSearchAlias('dd', 'duckduckgo', 'https://duckduckgo.com/?q=', 's');
 addSearchAlias('db', 'douban', 'https://www.douban.com/search?source=suggest&q=', 's');
 addSearchAlias('dm', 'douban movie', 'https://www.douban.com/search?source=suggest&cat=1002&q=', 's');
 addSearchAlias('sf', 'SegmentFault', 'https://segmentfault.com/search?type=all&q=', 's');
+addSearchAlias('sc', 'scoop', 'https://scoop.sh/#/apps?q=', 's');
 addSearchAlias('bd', 'baidu', 'https://www.baidu.com/s?ie=UTF-8&wd=', 's');
 addSearchAlias('bg', 'bing', 'https://cn.bing.com/search?q=', 's');
 addSearchAlias('so', 'stackoverflow', 'https://stackoverflow.com/search?q=', 's');
@@ -281,6 +282,12 @@ mapkey('oso', 'call stackoverflow search', function () {
   Front.openOmnibar({
     type: "SearchEngine",
     extra: 'so'
+  });
+});
+mapkey('osc', 'call scoop search', function () {
+  Front.openOmnibar({
+    type: "SearchEngine",
+    extra: 'sc'
   });
 });
 mapkey('osf', 'call segmentfault search', function () {
