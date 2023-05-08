@@ -104,6 +104,7 @@ addSearchAlias('gy', 'youtube', 'https://www.youtube.com/results?search_query=',
 addSearchAlias('dk', 'docker', 'https://hub.docker.com/search?q=', 's');
 addSearchAlias('jb', 'jable', 'https://jable.tv/search/{0}/', 's');
 addSearchAlias('ma', 'missav', 'https://missav.com/ja/search/{0}/', 's');
+addSearchAlias('nf', 'netflav', 'https://netflav.com/search?type=title&keyword=', 's');
 addSearchAlias('zz', 'zhaoziyuan', 'https://zhaoziyuan.la/so?filename=', 's');
 addSearchAlias('zs', 'assrt', 'https://assrt.net/sub/?searchword=', 's');
 addSearchAlias('zd', 'subhd', 'https://subhd.tv/search/', 's');
@@ -264,6 +265,12 @@ mapkey('oma', 'call missav search', function () {
   Front.openOmnibar({
     type: "SearchEngine",
     extra: 'ma'
+  });
+});
+mapkey('onf', 'call netflav search', function () {
+  Front.openOmnibar({
+    type: "SearchEngine",
+    extra: 'nf'
   });
 });
 mapkey('obg', 'call bing search', function () {
