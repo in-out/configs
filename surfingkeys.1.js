@@ -65,6 +65,7 @@ unmap('ar');
 unmap('od');
 unmap('oe');
 unmap('og');
+unmap('oy');
 unmap('or');
 unmap('sd');
 unmap('sg');
@@ -110,6 +111,7 @@ addSearchAlias('zs', 'assrt', 'https://assrt.net/sub/?searchword=', 's');
 addSearchAlias('zd', 'subhd', 'https://subhd.tv/search/', 's');
 addSearchAlias('za', 'a4k', 'https://www.a4k.net/search?term=', 's');
 addSearchAlias('zt', 'meow.tg', 'https://meow.tg/search/', 's');
+addSearchAlias('yx', 'yandex', 'https://yandex.com/search/?text=', 's');
 //addSearchAlias('ms', 'mengso', 'https://mengso.com/search?q=', 's');
 //addSearchAlias('p', 'panc', 'https://www.panc.cc/m/s/?s=', 's');
 //addSearchAlias('sx', 'searx', 'https://searx.info/?q=', 's');
@@ -349,6 +351,12 @@ mapkey('ogy', 'call youtube search', function () {
   Front.openOmnibar({
     type: "SearchEngine",
     extra: 'gy'
+  });
+});
+mapkey('oyx', 'call yandex search', function () {
+  Front.openOmnibar({
+    type: "SearchEngine",
+    extra: 'yx'
   });
 });
 // mapkey('oes', 'call ecosia search', function () {
