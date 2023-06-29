@@ -99,7 +99,7 @@ addSearchAlias('jd', 'jd', 'https://search.jd.com/Search?enc=utf-8&keyword=', 's
 addSearchAlias('jj', 'juejin', 'https://juejin.cn/search?query=', 's');
 // addSearchAlias('js', 'jianshu', 'https://www.jianshu.com/search?q=', 's');
 addSearchAlias('gh', 'github', 'https://github.com/search?q=', 's');
-addSearchAlias('rr', 'rarbg', 'https://rarbgto.org/torrents.php?search=', 's');
+// addSearchAlias('rr', 'rarbg', 'https://rarbgto.org/torrents.php?search=', 's');
 addSearchAlias('gg', 'google', 'https://www.google.com/search?pws=0&gl=us&gws_rd=cr&q=', 's');
 addSearchAlias('gy', 'youtube', 'https://www.youtube.com/results?search_query=', 's');
 addSearchAlias('dk', 'docker', 'https://hub.docker.com/search?q=', 's');
@@ -109,9 +109,10 @@ addSearchAlias('nf', 'netflav', 'https://netflav.com/search?type=title&keyword='
 addSearchAlias('zz', 'zhaoziyuan', 'https://zhaoziyuan.la/so?filename=', 's');
 addSearchAlias('zs', 'assrt', 'https://assrt.net/sub/?searchword=', 's');
 addSearchAlias('zd', 'subhd', 'https://subhd.tv/search/', 's');
-addSearchAlias('za', 'a4k', 'https://www.a4k.net/search?term=', 's');
+// addSearchAlias('za', 'a4k', 'https://www.a4k.net/search?term=', 's');
 addSearchAlias('zt', 'meow.tg', 'https://meow.tg/search/', 's');
 addSearchAlias('yx', 'yandex', 'https://yandex.com/search/?text=', 's');
+addSearchAlias('zk', 'zimuku', 'https://so.zimuku.org/search?q=', 's');
 //addSearchAlias('ms', 'mengso', 'https://mengso.com/search?q=', 's');
 //addSearchAlias('p', 'panc', 'https://www.panc.cc/m/s/?s=', 's');
 //addSearchAlias('sx', 'searx', 'https://searx.info/?q=', 's');
@@ -236,12 +237,19 @@ mapkey('ozd', 'call subhd search', function () {
   });
 });
 
-mapkey('oza', 'call a4k search', function () {
+mapkey('ozk', 'call zimuku search', function () {
   Front.openOmnibar({
     type: "SearchEngine",
-    extra: 'za'
+    extra: 'zk'
   });
 });
+
+// mapkey('oza', 'call a4k search', function () {
+//   Front.openOmnibar({
+//     type: "SearchEngine",
+//     extra: 'za'
+//   });
+// });
 
 mapkey('ozz', 'call zhaoziyuan search', function () {
   Front.openOmnibar({
@@ -401,12 +409,12 @@ mapkey('ozh', 'call zhihu search', function () {
     extra: 'zh'
   });
 });
-mapkey('orr', 'call rarbg search', function () {
-  Front.openOmnibar({
-    type: "SearchEngine",
-    extra: 'rr'
-  });
-});
+// mapkey('orr', 'call rarbg search', function () {
+//   Front.openOmnibar({
+//     type: "SearchEngine",
+//     extra: 'rr'
+//   });
+// });
 mapkey('odk', 'call docker search', function () {
   Front.openOmnibar({
     type: "SearchEngine",
