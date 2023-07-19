@@ -493,7 +493,9 @@ Front.registerInlineQuery({
     }
   }
 });
-
+api.mapkey('p', '#0enter ephemeral PassThrough mode to temporarily suppress SurfingKeys', function() {
+    api.Normal.passThrough(2000);
+});
 //Front.registerInlineQuery({
 //    url: function(q) {
 //        return `https://jisho.org/search/${q}`;
@@ -542,7 +544,7 @@ Front.registerInlineQuery({
 mapkey('gc', '#12Open Chrome Configure', function () {
   tabOpenLink("chrome://settings/");
 });
-settings.lurkingPattern = /https:\/\/bilibili\.com\/*|.*jable.*|.*missav.*|.*bilibili.*|.*youtube.*|.*github.*|.*rou\.video.*/i;
+//settings.lurkingPattern = /https:\/\/bilibili\.com\/*|.*jable.*|.*missav.*|.*bilibili.*|.*youtube.*|.*github.*|.*rou\.video.*/i;
 settings.blocklistPattern = /.*mail.google.com.*|.*inbox.google.com.*|trello.com|feishu.cn|inoreader.com|route.asus.com|rsshub.airsee.xyz|localhost/i;
 settings.nextLinkRegex = /((>>|下一页|next|older posts|older entries|forward|Next »|>|>>|❯|›|»|more|下一张|下页|(阅读)?下一章|下一章|下一頁|次へ)+)/i;
 settings.prevLinkRegex = /((<<|上一页|prev(ious)?|newer posts|newer entries|« Previous|back|<|❮|<<«|less|‹|上一张|(阅读)?上一章|上一章|前へ)+)/i;
