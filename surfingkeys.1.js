@@ -78,6 +78,9 @@ unmap('ob');
 unmap('sf');
 unmap('of');
 unmap('sw');
+unmap('se');
+unmap('sh');
+unmap('sy');
 unmap('ow');
 //unmap('f');
 // search engine
