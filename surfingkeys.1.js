@@ -85,7 +85,7 @@ unmap('ow');
 //unmap('f');
 // search engine
 removeSearchAlias('bg');
-// addSearchAlias('al', '猫狸盘搜', 'https://www.alipansou.com/search?k=', 's');
+addSearchAlias('al', '猫狸盘搜', 'https://www.alipansou.com/search?k=', 's');
 addSearchAlias('zh', 'zhihu', 'https://www.zhihu.com/search?type=question&q=', 's');
 // addSearchAlias('es', 'ecosia', 'https://www.ecosia.org/search?q=', 's');
 addSearchAlias('dd', 'duckduckgo', 'https://duckduckgo.com/?q=', 's');
@@ -218,12 +218,12 @@ mapkey("as", "add to view later", function () {
   //, {domain: /jable.tv.com/i}
 );
 
-// mapkey('oal', 'call 猫狸盘搜 search', function () {
-//   Front.openOmnibar({
-//     type: "SearchEngine",
-//     extra: 'al'
-//   });
-// });
+mapkey('oal', 'call 猫狸盘搜 search', function () {
+  Front.openOmnibar({
+    type: "SearchEngine",
+    extra: 'al'
+  });
+});
 
 mapkey('ozs', 'call assrt search', function () {
   Front.openOmnibar({
