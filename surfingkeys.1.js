@@ -108,7 +108,7 @@ addSearchAlias('dk', 'docker', 'https://hub.docker.com/search?q=', 's');
 addSearchAlias('jb', 'jable', 'https://jable.tv/search/{0}/', 's');
 addSearchAlias('ma', 'missav', 'https://missav.com/ja/search/{0}/', 's');
 addSearchAlias('nf', 'netflav', 'https://netflav.com/search?type=title&keyword=', 's');
-addSearchAlias('zz', 'zhaoziyuan', 'https://zhaoziyuan.me/so?filename=', 's');
+addSearchAlias('zz', 'zhaoziyuan', 'https://zhaoziyuan.me/sok?filename=', 's');
 addSearchAlias('zs', 'assrt', 'https://assrt.net/sub/?searchword=', 's');
 addSearchAlias('zd', 'subhd', 'https://subhd.tv/search/', 's');
 // addSearchAlias('za', 'a4k', 'https://www.a4k.net/search?term=', 's');
