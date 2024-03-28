@@ -115,6 +115,7 @@ addSearchAlias('zd', 'subhd', 'https://subhd.tv/search/', 's');
 addSearchAlias('zt', 'meow.tg', 'https://meow.tg/search/', 's');
 addSearchAlias('yx', 'yandex', 'https://yandex.com/search/?text=', 's');
 addSearchAlias('zk', 'zimuku', 'https://so.zimuku.org/search?q=', 's');
+addSearchAlias('dh', 'dmhy', 'https://share.dmhy.org/topics/list?keyword=', 's');
 addSearchAlias('js', '広辞苑', 'https://sakura-paris.org/dict/%E8%AC%9B%E8%AB%87%E7%A4%BE%E6%97%A5%E4%B8%AD%E8%BE%9E%E5%85%B8_%E5%B0%8F%E5%AD%A6%E9%A4%A8%E4%B8%AD%E6%97%A5%E3%83%BB%E6%97%A5%E4%B8%AD%E8%BE%9E%E5%85%B8_%E5%A4%A7%E8%BE%9E%E6%9E%97/exact/', 's');
 //addSearchAlias('ms', 'mengso', 'https://mengso.com/search?q=', 's');
 //addSearchAlias('p', 'panc', 'https://www.panc.cc/m/s/?s=', 's');
@@ -399,6 +400,12 @@ mapkey('odm', 'call douban movie search', function () {
   Front.openOmnibar({
     type: "SearchEngine",
     extra: 'dm'
+  });
+});
+mapkey('odh', 'call dmhy search', function () {
+  Front.openOmnibar({
+    type: "SearchEngine",
+    extra: 'dh'
   });
 });
 mapkey('odd', 'call dockduckgo search', function () {
