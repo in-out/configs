@@ -577,15 +577,8 @@ var favoriteso = function(prefix, urls) {
     }
 }
 
-favoriteso('opa', {
-    0:  'https://t66y.com/thread0806.php?fid=16', 
-    1:  'https://t0713.wonderfulday27.live/forumdisplay.php?fid=19&filter=digest',
-    2:  'https://t0713.wonderfulday27.live/forumdisplay.php?fid=21&filter=digest',
-    3:  'https://t0713.wonderfulday27.live/forumdisplay.php?fid=4&filter=digest',
-    4:  'https://www.javbus.com/forum/', 
-    5:  'https://jable.tv/new-release/', 
-    c:  'https://wallhaven.cc/subscription', 
-    a:  'https://35photo.pro/'
+favoriteso('of', {
+    a:  'https://t66y.com/thread0806.php?fid=16\\nhttps://t0713.wonderfulday27.live/forumdisplay.php?fid=19&filter=digest\\nhttps://t0713.wonderfulday27.live/forumdisplay.php?fid=21&filter=digest\\nhttps://t0713.wonderfulday27.live/forumdisplay.php?fid=4&filter=digest\\nhttps://www.javbus.com/forum/\\nhttps://jable.tv/new-release/\\nhttps://wallhaven.cc/subscription\\nhttps://35photo.pro/',
 })
 
 // Prevent automatic next/previous page loads
