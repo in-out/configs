@@ -567,6 +567,27 @@ settings.blocklistPattern = /.*mail.google.com.*|.*inbox.google.com.*|trello.com
 settings.nextLinkRegex = /((>>|下一页|next|older posts|older entries|forward|Next »|>|>>|❯|›|»|more|下一张|下页|(阅读)?下一章|下一章|下一頁|次へ)+)/i;
 settings.prevLinkRegex = /((<<|上一页|prev(ious)?|newer posts|newer entries|« Previous|back|<|❮|<<«|less|‹|上一张|(阅读)?上一章|上一章|前へ)+)/i;
 
+var favoriteso = function(prefix, urls) {
+    for (var key in urls) {
+        mapkey(
+            prefix + key,
+            'favorite:' + urls[key],
+            "window.open('" + urls[key] + "')"
+        )
+    }
+}
+
+favoriteso('opa', {
+    0:  'https://t66y.com/thread0806.php?fid=16', 
+    1:  'https://t0713.wonderfulday27.live/forumdisplay.php?fid=19&filter=digest',
+    2:  'https://t0713.wonderfulday27.live/forumdisplay.php?fid=21&filter=digest',
+    3:  'https://t0713.wonderfulday27.live/forumdisplay.php?fid=4&filter=digest',
+    4:  'https://www.javbus.com/forum/', 
+    5:  'https://jable.tv/new-release/', 
+    c:  'https://wallhaven.cc/subscription', 
+    a:  'https://35photo.pro/'
+})
+
 // Prevent automatic next/previous page loads
 settings.smartPageBoundary = false;
 settings.stealFocusOnLoad = false;
