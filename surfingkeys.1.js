@@ -484,6 +484,13 @@ mapkey("-e", "google translate", () => {
   }
 });
 
+mapkey("oav", "Open xxx", () => {
+    tabOpenLink(
+      `https://www.seejav.shop/forum/\nhttps://t66y.com/thread0806.php?fid=16\nhttps://t0713.wonderfulday27.live/forumdisplay.php?fid=19&filter=digest\nhttps://t0713.wonderfulday27.live/forumdisplay.php?fid=21&filter=digest\nhttps://t0713.wonderfulday27.live/forumdisplay.php?fid=4&filter=digest\nhttps://jable.tv/latest-updates/`
+    );
+  }
+});
+
 Front.registerInlineQuery({
   url: function (q) {
     return `http://dict.youdao.com/w/eng/${q}/#keyfrom=dict2.index`;
