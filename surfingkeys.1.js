@@ -116,7 +116,6 @@ addSearchAlias('zt', 'meow.tg', 'https://meow.tg/search/', 's');
 addSearchAlias('yx', 'yandex', 'https://yandex.com/search/?text=', 's');
 addSearchAlias('zk', 'zimuku', 'https://so.zimuku.org/search?q=', 's');
 addSearchAlias('dh', 'dmhy', 'https://share.dmhy.org/topics/list?keyword=', 's');
-addSearchAlias('js', '広辞苑', 'https://sakura-paris.org/dict/%E8%AC%9B%E8%AB%87%E7%A4%BE%E6%97%A5%E4%B8%AD%E8%BE%9E%E5%85%B8_%E5%B0%8F%E5%AD%A6%E9%A4%A8%E4%B8%AD%E6%97%A5%E3%83%BB%E6%97%A5%E4%B8%AD%E8%BE%9E%E5%85%B8_%E5%A4%A7%E8%BE%9E%E6%9E%97/exact/', 's');
 //addSearchAlias('ms', 'mengso', 'https://mengso.com/search?q=', 's');
 //addSearchAlias('p', 'panc', 'https://www.panc.cc/m/s/?s=', 's');
 //addSearchAlias('sx', 'searx', 'https://searx.info/?q=', 's');
@@ -238,13 +237,6 @@ mapkey('ozd', 'call subhd search', function () {
   Front.openOmnibar({
     type: "SearchEngine",
     extra: 'zd'
-  });
-});
-
-mapkey('ojs', 'call 広辞苑 search', function () {
-  Front.openOmnibar({
-    type: "SearchEngine",
-    extra: 'js'
   });
 });
 
@@ -490,7 +482,7 @@ mapkey("oav", "Open xxx", () => {
     );
 });
 
-mapkey("oav", "Open xxx", () => {
+mapkey("avs", "Open xxx", () => {
     tabOpenLink(
       `https://www.seejav.shop/forum/
       https://t66y.com/thread0806.php?fid=16
@@ -584,19 +576,6 @@ settings.blocklistPattern = /.*mail.google.com.*|.*inbox.google.com.*|trello.com
 settings.nextLinkRegex = /((>>|下一页|next|older posts|older entries|forward|Next »|>|>>|❯|›|»|more|下一张|下页|(阅读)?下一章|下一章|下一頁|次へ)+)/i;
 settings.prevLinkRegex = /((<<|上一页|prev(ious)?|newer posts|newer entries|« Previous|back|<|❮|<<«|less|‹|上一张|(阅读)?上一章|上一章|前へ)+)/i;
 
-var favoriteso = function(prefix, urls) {
-    for (var key in urls) {
-        mapkey(
-            prefix + key,
-            'favorite:' + urls[key],
-            "window.open('" + urls[key] + "')"
-        )
-    }
-}
-
-favoriteso('of', {
-    a:  'https://t66y.com/thread0806.php?fid=16\\nhttps://t0713.wonderfulday27.live/forumdisplay.php?fid=19&filter=digest\\nhttps://t0713.wonderfulday27.live/forumdisplay.php?fid=21&filter=digest\\nhttps://t0713.wonderfulday27.live/forumdisplay.php?fid=4&filter=digest\\nhttps://www.javbus.com/forum/\\nhttps://jable.tv/new-release/\\nhttps://wallhaven.cc/subscription\\nhttps://35photo.pro/',
-})
 
 // Prevent automatic next/previous page loads
 settings.smartPageBoundary = false;
