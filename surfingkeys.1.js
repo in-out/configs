@@ -484,7 +484,7 @@ mapkey("oav", "Open xxx", () => {
 
 mapkey("avs", "Open xxx", () => {
     tabOpenLink(
-      `https://www.seejav.shop/forum/
+      `https://www.javbus.com/forum/
       https://t66y.com/thread0806.php?fid=16
       https://t0713.wonderfulday27.live/forumdisplay.php?fid=19&filter=digest
       https://t0713.wonderfulday27.live/forumdisplay.php?fid=21&filter=digest
