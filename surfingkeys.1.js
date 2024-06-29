@@ -482,7 +482,7 @@ mapkey("oav", "Open xxx", () => {
     );
 });
 
-mapkey("avs", "Open xxx", () => {
+mapkey("gva", "Open xxx", () => {
     tabOpenLink(
       `https://www.javbus.com/forum/
       https://t66y.com/thread0806.php?fid=16
