@@ -476,13 +476,7 @@ mapkey("-e", "google translate", () => {
   }
 });
 
-mapkey("oav", "Open xxx", () => {
-    tabOpenLink(
-      `http://translate.google.com/translate?u=${window.location.href}`
-    );
-});
-
-mapkey("gva", "Open xxx", () => {
+mapkey("gva", "Open XXX", () => {
     tabOpenLink(
       `https://www.javbus.com/forum/
       https://t66y.com/thread0806.php?fid=16
@@ -490,6 +484,24 @@ mapkey("gva", "Open xxx", () => {
       https://t0601.91p889.com/forumdisplay.php?fid=21&filter=digest
       https://t0601.91p889.com/forumdisplay.php?fid=4&filter=digest
       https://jable.tv/latest-updates/`
+    );
+  });
+
+mapkey("gvj", "Open Japanese", () => {
+    tabOpenLink(
+      `https://omnivore.app/home
+      https://note.com/topic/career
+      https://news.yahoo.co.jp/
+      https://www.nhk.or.jp/radio/
+      https://newspicks.com/theme-news/education/`
+    );
+  });
+
+mapkey("gvs", "Open Service", () => {
+    tabOpenLink(
+      `https://yacd.metacubex.one/#/proxies
+      https://ql.airsee.xyz/crontab
+      https://82.156.139.136:6601/`
     );
   });
 
