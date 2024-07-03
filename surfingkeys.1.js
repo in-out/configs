@@ -501,7 +501,7 @@ mapkey("gvs", "Open Service", () => {
     tabOpenLink(
       `https://yacd.metacubex.one/#/proxies
       https://ql.airsee.xyz/crontab
-      https://82.156.139.136:6601/`
+      https://82.156.139.136:6601/tencentcloud`
     );
   });
 
