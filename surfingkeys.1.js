@@ -106,7 +106,7 @@ addSearchAlias('gh', 'github', 'https://github.com/search?q=', 's');
 addSearchAlias('gg', 'google', 'https://www.google.com/search?pws=0&gl=us&gws_rd=cr&q=', 's');
 addSearchAlias('gy', 'youtube', 'https://www.youtube.com/results?search_query=', 's');
 addSearchAlias('dk', 'docker', 'https://hub.docker.com/search?q=', 's');
-addSearchAlias('jb', 'jable', 'https://jable.tv/search/{0}/', 's');
+addSearchAlias('jb', 'jable', 'https://fs1.app/search/{0}/', 's');
 addSearchAlias('ma', 'missav', 'https://missav.com/ja/search/{0}/', 's');
 addSearchAlias('nf', 'netflav', 'https://netflav.com/search?type=title&keyword=', 's');
 addSearchAlias('zz', 'zhaoziyuan', 'https://zhaoziyuan.pw/so?filename=', 's');
@@ -484,7 +484,7 @@ mapkey("gva", "Open XXX", () => {
       https://t0729.91p889.com/forumdisplay.php?fid=19&filter=digest
       https://t0729.91p889.com/forumdisplay.php?fid=21&filter=digest
       https://t0729.91p889.com/forumdisplay.php?fid=4&filter=digest
-      https://jable.tv/latest-updates/`
+      https://fs1.app/latest-updates/`
     );
   });
 
@@ -584,7 +584,7 @@ api.mapkey('p', '#0enter ephemeral PassThrough mode to temporarily suppress Surf
 mapkey('gc', '#12Open Chrome Configure', function () {
   tabOpenLink("chrome://settings/");
 });
-settings.lurkingPattern = /.*jable.*|.*missav.*|.*bilibili.*|.*youtube.*|.*playav.*|.*taiav.*|list\.airsee\.xyz|.*hsex\.men.*|.*rou\.video.*/i;
+settings.lurkingPattern = /.*jable.*|.*fs1\.app|.*missav.*|.*bilibili.*|.*youtube.*|.*playav.*|.*taiav.*|list\.airsee\.xyz|.*hsex\.men.*|.*rou\.video.*/i;
 settings.blocklistPattern = /.*mail.google.com.*|.*inbox.google.com.*|trello.com|feishu.cn|inoreader.com|route.asus.com|rsshub.airsee.xyz|localhost/i;
 settings.nextLinkRegex = /((>>|下一页|next|older posts|older entries|forward|Next »|>|>>|❯|›|»|more|下一张|下页|(阅读)?下一章|下一章|下一頁|次へ)+)/i;
 settings.prevLinkRegex = /((<<|上一页|prev(ious)?|newer posts|newer entries|« Previous|back|<|❮|<<«|less|‹|上一张|(阅读)?上一章|上一章|前へ)+)/i;
