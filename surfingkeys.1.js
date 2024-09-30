@@ -1,27 +1,26 @@
-//const {
-//  aceVimMap,
-//  unmap,
-//  mapkey,
-//  imap,
-//  imapkey,
-//  getClickableElements,
-//  unmapAllExcept,
-//  vmapkey,
-//  map,
-//  cmap,
-//  addSearchAlias,
-//  removeSearchAlias,
-//  tabOpenLink,
-//  readText,
-//  Clipboard,
-//  Front,
-//  Hints,
-//  Visual,
-//  RUNTIME
-//} = api;
+const {
+  aceVimMap,
+  unmap,
+  mapkey,
+  imap,
+  imapkey,
+  getClickableElements,
+  vmapkey,
+  map,
+  cmap,
+  addSearchAlias,
+  removeSearchAlias,
+  tabOpenLink,
+  readText,
+  Clipboard,
+  Front,
+  Hints,
+  Visual,
+  RUNTIME
+} = api;
 // an example to create a new mapping `ctrl-y`
-api.mapkey('<Ctrl-y>', 'Show me the money', function () {
-  api.api.Front.showPopup('a well-known phrase uttered by characters in the 1996 film Jerry Maguire (Escape to close).');
+mapkey('<Ctrl-y>', 'Show me the money', function () {
+  api.Front.showPopup('a well-known phrase uttered by characters in the 1996 film Jerry Maguire (Escape to close).');
 });
 stealFocusOnLoad = true;
 enableAutoFocus = false;
@@ -30,111 +29,111 @@ omnibarSuggestion = true;
 // -----------------------------------------------------------------------------------------------------------------------
 // Change hints styles
 // -----------------------------------------------------------------------------------------------------------------------
-//api.Hints.characters = "asdfgqwertvbn";
-api.Hints.setCharacters("asdfgqwertvbn")
+//Hints.characters = "asdfgqwertvbn";
+Hints.setCharacters("asdfgqwertvbn")
 
-//api.Hints.style('border: solid 0px #ff79c6; color:#44475a; background: #f1fa8c; background-color: #f1fa8c; font-size: 9pt; font-family: "Microsoft YaHei", "Inconsolata", "Tahoma", "SimSun", "FontAwesome", "Segoe UI", "Segoe UI Symbol", "Symbola", "Meiryo", "Malgun Gothic", "NSimSun", "FZSongS", "方正宋体S-超大字符集", "Arial Unicode MS"');
-//api.Hints.style("border: solid 0px #ff79c6; padding: 1px; background: #7FAB97; font-size: 9pt; font-family: 'Microsoft YaHei', 'Inconsolata', 'Tahoma', 'SimSun', 'FontAwesome', 'Segoe UI', 'Segoe UI Symbol', 'Symbola', 'Meiryo', 'Malgun Gothic', 'NSimSun', 'FZSongS', '方正宋体S-超大字符集', 'Arial Unicode MS'", "text");
+//Hints.style('border: solid 0px #ff79c6; color:#44475a; background: #f1fa8c; background-color: #f1fa8c; font-size: 9pt; font-family: "Microsoft YaHei", "Inconsolata", "Tahoma", "SimSun", "FontAwesome", "Segoe UI", "Segoe UI Symbol", "Symbola", "Meiryo", "Malgun Gothic", "NSimSun", "FZSongS", "方正宋体S-超大字符集", "Arial Unicode MS"');
+//Hints.style("border: solid 0px #ff79c6; padding: 1px; background: #7FAB97; font-size: 9pt; font-family: 'Microsoft YaHei', 'Inconsolata', 'Tahoma', 'SimSun', 'FontAwesome', 'Segoe UI', 'Segoe UI Symbol', 'Symbola', 'Meiryo', 'Malgun Gothic', 'NSimSun', 'FZSongS', '方正宋体S-超大字符集', 'Arial Unicode MS'", "text");
 // -----------------------------------------------------------------------------------------------------------------------
 // Change search marks and cursor
 // -----------------------------------------------------------------------------------------------------------------------
-//api.Visual.style('marks', 'background-color: #f1fa8c;');
-//api.Visual.style('cursor', 'background-color: #6272a4; color: #f8f8f2');
+//Visual.style('marks', 'background-color: #f1fa8c;');
+//Visual.style('cursor', 'background-color: #6272a4; color: #f8f8f2');
 
 // ---- Hints ----
 // Hints have to be defined separately
 // Uncomment to enable
 
 
-//api.mapkey('H', '#4Go back in history', 'history.go(-1)');
-//api.mapkey('L', '#4Go forward in history', 'history.go(1)');
+//mapkey('H', '#4Go back in history', 'history.go(-1)');
+//mapkey('L', '#4Go forward in history', 'history.go(1)');
 // an example to remove mapkey `Ctrl-i`
-// api.unmap('<Ctrl-i>');
-api.unmap('w');
-api.unmap('gr');
-api.unmap('spa');
-api.unmap('spb');
-api.unmap('spd');
-api.unmap('sps');
-api.unmap('spc');
-api.unmap('F');
-api.unmap('gc');
-api.unmap('aa');
-api.unmap('as');
-api.unmap('ar');
-api.unmap('od');
-api.unmap('oe');
-api.unmap('og');
-api.unmap('oy');
-api.unmap('or');
-api.unmap('sd');
-api.unmap('sg');
-api.unmap('om');
-api.unmap('ss');
-api.unmap('sm');
-api.unmap('os')
-api.unmap('.');
-api.unmap('sb');
-api.unmap('ob');
-api.unmap('sf');
-api.unmap('of');
-api.unmap('sw');
-api.unmap('se');
-api.unmap('sh');
-api.unmap('sy');
-api.unmap('ow');
+// unmap('<Ctrl-i>');
+unmap('w');
+unmap('gr');
+unmap('spa');
+unmap('spb');
+unmap('spd');
+unmap('sps');
+unmap('spc');
+unmap('F');
+unmap('gc');
+unmap('aa');
+unmap('as');
+unmap('ar');
+unmap('od');
+unmap('oe');
+unmap('og');
+unmap('oy');
+unmap('or');
+unmap('sd');
+unmap('sg');
+unmap('om');
+unmap('ss');
+unmap('sm');
+unmap('os')
+unmap('.');
+unmap('sb');
+unmap('ob');
+unmap('sf');
+unmap('of');
+unmap('sw');
+unmap('se');
+unmap('sh');
+unmap('sy');
+unmap('ow');
 map('<Alt-1>', '<Alt-s>');
-//api.unmap('f');
+//unmap('f');
 // search engine
-api.removeSearchAlias('bg');
-api.addSearchAlias(('al', '猫狸盘搜', 'https://www.alipansou.com/search?k=', 's');
-api.addSearchAlias(('zh', 'zhihu', 'https://www.zhihu.com/search?type=question&q=', 's');
-// api.addSearchAlias(('es', 'ecosia', 'https://www.ecosia.org/search?q=', 's');
-api.addSearchAlias(('dd', 'duckduckgo', 'https://duckduckgo.com/?q=', 's');
-api.addSearchAlias(('db', 'douban', 'https://www.douban.com/search?source=suggest&q=', 's');
-api.addSearchAlias(('dm', 'douban movie', 'https://www.douban.com/search?source=suggest&cat=1002&q=', 's');
-api.addSearchAlias(('sf', 'SegmentFault', 'https://segmentfault.com/search?type=all&q=', 's');
-api.addSearchAlias(('sc', 'scoop', 'https://scoop.sh/#/apps?q=', 's');
-api.addSearchAlias(('bd', 'baidu', 'https://www.baidu.com/s?ie=UTF-8&wd=', 's');
-api.addSearchAlias(('bg', 'bing', 'https://cn.bing.com/search?q=', 's');
-api.addSearchAlias(('so', 'stackoverflow', 'https://stackoverflow.com/search?q=', 's');
-api.addSearchAlias(('md', 'mdn', 'https://developer.mozilla.org/zh-CN/search?q=', 's');
-api.addSearchAlias(('jd', 'jd', 'https://search.jd.com/Search?enc=utf-8&keyword=', 's');
-api.addSearchAlias(('jj', 'juejin', 'https://juejin.cn/search?query=', 's');
-// api.addSearchAlias(('js', 'jianshu', 'https://www.jianshu.com/search?q=', 's');
-api.addSearchAlias(('gh', 'github', 'https://github.com/search?q=', 's');
-// api.addSearchAlias(('rr', 'rarbg', 'https://rarbgto.org/torrents.php?search=', 's');
-api.addSearchAlias(('gg', 'google', 'https://www.google.com/search?pws=0&gl=us&gws_rd=cr&q=', 's');
-api.addSearchAlias(('gy', 'youtube', 'https://www.youtube.com/results?search_query=', 's');
-api.addSearchAlias(('dk', 'docker', 'https://hub.docker.com/search?q=', 's');
-api.addSearchAlias(('jb', 'jable', 'https://fs1.app/search/{0}/', 's');
-api.addSearchAlias(('ma', 'missav', 'https://missav.com/ja/search/{0}/', 's');
-api.addSearchAlias(('nf', 'netflav', 'https://netflav.com/search?type=title&keyword=', 's');
-api.addSearchAlias(('zz', 'zhaoziyuan', 'https://zhaoziyuan.pw/so?filename=', 's');
-api.addSearchAlias(('zs', 'assrt', 'https://assrt.net/sub/?searchword=', 's');
-api.addSearchAlias(('zd', 'subhd', 'https://subhd.tv/search/', 's');
-// api.addSearchAlias(('za', 'a4k', 'https://www.a4k.net/search?term=', 's');
-api.addSearchAlias(('zt', 'meow.tg', 'https://meow.tg/search/', 's');
-api.addSearchAlias(('yx', 'yandex', 'https://yandex.com/search/?text=', 's');
-api.addSearchAlias(('zk', 'zimuku', 'https://so.zimuku.org/search?q=', 's');
-api.addSearchAlias(('dh', 'dmhy', 'https://share.dmhy.org/topics/list?keyword=', 's');
-//api.addSearchAlias(('ms', 'mengso', 'https://mengso.com/search?q=', 's');
-//api.addSearchAlias(('p', 'panc', 'https://www.panc.cc/m/s/?s=', 's');
-//api.addSearchAlias(('sx', 'searx', 'https://searx.info/?q=', 's');
-//api.addSearchAlias(('sx', 'searx', 'https://searx.info/?q=', 's');
-//api.addSearchAlias(('sx', 'searx', 'https://searx.fmac.xyz/?q=', 's');
-//api.addSearchAlias(('t', 'translate', 'https://translate.google.cn/?source=osdd#auto/zh-CN/', 's');
-//api.addSearchAlias(('sm', 'smzdm', 'https://search.smzdm.com/?c=post&s=', 's');
-//api.addSearchAlias(('f', 'fsou', 'https://fsou.cc/search?q=', 's');
+removeSearchAlias('bg');
+addSearchAlias('al', '猫狸盘搜', 'https://www.alipansou.com/search?k=', 's');
+addSearchAlias('zh', 'zhihu', 'https://www.zhihu.com/search?type=question&q=', 's');
+// addSearchAlias('es', 'ecosia', 'https://www.ecosia.org/search?q=', 's');
+addSearchAlias('dd', 'duckduckgo', 'https://duckduckgo.com/?q=', 's');
+addSearchAlias('db', 'douban', 'https://www.douban.com/search?source=suggest&q=', 's');
+addSearchAlias('dm', 'douban movie', 'https://www.douban.com/search?source=suggest&cat=1002&q=', 's');
+addSearchAlias('sf', 'SegmentFault', 'https://segmentfault.com/search?type=all&q=', 's');
+addSearchAlias('sc', 'scoop', 'https://scoop.sh/#/apps?q=', 's');
+addSearchAlias('bd', 'baidu', 'https://www.baidu.com/s?ie=UTF-8&wd=', 's');
+addSearchAlias('bg', 'bing', 'https://cn.bing.com/search?q=', 's');
+addSearchAlias('so', 'stackoverflow', 'https://stackoverflow.com/search?q=', 's');
+addSearchAlias('md', 'mdn', 'https://developer.mozilla.org/zh-CN/search?q=', 's');
+addSearchAlias('jd', 'jd', 'https://search.jd.com/Search?enc=utf-8&keyword=', 's');
+addSearchAlias('jj', 'juejin', 'https://juejin.cn/search?query=', 's');
+// addSearchAlias('js', 'jianshu', 'https://www.jianshu.com/search?q=', 's');
+addSearchAlias('gh', 'github', 'https://github.com/search?q=', 's');
+// addSearchAlias('rr', 'rarbg', 'https://rarbgto.org/torrents.php?search=', 's');
+addSearchAlias('gg', 'google', 'https://www.google.com/search?pws=0&gl=us&gws_rd=cr&q=', 's');
+addSearchAlias('gy', 'youtube', 'https://www.youtube.com/results?search_query=', 's');
+addSearchAlias('dk', 'docker', 'https://hub.docker.com/search?q=', 's');
+addSearchAlias('jb', 'jable', 'https://fs1.app/search/{0}/', 's');
+addSearchAlias('ma', 'missav', 'https://missav.com/ja/search/{0}/', 's');
+addSearchAlias('nf', 'netflav', 'https://netflav.com/search?type=title&keyword=', 's');
+addSearchAlias('zz', 'zhaoziyuan', 'https://zhaoziyuan.pw/so?filename=', 's');
+addSearchAlias('zs', 'assrt', 'https://assrt.net/sub/?searchword=', 's');
+addSearchAlias('zd', 'subhd', 'https://subhd.tv/search/', 's');
+// addSearchAlias('za', 'a4k', 'https://www.a4k.net/search?term=', 's');
+addSearchAlias('zt', 'meow.tg', 'https://meow.tg/search/', 's');
+addSearchAlias('yx', 'yandex', 'https://yandex.com/search/?text=', 's');
+addSearchAlias('zk', 'zimuku', 'https://so.zimuku.org/search?q=', 's');
+addSearchAlias('dh', 'dmhy', 'https://share.dmhy.org/topics/list?keyword=', 's');
+//addSearchAlias('ms', 'mengso', 'https://mengso.com/search?q=', 's');
+//addSearchAlias('p', 'panc', 'https://www.panc.cc/m/s/?s=', 's');
+//addSearchAlias('sx', 'searx', 'https://searx.info/?q=', 's');
+//addSearchAlias('sx', 'searx', 'https://searx.info/?q=', 's');
+//addSearchAlias('sx', 'searx', 'https://searx.fmac.xyz/?q=', 's');
+//addSearchAlias('t', 'translate', 'https://translate.google.cn/?source=osdd#auto/zh-CN/', 's');
+//addSearchAlias('sm', 'smzdm', 'https://search.smzdm.com/?c=post&s=', 's');
+//addSearchAlias('f', 'fsou', 'https://fsou.cc/search?q=', 's');
 
-//api.mapkey('osx', 'call searx', function() {
-//	api.Front.openOmnibar({
+//mapkey('osx', 'call searx', function() {
+//	Front.openOmnibar({
 //		type: "SearchEngine",
 //		extra: 'sx'
 //	});
 //});
-//api.mapkey('osm', 'call smzdm search', function() {
-//	api.Front.openOmnibar({
+//mapkey('osm', 'call smzdm search', function() {
+//	Front.openOmnibar({
 //		type: "SearchEngine",
 //		extra: 'sm'
 //	});
@@ -153,43 +152,43 @@ function getEleByTextContent(content) {
   return undefined;
 }
 
-api.mapkey("ww", "add to nsfw", function () {
+mapkey("ww", "add to nsfw", function () {
   var ele = getEleByTextContent('NSFW');
   if (ele) ele.click();
 }
 );
 
-api.mapkey("wa", "add to art", function () {
+mapkey("wa", "add to art", function () {
   var ele = getEleByTextContent('art');
   if (ele) ele.click();
 }
 );
 
-api.mapkey("wg", "add to girls", function () {
+mapkey("wg", "add to girls", function () {
   var ele = getEleByTextContent('girls');
   if (ele) ele.click();
 }
 );
 
-api.mapkey("wf", "full screen", function () {
+mapkey("wf", "full screen", function () {
   var ele = document.querySelector('[data-plyr=fullscreen]');
   if (ele) ele.click();
 }
 );
 
-api.mapkey("a1", "rotate 90 degrees", function () {
+mapkey("a1", "rotate 90 degrees", function () {
   var ele = document.getElementsByClassName('art-video')[0];
   if (ele) ele.style.transform = 'rotate(90deg)';
 }
 );
 
-api.mapkey("a2", "rotate 0 degrees", function () {
+mapkey("a2", "rotate 0 degrees", function () {
   var ele = document.getElementsByClassName('art-video')[0];
   if (ele) ele.style.transform = 'rotate(0deg)';
 }
 );
 
-// api.mapkey("aa", "add to view later or extract audio source of first audio", function () {
+// mapkey("aa", "add to view later or extract audio source of first audio", function () {
 //   var domain = document.domain;
 //   var meta = document.querySelector('meta[name="generator"]').content;
 //   if (domain == 'nekodict.com') {
@@ -208,239 +207,239 @@ api.mapkey("a2", "rotate 0 degrees", function () {
 // }
 //   //, {domain: /jable.tv.com/i}
 // );
-api.mapkey("aa", "add to view later", function () {
+mapkey("aa", "add to view later", function () {
     var btn = document.querySelectorAll('[data-fav-type="1"]')[0];
     if (btn) btn.click();
 }
   //, {domain: /jable.tv.com/i}
 );
-api.mapkey("as", "add to view later", function () {
+mapkey("as", "add to view later", function () {
     var btn = document.querySelectorAll('[data-fav-type="0"]')[0];
     if (btn) btn.click();
 }
   //, {domain: /jable.tv.com/i}
 );
 
-api.mapkey('oal', 'call 猫狸盘搜 search', function () {
-  api.Front.openOmnibar({
+mapkey('oal', 'call 猫狸盘搜 search', function () {
+  Front.openOmnibar({
     type: "SearchEngine",
     extra: 'al'
   });
 });
 
-api.mapkey('ozs', 'call assrt search', function () {
-  api.Front.openOmnibar({
+mapkey('ozs', 'call assrt search', function () {
+  Front.openOmnibar({
     type: "SearchEngine",
     extra: 'zs'
   });
 });
 
-api.mapkey('ozd', 'call subhd search', function () {
-  api.Front.openOmnibar({
+mapkey('ozd', 'call subhd search', function () {
+  Front.openOmnibar({
     type: "SearchEngine",
     extra: 'zd'
   });
 });
 
-api.mapkey('ozk', 'call zimuku search', function () {
-  api.Front.openOmnibar({
+mapkey('ozk', 'call zimuku search', function () {
+  Front.openOmnibar({
     type: "SearchEngine",
     extra: 'zk'
   });
 });
 
-// api.mapkey('oza', 'call a4k search', function () {
-//   api.Front.openOmnibar({
+// mapkey('oza', 'call a4k search', function () {
+//   Front.openOmnibar({
 //     type: "SearchEngine",
 //     extra: 'za'
 //   });
 // });
 
-api.mapkey('ozz', 'call zhaoziyuan search', function () {
-  api.Front.openOmnibar({
+mapkey('ozz', 'call zhaoziyuan search', function () {
+  Front.openOmnibar({
     type: "SearchEngine",
     extra: 'zz'
   });
 });
 
-api.mapkey('ozt', 'call meow.tg search', function () {
-  api.Front.openOmnibar({
+mapkey('ozt', 'call meow.tg search', function () {
+  Front.openOmnibar({
     type: "SearchEngine",
     extra: 'zt'
   });
 });
 
-api.mapkey('ojb', 'call jable search', function () {
-  api.Front.openOmnibar({
+mapkey('ojb', 'call jable search', function () {
+  Front.openOmnibar({
     type: "SearchEngine",
     extra: 'jb'
   });
 });
-api.mapkey('oma', 'call missav search', function () {
-  api.Front.openOmnibar({
+mapkey('oma', 'call missav search', function () {
+  Front.openOmnibar({
     type: "SearchEngine",
     extra: 'ma'
   });
 });
-api.mapkey('onf', 'call netflav search', function () {
-  api.Front.openOmnibar({
+mapkey('onf', 'call netflav search', function () {
+  Front.openOmnibar({
     type: "SearchEngine",
     extra: 'nf'
   });
 });
-api.mapkey('obg', 'call bing search', function () {
-  api.Front.openOmnibar({
+mapkey('obg', 'call bing search', function () {
+  Front.openOmnibar({
     type: "SearchEngine",
     extra: 'bg'
   });
 });
-api.mapkey('obd', 'call baidu search', function () {
-  api.Front.openOmnibar({
+mapkey('obd', 'call baidu search', function () {
+  Front.openOmnibar({
     type: "SearchEngine",
     extra: 'bd'
   });
 });
-api.mapkey('oso', 'call stackoverflow search', function () {
-  api.Front.openOmnibar({
+mapkey('oso', 'call stackoverflow search', function () {
+  Front.openOmnibar({
     type: "SearchEngine",
     extra: 'so'
   });
 });
-api.mapkey('osc', 'call scoop search', function () {
-  api.Front.openOmnibar({
+mapkey('osc', 'call scoop search', function () {
+  Front.openOmnibar({
     type: "SearchEngine",
     extra: 'sc'
   });
 });
-api.mapkey('osf', 'call segmentfault search', function () {
-  api.Front.openOmnibar({
+mapkey('osf', 'call segmentfault search', function () {
+  Front.openOmnibar({
     type: "SearchEngine",
     extra: 'sf'
   });
 });
-api.mapkey('omd', 'call mdn search', function () {
-  api.Front.openOmnibar({
+mapkey('omd', 'call mdn search', function () {
+  Front.openOmnibar({
     type: "SearchEngine",
     extra: 'md'
   });
 });
-//api.mapkey('oms', 'call mengso search', function() {
-//	api.Front.openOmnibar({
+//mapkey('oms', 'call mengso search', function() {
+//	Front.openOmnibar({
 //		type: "SearchEngine",
 //		extra: 'ms'
 //	});
 //});
-api.mapkey('ojd', 'call jd search', function () {
-  api.Front.openOmnibar({
+mapkey('ojd', 'call jd search', function () {
+  Front.openOmnibar({
     type: "SearchEngine",
     extra: 'jd'
   });
 });
-api.mapkey('ojj', 'call juejin search', function () {
-  api.Front.openOmnibar({
+mapkey('ojj', 'call juejin search', function () {
+  Front.openOmnibar({
     type: "SearchEngine",
     extra: 'jj'
   });
 });
-// api.mapkey('ojs', 'call jianshu search', function () {
-//   api.Front.openOmnibar({
+// mapkey('ojs', 'call jianshu search', function () {
+//   Front.openOmnibar({
 //     type: "SearchEngine",
 //     extra: 'js'
 //   });
 // });
-api.mapkey('ogh', 'call github search', function () {
-  api.Front.openOmnibar({
+mapkey('ogh', 'call github search', function () {
+  Front.openOmnibar({
     type: "SearchEngine",
     extra: 'gh'
   });
 });
-api.mapkey('ogg', 'call google search', function () {
-  api.Front.openOmnibar({
+mapkey('ogg', 'call google search', function () {
+  Front.openOmnibar({
     type: "SearchEngine",
     extra: 'gg'
   });
 });
-api.mapkey('ogy', 'call youtube search', function () {
-  api.Front.openOmnibar({
+mapkey('ogy', 'call youtube search', function () {
+  Front.openOmnibar({
     type: "SearchEngine",
     extra: 'gy'
   });
 });
-api.mapkey('oyx', 'call yandex search', function () {
-  api.Front.openOmnibar({
+mapkey('oyx', 'call yandex search', function () {
+  Front.openOmnibar({
     type: "SearchEngine",
     extra: 'yx'
   });
 });
-// api.mapkey('oes', 'call ecosia search', function () {
-//   api.Front.openOmnibar({
+// mapkey('oes', 'call ecosia search', function () {
+//   Front.openOmnibar({
 //     type: "SearchEngine",
 //     extra: 'es'
 //   });
 // });
-//api.mapkey('of', 'call fsou search', function() {
-//	api.Front.openOmnibar({
+//mapkey('of', 'call fsou search', function() {
+//	Front.openOmnibar({
 //		type: "SearchEngine",
 //		extra: 'f'
 //	});
 //});
-api.mapkey('odb', 'call douban search', function () {
-  api.Front.openOmnibar({
+mapkey('odb', 'call douban search', function () {
+  Front.openOmnibar({
     type: "SearchEngine",
     extra: 'db'
   });
 });
-api.mapkey('odm', 'call douban movie search', function () {
-  api.Front.openOmnibar({
+mapkey('odm', 'call douban movie search', function () {
+  Front.openOmnibar({
     type: "SearchEngine",
     extra: 'dm'
   });
 });
-api.mapkey('odh', 'call dmhy search', function () {
-  api.Front.openOmnibar({
+mapkey('odh', 'call dmhy search', function () {
+  Front.openOmnibar({
     type: "SearchEngine",
     extra: 'dh'
   });
 });
-api.mapkey('odd', 'call dockduckgo search', function () {
-  api.Front.openOmnibar({
+mapkey('odd', 'call dockduckgo search', function () {
+  Front.openOmnibar({
     type: "SearchEngine",
     extra: 'dd'
   });
 });
-/**api.mapkey('op', 'call pancc search', function() {
-  api.Front.openOmnibar({
+/**mapkey('op', 'call pancc search', function() {
+  Front.openOmnibar({
     type: "SearchEngine",
     extra: 'p'
   });
 });**/
-api.mapkey('ozh', 'call zhihu search', function () {
-  api.Front.openOmnibar({
+mapkey('ozh', 'call zhihu search', function () {
+  Front.openOmnibar({
     type: "SearchEngine",
     extra: 'zh'
   });
 });
-// api.mapkey('orr', 'call rarbg search', function () {
-//   api.Front.openOmnibar({
+// mapkey('orr', 'call rarbg search', function () {
+//   Front.openOmnibar({
 //     type: "SearchEngine",
 //     extra: 'rr'
 //   });
 // });
-api.mapkey('odk', 'call docker search', function () {
-  api.Front.openOmnibar({
+mapkey('odk', 'call docker search', function () {
+  Front.openOmnibar({
     type: "SearchEngine",
     extra: 'dk'
   });
 });
 //map('or', ':openSession r');
-api.mapkey("-j", "google translate", () => {
+mapkey("-j", "google translate", () => {
   const selection = window.getSelection().toString();
   if (selection === "") {
-    api.removeSearchAlias(
+    tabOpenLink(
       `http://translate.google.com/translate?u=${window.location.href}`
     );
   } else {
-    api.removeSearchAlias(
+    tabOpenLink(
       `https://translate.google.com/?sl=auto&tl=ja&text=${encodeURIComponent(
         selection
       )}`
@@ -448,14 +447,14 @@ api.mapkey("-j", "google translate", () => {
   }
 });
 
-api.mapkey("-c", "google translate", () => {
+mapkey("-c", "google translate", () => {
   const selection = window.getSelection().toString();
   if (selection === "") {
-    api.removeSearchAlias(
+    tabOpenLink(
       `http://translate.google.com/translate?u=${window.location.href}`
     );
   } else {
-    api.removeSearchAlias(
+    tabOpenLink(
       `https://translate.google.com/?sl=auto&tl=zh-CN&text=${encodeURIComponent(
         selection
       )}`
@@ -463,14 +462,14 @@ api.mapkey("-c", "google translate", () => {
   }
 });
 
-api.mapkey("-e", "google translate", () => {
+mapkey("-e", "google translate", () => {
   const selection = window.getSelection().toString();
   if (selection === "") {
-    api.removeSearchAlias(
+    tabOpenLink(
       `http://translate.google.com/translate?u=${window.location.href}`
     );
   } else {
-    api.removeSearchAlias(
+    tabOpenLink(
       `https://translate.google.com/?sl=auto&tl=en&text=${encodeURIComponent(
         selection
       )}`
@@ -478,8 +477,8 @@ api.mapkey("-e", "google translate", () => {
   }
 });
 
-api.mapkey("gva", "Open XXX", () => {
-    api.removeSearchAlias(
+mapkey("gva", "Open XXX", () => {
+    tabOpenLink(
       `https://www.javbus.com/forum/
       https://t66y.com/thread0806.php?fid=16
       https://t0729.91p889.com/forumdisplay.php?fid=19&filter=digest
@@ -489,8 +488,8 @@ api.mapkey("gva", "Open XXX", () => {
     );
   });
 
-api.mapkey("gvj", "Open Japanese", () => {
-    api.removeSearchAlias(
+mapkey("gvj", "Open Japanese", () => {
+    tabOpenLink(
       `https://omnivore.app/home
       https://note.com/topic/career
       https://news.yahoo.co.jp/
@@ -499,15 +498,15 @@ api.mapkey("gvj", "Open Japanese", () => {
     );
   });
 
-api.mapkey("gvs", "Open Service", () => {
-    api.removeSearchAlias(
+mapkey("gvs", "Open Service", () => {
+    tabOpenLink(
       `https://yacd.metacubex.one/#/proxies
       https://ql.airsee.xyz/crontab
       https://82.156.139.136:6601/tencentcloud`
     );
   });
 
-api.Front.registerInlineQuery({
+Front.registerInlineQuery({
   url: function (q) {
     return `http://dict.youdao.com/w/eng/${q}/#keyfrom=dict2.index`;
   },
@@ -534,10 +533,10 @@ api.Front.registerInlineQuery({
     }
   }
 });
-api.api.mapkey('p', '#0enter ephemeral PassThrough mode to temporarily suppress SurfingKeys', function() {
+api.mapkey('p', '#0enter ephemeral PassThrough mode to temporarily suppress SurfingKeys', function() {
     api.Normal.passThrough(2000);
 });
-//api.Front.registerInlineQuery({
+//Front.registerInlineQuery({
 //    url: function(q) {
 //        return `https://jisho.org/search/${q}`;
 //    },
@@ -576,14 +575,14 @@ api.api.mapkey('p', '#0enter ephemeral PassThrough mode to temporarily suppress 
 //map('F','af');
 //map('f','gf');
 // Set H and L for back/forward
-// api.mapkey('S', '#8Open opened URL in current tab', 'Normal.openOmnibar({type: "URLs", extra: "getTabURLs"})');
-// api.mapkey('H', '#4Go back in history', 'history.go(-1)');
-// api.mapkey('L', '#4Go forward in history', 'history.go(1)');
+// mapkey('S', '#8Open opened URL in current tab', 'Normal.openOmnibar({type: "URLs", extra: "getTabURLs"})');
+// mapkey('H', '#4Go back in history', 'history.go(-1)');
+// mapkey('L', '#4Go forward in history', 'history.go(1)');
 // Tabs
-//api.mapkey('gT', '#3Go one tab left', 'RUNTIME("previousTab")');
-//api.mapkey('gt', '#3Go one tab right', 'RUNTIME("nextTab")');
-api.mapkey('gc', '#12Open Chrome Configure', function () {
-  api.removeSearchAlias("chrome://settings/");
+//mapkey('gT', '#3Go one tab left', 'RUNTIME("previousTab")');
+//mapkey('gt', '#3Go one tab right', 'RUNTIME("nextTab")');
+mapkey('gc', '#12Open Chrome Configure', function () {
+  tabOpenLink("chrome://settings/");
 });
 settings.lurkingPattern = /.*jable.*|.*fs1\.app|.*missav.*|.*bilibili.*|.*youtube.*|.*playav.*|.*taiav.*|list\.airsee\.xyz|.*hsex\.men.*|.*rou\.video.*/i;
 settings.blocklistPattern = /.*mail.google.com.*|.*inbox.google.com.*|trello.com|feishu.cn|inoreader.com|route.asus.com|rsshub.airsee.xyz|localhost/i;
@@ -595,33 +594,33 @@ settings.prevLinkRegex = /((<<|上一页|prev(ious)?|newer posts|newer entries|�
 settings.smartPageBoundary = false;
 settings.stealFocusOnLoad = false;
 // Tomorrow-Night
-api.Hints.style('border: solid 2px #373B41; color:#52C196; background: initial; background-color: #1D1F21;');
-api.Hints.style("border: solid 2px #373B41 !important; padding: 1px !important; color: #C5C8C6 !important; background: #1D1F21 !important;", "text");
-api.Visual.style('marks', 'background-color: #52C19699;');
-api.Visual.style('cursor', 'background-color: #81A2BE;');
+Hints.style('border: solid 2px #373B41; color:#52C196; background: initial; background-color: #1D1F21;');
+Hints.style("border: solid 2px #373B41 !important; padding: 1px !important; color: #C5C8C6 !important; background: #1D1F21 !important;", "text");
+Visual.style('marks', 'background-color: #52C19699;');
+Visual.style('cursor', 'background-color: #81A2BE;');
 
 // Nord
 /* -- DELETE LINE TO ENABLE THEME
-api.Hints.style('border: solid 2px #4C566A; color:#A3BE8C; background: initial; background-color: #3B4252;');
-api.Hints.style("border: solid 2px #4C566A !important; padding: 1px !important; color: #E5E9F0 !important; background: #3B4252 !important;", "text");
-api.Visual.style('marks', 'background-color: #A3BE8C99;');
-api.Visual.style('cursor', 'background-color: #88C0D0;');
+Hints.style('border: solid 2px #4C566A; color:#A3BE8C; background: initial; background-color: #3B4252;');
+Hints.style("border: solid 2px #4C566A !important; padding: 1px !important; color: #E5E9F0 !important; background: #3B4252 !important;", "text");
+Visual.style('marks', 'background-color: #A3BE8C99;');
+Visual.style('cursor', 'background-color: #88C0D0;');
 -- DELETE LINE TO ENABLE THEME */
 
 // Doom One
 /* -- DELETE LINE TO ENABLE THEME
-api.Hints.style('border: solid 2px #282C34; color:#98be65; background: initial; background-color: #2E3440;');
-api.Hints.style("border: solid 2px #282C34 !important; padding: 1px !important; color: #51AFEF !important; background: #2E3440 !important;", "text");
-api.Visual.style('marks', 'background-color: #98be6599;');
-api.Visual.style('cursor', 'background-color: #51AFEF;');
+Hints.style('border: solid 2px #282C34; color:#98be65; background: initial; background-color: #2E3440;');
+Hints.style("border: solid 2px #282C34 !important; padding: 1px !important; color: #51AFEF !important; background: #2E3440 !important;", "text");
+Visual.style('marks', 'background-color: #98be6599;');
+Visual.style('cursor', 'background-color: #51AFEF;');
 -- DELETE LINE TO ENABLE THEME */
 
 // Monokai
 /* -- DELETE LINE TO ENABLE THEME
-api.Hints.style('border: solid 2px #2D2E2E; color:#F92660; background: initial; background-color: #272822;');
-api.Hints.style("border: solid 2px #2D2E2E !important; padding: 1px !important; color: #A6E22E !important; background: #272822 !important;", "text");
-api.Visual.style('marks', 'background-color: #A6E22E99;');
-api.Visual.style('cursor', 'background-color: #F92660;');
+Hints.style('border: solid 2px #2D2E2E; color:#F92660; background: initial; background-color: #272822;');
+Hints.style("border: solid 2px #2D2E2E !important; padding: 1px !important; color: #A6E22E !important; background: #272822 !important;", "text");
+Visual.style('marks', 'background-color: #A6E22E99;');
+Visual.style('cursor', 'background-color: #F92660;');
 -- DELETE LINE TO ENABLE THEME */
 
 settings.theme = `
