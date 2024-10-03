@@ -109,11 +109,11 @@ addSearchAlias('dk', 'docker', 'https://hub.docker.com/search?q=', 's');
 addSearchAlias('jb', 'jable', 'https://fs1.app/search/{0}/', 's');
 addSearchAlias('ma', 'missav', 'https://missav.com/ja/search/{0}/', 's');
 addSearchAlias('nf', 'netflav', 'https://netflav.com/search?type=title&keyword=', 's');
-addSearchAlias('zz', 'zhaoziyuan', 'https://zhaoziyuan.pw/so?filename=', 's');
+//addSearchAlias('zz', 'zhaoziyuan', 'https://zhaoziyuan.pw/so?filename=', 's');
 addSearchAlias('zs', 'assrt', 'https://assrt.net/sub/?searchword=', 's');
 addSearchAlias('zd', 'subhd', 'https://subhd.tv/search/', 's');
 // addSearchAlias('za', 'a4k', 'https://www.a4k.net/search?term=', 's');
-addSearchAlias('zt', 'meow.tg', 'https://meow.tg/search/', 's');
+//addSearchAlias('zt', 'meow.tg', 'https://meow.tg/search/', 's');
 addSearchAlias('yx', 'yandex', 'https://yandex.com/search/?text=', 's');
 addSearchAlias('zk', 'zimuku', 'https://so.zimuku.org/search?q=', 's');
 addSearchAlias('dh', 'dmhy', 'https://share.dmhy.org/topics/list?keyword=', 's');
@@ -255,19 +255,19 @@ mapkey('ozk', 'call zimuku search', function () {
 //   });
 // });
 
-mapkey('ozz', 'call zhaoziyuan search', function () {
-  Front.openOmnibar({
-    type: "SearchEngine",
-    extra: 'zz'
-  });
-});
+// mapkey('ozz', 'call zhaoziyuan search', function () {
+//   Front.openOmnibar({
+//     type: "SearchEngine",
+//     extra: 'zz'
+//   });
+// });
 
-mapkey('ozt', 'call meow.tg search', function () {
-  Front.openOmnibar({
-    type: "SearchEngine",
-    extra: 'zt'
-  });
-});
+// mapkey('ozt', 'call meow.tg search', function () {
+//   Front.openOmnibar({
+//     type: "SearchEngine",
+//     extra: 'zt'
+//   });
+// });
 
 mapkey('ojb', 'call jable search', function () {
   Front.openOmnibar({
