@@ -110,7 +110,7 @@ addSearchAlias('jb', 'jable', 'https://fs1.app/search/{0}/', 's');
 addSearchAlias('ma', 'missav', 'https://missav.com/ja/search/{0}/', 's');
 //addSearchAlias('nf', '', 'https://.com/search?type=title&keyword=', 's');
 //addSearchAlias('zz', 'zhaoziyuan', 'https://zhaoziyuan.pw/so?filename=', 's');
-addSearchAlias('zs', 'assrt', 'https://assrt.net/sub/?searchword=', 's');
+// addSearchAlias('zs', 'assrt', 'https://assrt.net/sub/?searchword=', 's');
 addSearchAlias('zd', 'subhd', 'https://subhd.tv/search/', 's');
 // addSearchAlias('za', 'a4k', 'https://www.a4k.net/search?term=', 's');
 //addSearchAlias('zt', 'meow.tg', 'https://meow.tg/search/', 's');
@@ -227,12 +227,12 @@ mapkey('oal', 'call 猫狸盘搜 search', function () {
   });
 });
 
-mapkey('ozs', 'call assrt search', function () {
-  Front.openOmnibar({
-    type: "SearchEngine",
-    extra: 'zs'
-  });
-});
+// mapkey('ozs', 'call assrt search', function () {
+//   Front.openOmnibar({
+//     type: "SearchEngine",
+//     extra: 'zs'
+//   });
+// });
 
 mapkey('ozd', 'call subhd search', function () {
   Front.openOmnibar({
