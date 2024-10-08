@@ -106,7 +106,7 @@ addSearchAlias('gh', 'github', 'https://github.com/search?q=', 's');
 addSearchAlias('gg', 'google', 'https://www.google.com/search?pws=0&gl=us&gws_rd=cr&q=', 's');
 addSearchAlias('gy', 'youtube', 'https://www.youtube.com/results?search_query=', 's');
 addSearchAlias('dk', 'docker', 'https://hub.docker.com/search?q=', 's');
-addSearchAlias('jb', 'jable', 'https://fs1.app/search/{0}/', 's');
+addSearchAlias('jb', 'jable', 'https://jable.tv/search/{0}/', 's');
 addSearchAlias('ma', 'missav', 'https://missav.com/ja/search/{0}/', 's');
 //addSearchAlias('nf', '', 'https://.com/search?type=title&keyword=', 's');
 //addSearchAlias('zz', 'zhaoziyuan', 'https://zhaoziyuan.pw/so?filename=', 's');
@@ -484,7 +484,7 @@ mapkey("gva", "Open XXX", () => {
       https://t0729.91p889.com/forumdisplay.php?fid=19&filter=digest
       https://t0729.91p889.com/forumdisplay.php?fid=21&filter=digest
       https://t0729.91p889.com/forumdisplay.php?fid=4&filter=digest
-      https://fs1.app/latest-updates/`
+      https://jable.tv/latest-updates/`
     );
   });
 
