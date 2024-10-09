@@ -116,6 +116,7 @@ addSearchAlias('zd', 'subhd', 'https://subhd.tv/search/', 's');
 //addSearchAlias('zt', 'meow.tg', 'https://meow.tg/search/', 's');
 addSearchAlias('yx', 'yandex', 'https://yandex.com/search/?text=', 's');
 addSearchAlias('zk', 'zimuku', 'https://so.zimuku.org/search?q=', 's');
+addSearchAlias('lu', 'luxirty', 'https://search.luxirty.com/search?q=', 's');
 addSearchAlias('dh', 'dmhy', 'https://share.dmhy.org/topics/list?keyword=', 's');
 //addSearchAlias('ms', 'mengso', 'https://mengso.com/search?q=', 's');
 //addSearchAlias('p', 'panc', 'https://www.panc.cc/m/s/?s=', 's');
@@ -245,6 +246,13 @@ mapkey('ozk', 'call zimuku search', function () {
   Front.openOmnibar({
     type: "SearchEngine",
     extra: 'zk'
+  });
+});
+
+mapkey('olu', 'call luxirty search', function () {
+  Front.openOmnibar({
+    type: "SearchEngine",
+    extra: 'lu'
   });
 });
 
