@@ -128,6 +128,8 @@ addSearchAlias('dh', 'dmhy', 'https://share.dmhy.org/topics/list?keyword=', 's')
 //addSearchAlias('f', 'fsou', 'https://fsou.cc/search?q=', 's');
 addSearchAlias('bs', 'btsow', 'https://btsow.motorcycles/search/{0}', 's');
 addSearchAlias('bx', '磁力熊猫', 'https://xiongmaoox.top/search?keyword=', 's');
+addSearchAlias('bn', 'nyaa', 'https://nyaa.si/?f=0&c=0_0&q=', 's');
+addSearchAlias('br', 'skr', 'https://skrbtgb.top/search?keyword=', 's');
 
 //mapkey('osx', 'call searx', function() {
 //	Front.openOmnibar({
@@ -295,6 +297,18 @@ mapkey('obx', 'call 磁力熊猫 search', function () {
   Front.openOmnibar({
     type: "SearchEngine",
     extra: 'bx'
+  });
+});
+mapkey('obr', 'call skr search', function () {
+  Front.openOmnibar({
+    type: "SearchEngine",
+    extra: 'br'
+  });
+});
+mapkey('obn', 'call nyaa search', function () {
+  Front.openOmnibar({
+    type: "SearchEngine",
+    extra: 'bn'
   });
 });
 mapkey('oma', 'call missav search', function () {
