@@ -130,6 +130,7 @@ addSearchAlias('bs', 'btsow', 'https://btsow.motorcycles/search/{0}', 's');
 addSearchAlias('bx', '磁力熊猫', 'https://xiongmaoox.top/search?keyword=', 's');
 addSearchAlias('bn', 'nyaa', 'https://nyaa.si/?f=0&c=0_0&q=', 's');
 addSearchAlias('br', 'skr', 'https://skrbtgb.top/search?keyword=', 's');
+addSearchAlias('bp', 'thepiratebay', 'https://thepiratebay.org/search.php?q=', 's');
 
 //mapkey('osx', 'call searx', function() {
 //	Front.openOmnibar({
@@ -297,6 +298,12 @@ mapkey('obx', 'call 磁力熊猫 search', function () {
   Front.openOmnibar({
     type: "SearchEngine",
     extra: 'bx'
+  });
+});
+mapkey('obp', 'call thepiratebay search', function () {
+  Front.openOmnibar({
+    type: "SearchEngine",
+    extra: 'bp'
   });
 });
 mapkey('obr', 'call skr search', function () {
