@@ -524,9 +524,9 @@ mapkey("gva", "Open XXX", () => {
     tabOpenLink(
       `https://www.javbus.com/forum/
       https://t66y.com/thread0806.php?fid=16
-      https://t0729.91p889.com/forumdisplay.php?fid=19&filter=digest
-      https://t0729.91p889.com/forumdisplay.php?fid=21&filter=digest
-      https://t0729.91p889.com/forumdisplay.php?fid=4&filter=digest
+      https://t1002.9p47p.com/forumdisplay.php?fid=19&filter=digest
+      https://t1002.9p47p.com/forumdisplay.php?fid=21&filter=digest
+      https://t1002.9p47p.com/forumdisplay.php?fid=4&filter=digest
       https://jable.tv/latest-updates/`
     );
   });
