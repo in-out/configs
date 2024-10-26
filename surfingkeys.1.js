@@ -115,7 +115,9 @@ addSearchAlias('zd', 'subhd', 'https://subhd.tv/search/', 's');
 // addSearchAlias('za', 'a4k', 'https://www.a4k.net/search?term=', 's');
 //addSearchAlias('zt', 'meow.tg', 'https://meow.tg/search/', 's');
 addSearchAlias('yx', 'yandex', 'https://yandex.com/search/?text=', 's');
-addSearchAlias('zk', 'zimuku', 'https://so.zimuku.org/search?q=', 's');
+addSearchAlias('zk', 'zimuku', 'https://zmk.pw/search?q=', 's');
+addSearchAlias('zr', 'r3sub', 'https://r3sub.com/search.php?s=', 's');
+addSearchAlias('zl', 'lwltv', 'https://www.lwltv.com/search/{0}', 's');
 addSearchAlias('lu', 'luxirty', 'https://search.luxirty.com/search?q=', 's');
 addSearchAlias('dh', 'dmhy', 'https://share.dmhy.org/topics/list?keyword=', 's');
 //addSearchAlias('ms', 'mengso', 'https://mengso.com/search?q=', 's');
@@ -251,6 +253,20 @@ mapkey('ozk', 'call zimuku search', function () {
   Front.openOmnibar({
     type: "SearchEngine",
     extra: 'zk'
+  });
+});
+
+mapkey('ozr', 'call r3sub search', function () {
+  Front.openOmnibar({
+    type: "SearchEngine",
+    extra: 'zr'
+  });
+});
+
+mapkey('ozl', 'call lwltv search', function () {
+  Front.openOmnibar({
+    type: "SearchEngine",
+    extra: 'zl'
   });
 });
 
