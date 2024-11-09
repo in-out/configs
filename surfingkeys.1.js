@@ -562,6 +562,7 @@ mapkey("gvs", "Open Service", () => {
       `https://yacd.metacubex.one/#/proxies
       https://ql.airsee.xyz/crontab
       https://dnsnext.console.aliyun.com/pubDNS/requestStatistics
+      http://114.96.82.26:27373/
       https://82.156.139.136:6601/tencentcloud`
     );
   });
