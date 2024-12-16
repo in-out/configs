@@ -560,7 +560,7 @@ mapkey("gvj", "Open Japanese", () => {
 mapkey("gvs", "Open Service", () => {
     tabOpenLink(
       `https://yacd.metacubex.one/#/proxies
-      https://ql.airsee.xyz/crontab
+      https://ql.unionall.fun/crontab
       https://dnsnext.console.aliyun.com/pubDNS/requestStatistics
       http://114.96.82.26:27373
       https://82.156.139.136:6601/tencentcloud`
@@ -645,8 +645,8 @@ api.mapkey('p', '#0enter ephemeral PassThrough mode to temporarily suppress Surf
 mapkey('gc', '#12Open Chrome Configure', function () {
   tabOpenLink("chrome://settings/");
 });
-settings.lurkingPattern = /.*jable.*|.*fs1\.app|.*missav.*|.*youtube.*|.*playav.*|.*taiav.*|list\.airsee\.xyz|.*hsex\.men.*|.*rou\.video.*/i;
-settings.blocklistPattern = /.*mail.google.com.*|.*inbox.google.com.*|trello.com|feishu.cn|inoreader.com|route.asus.com|rsshub.airsee.xyz|yarr.airsee.xyz|.*bilibili|.*acfun.*|localhost|114\.96/i;
+settings.lurkingPattern = /.*jable.*|.*fs1\.app|.*missav.*|.*youtube.*|.*playav.*|.*taiav.*|yalist\.unionall\.fun|.*hsex\.men.*|.*rou\.video.*/i;
+settings.blocklistPattern = /.*mail.google.com.*|.*inbox.google.com.*|trello.com|feishu.cn|inoreader.com|route.asus.com|rsshub.unionall.fun|yarr.unionall.fun|.*bilibili|.*acfun.*|localhost|114\.96/i;
 settings.nextLinkRegex = /((>>|下一页|next|older posts|older entries|forward|Next »|>|>>|❯|›|»|more|下一张|下页|(阅读)?下一章|下一章|下一頁|次へ)+)/i;
 settings.prevLinkRegex = /((<<|上一页|prev(ious)?|newer posts|newer entries|« Previous|back|<|❮|<<«|less|‹|上一张|(阅读)?上一章|上一章|前へ)+)/i;
 
