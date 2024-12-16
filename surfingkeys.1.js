@@ -562,7 +562,7 @@ mapkey("gvs", "Open Service", () => {
       `https://yacd.metacubex.one/#/proxies
       https://ql.unionall.fun/crontab
       https://dnsnext.console.aliyun.com/pubDNS/requestStatistics
-      http://114.96.82.26:36840/`
+      https://1panel.unionall.fun/2063bbbce8 `
     );
   });
 
