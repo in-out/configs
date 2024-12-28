@@ -133,6 +133,8 @@ addSearchAlias('bx', '磁力熊猫', 'https://xiongmaoox.top/search?keyword=', '
 addSearchAlias('bn', 'nyaa', 'https://nyaa.si/?f=0&c=0_0&q=', 's');
 addSearchAlias('br', 'skr', 'https://skrbtgb.top/search?keyword=', 's');
 addSearchAlias('bp', 'thepiratebay', 'https://thepiratebay.org/search.php?q=', 's');
+addSearchAlias('p3', '123云盘资源社区', 'https://pan1.me/search-{0}.htm', 's');
+addSearchAlias('rr', 'rarbg', 'https://rarbg.unblockninja.com/get-posts/?keywords=', 's');
 
 //mapkey('osx', 'call searx', function() {
 //	Front.openOmnibar({
@@ -478,12 +480,18 @@ mapkey('ozh', 'call zhihu search', function () {
     extra: 'zh'
   });
 });
-// mapkey('orr', 'call rarbg search', function () {
-//   Front.openOmnibar({
-//     type: "SearchEngine",
-//     extra: 'rr'
-//   });
-// });
+mapkey('orr', 'call rarbg search', function () {
+  Front.openOmnibar({
+    type: "SearchEngine",
+    extra: 'rr'
+  });
+});
+mapkey('op3', 'call 123 search', function () {
+  Front.openOmnibar({
+    type: "SearchEngine",
+    extra: 'p3'
+  });
+});
 mapkey('odk', 'call docker search', function () {
   Front.openOmnibar({
     type: "SearchEngine",
