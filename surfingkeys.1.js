@@ -133,7 +133,7 @@ addSearchAlias('bx', '磁力熊猫', 'https://xiongmaoox.top/search?keyword=', '
 addSearchAlias('bn', 'nyaa', 'https://nyaa.si/?f=0&c=0_0&q=', 's');
 addSearchAlias('br', 'skr', 'https://skrbtgb.top/search?keyword=', 's');
 addSearchAlias('bp', 'thepiratebay', 'https://thepiratebay.org/search.php?q=', 's');
-addSearchAlias('p3', '123', 'https://pan1.me/search-{0}.htm', 's');
+addSearchAlias('p3', '123', 'https://time.123in.link/search-{0}.htm', 's');
 addSearchAlias('rr', 'rarbg', 'https://rarbg.unblockninja.com/get-posts/?keywords=', 's');
 
 //mapkey('osx', 'call searx', function() {
