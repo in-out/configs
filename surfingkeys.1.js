@@ -135,6 +135,7 @@ addSearchAlias('br', 'skr', 'https://skrbtgb.top/search?keyword=', 's');
 addSearchAlias('bp', 'thepiratebay', 'https://thepiratebay.org/search.php?q=', 's');
 addSearchAlias('p3', '123', 'https://pan1.me//search-{0}.htm', 's');
 addSearchAlias('rr', 'rarbg', 'https://rarbg.unblockninja.com/get-posts/?keywords=', 's');
+addSearchAlias('bj', 'BT之家', 'https://www.1lou.me/search.htm?keyword=', 's');
 
 //mapkey('osx', 'call searx', function() {
 //	Front.openOmnibar({
@@ -496,6 +497,12 @@ mapkey('odk', 'call docker search', function () {
   Front.openOmnibar({
     type: "SearchEngine",
     extra: 'dk'
+  });
+});
+mapkey('obj', 'call BT之家 search', function () {
+  Front.openOmnibar({
+    type: "SearchEngine",
+    extra: 'bj'
   });
 });
 //map('or', ':openSession r');
