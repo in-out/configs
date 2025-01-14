@@ -107,7 +107,7 @@ addSearchAlias('gg', 'google', 'https://www.google.com/search?pws=0&gl=us&gws_rd
 addSearchAlias('gy', 'youtube', 'https://www.youtube.com/results?search_query=', 's');
 addSearchAlias('dk', 'docker', 'https://hub.docker.com/search?q=', 's');
 addSearchAlias('jb', 'jable', 'https://jable.tv/search/{0}/', 's');
-addSearchAlias('ma', 'missav', 'https://missav.ws/ja/search/{0}/', 's');
+addSearchAlias('ma', 'missav', 'https://missav.ai/ja/search/{0}/', 's');
 //addSearchAlias('nf', '', 'https://.com/search?type=title&keyword=', 's');
 //addSearchAlias('zz', 'zhaoziyuan', 'https://zhaoziyuan.pw/so?filename=', 's');
 // addSearchAlias('zs', 'assrt', 'https://assrt.net/sub/?searchword=', 's');
