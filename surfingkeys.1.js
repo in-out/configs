@@ -82,7 +82,7 @@ unmap('se');
 unmap('sh');
 unmap('sy');
 unmap('ow');
-map('<Alt-1>', '<Alt-s>');
+//map('<Alt-1>', '<Alt-s>');
 //unmap('f');
 // search engine
 removeSearchAlias('bg');
@@ -659,8 +659,10 @@ api.mapkey('p', '#0enter ephemeral PassThrough mode to temporarily suppress Surf
 mapkey('gc', '#12Open Chrome Configure', function () {
   tabOpenLink("chrome://settings/");
 });
-settings.lurkingPattern = /.*jable.*|.*fs1\.app|.*missav.*|.*youtube.*|.*playav.*|.*taiav.*|yalist\.unionall\.fun|.*hsex\.men.*|.*rou\.video.*|.*pan1\.me.*/i;
-settings.blocklistPattern = /.*mail.google.com.*|.*inbox.google.com.*|trello.com|feishu.cn|inoreader.com|route.asus.com|rsshub.unionall.fun|yarr.unionall.fun|yarrr.unionall.fun|.*bilibili|.*acfun.*|localhost|114\.96/i;
+//settings.lurkingPattern = /.*jable.*|.*fs1\.app|.*missav.*|.*youtube.*|.*playav.*|.*taiav.*|yalist\.unionall\.fun|.*hsex\.men.*|.*rou\.video.*|.*pan1\.me.*/i;
+//settings.blocklistPattern = /.*mail.google.com.*|.*inbox.google.com.*|trello.com|feishu.cn|inoreader.com|route.asus.com|rsshub.unionall.fun|yarr.unionall.fun|yarrr.unionall.fun|.*bilibili|.*acfun.*|localhost|114\.96/i;
+settings.lurkingPattern = /.*jable.*|.*fs1\.app|.*missav.*|.*youtube.*|.*playav.*|.*taiav.*|.*bilibili|.*acfun.*|yalist\.unionall\.fun|.*hsex\.men.*|.*rou\.video.*|.*pan1\.me.*/i;
+settings.blocklistPattern = /.*mail.google.com.*|.*inbox.google.com.*|trello.com|feishu.cn|inoreader.com|route.asus.com|rsshub.unionall.fun|yarr.unionall.fun|yarrr.unionall.fun|localhost|114\.96/i;
 settings.nextLinkRegex = /((>>|下一页|next|older posts|older entries|forward|Next »|>|>>|❯|›|»|more|下一张|下页|(阅读)?下一章|下一章|下一頁|次へ)+)/i;
 settings.prevLinkRegex = /((<<|上一页|prev(ious)?|newer posts|newer entries|« Previous|back|<|❮|<<«|less|‹|上一张|(阅读)?上一章|上一章|前へ)+)/i;
 
