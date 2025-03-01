@@ -83,6 +83,7 @@ unmap('sh');
 unmap('sy');
 unmap('ow');
 //map('<Alt-1>', '<Alt-s>');
+map('ap', 'gp');
 //unmap('f');
 // search engine
 removeSearchAlias('bg');
