@@ -103,7 +103,6 @@ addSearchAlias('jd', 'jd', 'https://search.jd.com/Search?enc=utf-8&keyword=', 's
 addSearchAlias('jj', 'juejin', 'https://juejin.cn/search?query=', 's');
 // addSearchAlias('js', 'jianshu', 'https://www.jianshu.com/search?q=', 's');
 addSearchAlias('gh', 'github', 'https://github.com/search?q=', 's');
-// addSearchAlias('rr', 'rarbg', 'https://rarbgto.org/torrents.php?search=', 's');
 addSearchAlias('gg', 'google', 'https://www.google.com/search?pws=0&gl=us&gws_rd=cr&q=', 's');
 addSearchAlias('gy', 'youtube', 'https://www.youtube.com/results?search_query=', 's');
 addSearchAlias('dk', 'docker', 'https://hub.docker.com/search?q=', 's');
@@ -129,14 +128,15 @@ addSearchAlias('dh', 'dmhy', 'https://share.dmhy.org/topics/list?keyword=', 's')
 //addSearchAlias('t', 'translate', 'https://translate.google.cn/?source=osdd#auto/zh-CN/', 's');
 //addSearchAlias('sm', 'smzdm', 'https://search.smzdm.com/?c=post&s=', 's');
 //addSearchAlias('f', 'fsou', 'https://fsou.cc/search?q=', 's');
-addSearchAlias('bs', 'btsow', 'https://btsow.motorcycles/search/{0}', 's');
-addSearchAlias('bx', '磁力熊猫', 'https://xiongmaoox.top/search?keyword=', 's');
-addSearchAlias('bn', 'nyaa', 'https://nyaa.si/?f=0&c=0_0&q=', 's');
-addSearchAlias('br', 'skr', 'https://skrbtgb.top/search?keyword=', 's');
-addSearchAlias('bp', 'thepiratebay', 'https://thepiratebay.org/search.php?q=', 's');
+addSearchAlias('ts', 'btsow', 'https://btsow.motorcycles/search/{0}', 's');
+addSearchAlias('tx', '磁力熊猫', 'https://xiongmaoox.top/search?keyword=', 's');
+addSearchAlias('tn', 'nyaa', 'https://nyaa.si/?f=0&c=0_0&q=', 's');
+addSearchAlias('tr', 'skr', 'https://skrbtgb.top/search?keyword=', 's');
+addSearchAlias('tp', 'thepiratebay', 'https://thepiratebay.org/search.php?q=', 's');
+addSearchAlias('tr', 'rarbg', 'https://rarbg.unblockninja.com/get-posts/?keywords=', 's');
+addSearchAlias('tj', 'BT之家', 'https://www.1lou.me/search.htm?keyword=', 's');
+addSearchAlias('te', 'ext', 'https://ext.to/browse/?with_adult=1&q=', 's');
 addSearchAlias('p3', '123', 'https://pan1.me//search-{0}.htm', 's');
-addSearchAlias('rr', 'rarbg', 'https://rarbg.unblockninja.com/get-posts/?keywords=', 's');
-addSearchAlias('bj', 'BT之家', 'https://www.1lou.me/search.htm?keyword=', 's');
 
 //mapkey('osx', 'call searx', function() {
 //	Front.openOmnibar({
@@ -308,34 +308,34 @@ mapkey('ojb', 'call jable search', function () {
     extra: 'jb'
   });
 });
-mapkey('obs', 'call btsow search', function () {
+mapkey('ots', 'call btsow search', function () {
   Front.openOmnibar({
     type: "SearchEngine",
-    extra: 'bs'
+    extra: 'ts'
   });
 });
-mapkey('obx', 'call 磁力熊猫 search', function () {
+mapkey('otx', 'call 磁力熊猫 search', function () {
   Front.openOmnibar({
     type: "SearchEngine",
-    extra: 'bx'
+    extra: 'tx'
   });
 });
-mapkey('obp', 'call thepiratebay search', function () {
+mapkey('otp', 'call thepiratebay search', function () {
   Front.openOmnibar({
     type: "SearchEngine",
-    extra: 'bp'
+    extra: 'tp'
   });
 });
-mapkey('obr', 'call skr search', function () {
+mapkey('otr', 'call skr search', function () {
   Front.openOmnibar({
     type: "SearchEngine",
-    extra: 'br'
+    extra: 'tr'
   });
 });
-mapkey('obn', 'call nyaa search', function () {
+mapkey('otn', 'call nyaa search', function () {
   Front.openOmnibar({
     type: "SearchEngine",
-    extra: 'bn'
+    extra: 'tn'
   });
 });
 mapkey('oma', 'call missav search', function () {
@@ -482,10 +482,10 @@ mapkey('ozh', 'call zhihu search', function () {
     extra: 'zh'
   });
 });
-mapkey('orr', 'call rarbg search', function () {
+mapkey('otr', 'call rarbg search', function () {
   Front.openOmnibar({
     type: "SearchEngine",
-    extra: 'rr'
+    extra: 'tr'
   });
 });
 mapkey('op3', 'call 123 search', function () {
@@ -500,10 +500,16 @@ mapkey('odk', 'call docker search', function () {
     extra: 'dk'
   });
 });
-mapkey('obj', 'call BT之家 search', function () {
+mapkey('otj', 'call BT之家 search', function () {
   Front.openOmnibar({
     type: "SearchEngine",
-    extra: 'bj'
+    extra: 'tj'
+  });
+});
+mapkey('ote', 'call ext search', function () {
+  Front.openOmnibar({
+    type: "SearchEngine",
+    extra: 'te'
   });
 });
 //map('or', ':openSession r');
