@@ -136,7 +136,7 @@ addSearchAlias('tp', 'thepiratebay', 'https://thepiratebay.org/search.php?q=', '
 addSearchAlias('tr', 'rarbg', 'https://rarbg.unblockninja.com/get-posts/?keywords=', 's');
 addSearchAlias('tj', 'BT之家', 'https://www.1lou.me/search.htm?keyword=', 's');
 addSearchAlias('te', 'ext', 'https://ext.to/browse/?with_adult=1&q=', 's');
-addSearchAlias('p3', '123', 'https://pan1.me/?search-{0}.htm', 's','https://pan1.me/view/img/favicon.ico');
+addSearchAlias('p3', '123', 'https://pan1.me/?search-{0}.htm', 's',  {favicon_url: 'https://pan1.me/view/img/favicon.ico'});
 
 //mapkey('osx', 'call searx', function() {
 //	Front.openOmnibar({
