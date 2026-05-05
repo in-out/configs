@@ -128,7 +128,7 @@ addSearchAlias('dh', 'dmhy', 'https://share.dmhy.org/topics/list?keyword=', 's')
 //addSearchAlias('t', 'translate', 'https://translate.google.cn/?source=osdd#auto/zh-CN/', 's');
 //addSearchAlias('sm', 'smzdm', 'https://search.smzdm.com/?c=post&s=', 's');
 //addSearchAlias('f', 'fsou', 'https://fsou.cc/search?q=', 's');
-addSearchAlias('ts', 'btsow', 'https://btsow.motorcycles/search/{0}', 's');
+addSearchAlias('ts', 'btsow', 'https://bt1.btsow.me/search/{0}', 's');
 addSearchAlias('tx', '磁力熊猫', 'https://xiongmaoox.top/search?keyword=', 's');
 addSearchAlias('tn', 'nyaa', 'https://nyaa.si/?f=0&c=0_0&q=', 's');
 addSearchAlias('tr', 'skr', 'https://skrbtgb.top/search?keyword=', 's');
