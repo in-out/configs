@@ -7,6 +7,7 @@ const {
   getClickableElements,
   vmapkey,
   map,
+  lmap,
   cmap,
   addSearchAlias,
   removeSearchAlias,
@@ -82,6 +83,7 @@ unmap('se');
 unmap('sh');
 unmap('sy');
 unmap('ow');
+lmap('w', '<Alt-i>');
 //map('<Alt-1>', '<Alt-s>');
 map('ap', '<Alt-p>');
 //unmap('f');
@@ -164,73 +166,73 @@ function getEleByTextContent(content) {
   return undefined;
 }
 
-mapkey("ww", "add to nsfw", function () {
-  var ele = getEleByTextContent('NSFW');
-  if (ele) ele.click();
-}
-);
+//mapkey("ww", "add to nsfw", function () {
+//  var ele = getEleByTextContent('NSFW');
+//  if (ele) ele.click();
+//}
+//);
 
-mapkey("wa", "add to art", function () {
-  var ele = getEleByTextContent('art');
-  if (ele) ele.click();
-}
-);
+//mapkey("wa", "add to art", function () {
+//  var ele = getEleByTextContent('art');
+//  if (ele) ele.click();
+//}
+//);
 
-mapkey("wg", "add to girls", function () {
-  var ele = getEleByTextContent('girls');
-  if (ele) ele.click();
-}
-);
+//mapkey("wg", "add to girls", function () {
+//  var ele = getEleByTextContent('girls');
+//  if (ele) ele.click();
+//}
+//);
 
-mapkey("wf", "full screen", function () {
-  var ele = document.querySelector('[data-plyr=fullscreen]');
-  if (ele) ele.click();
-}
-);
+//mapkey("wf", "full screen", function () {
+//  var ele = document.querySelector('[data-plyr=fullscreen]');
+//  if (ele) ele.click();
+//}
+//);
 
-mapkey("a1", "rotate 90 degrees", function () {
-  var ele = document.getElementsByClassName('art-video')[0];
-  if (ele) ele.style.transform = 'rotate(90deg)';
-}
-);
+//mapkey("a1", "rotate 90 degrees", function () {
+//  var ele = document.getElementsByClassName('art-video')[0];
+//  if (ele) ele.style.transform = 'rotate(90deg)';
+//}
+//);
 
-mapkey("a2", "rotate 0 degrees", function () {
-  var ele = document.getElementsByClassName('art-video')[0];
-  if (ele) ele.style.transform = 'rotate(0deg)';
-}
-);
+//mapkey("a2", "rotate 0 degrees", function () {
+//  var ele = document.getElementsByClassName('art-video')[0];
+//  if (ele) ele.style.transform = 'rotate(0deg)';
+//}
+//);
 
-// mapkey("aa", "add to view later or extract audio source of first audio", function () {
-//   var domain = document.domain;
-//   var meta = document.querySelector('meta[name="generator"]').content;
-//   if (domain == 'nekodict.com') {
-//     console.log('neko');
-//     Clipboard.write(document.getElementsByTagName('audio')[0].src);
-//   } else {
-//     if (meta && meta.startsWith('AList')) {
-//       console.log('alist');
-//       document.getElementsByClassName('art-control-fullscreen')[0].click();
-//     } else {
-//       console.log('jav');
-//       var btn = document.querySelectorAll('[data-fav-type="1"]')[0];
-//       if (btn) btn.click();
-//     }
-//   }
-// }
-//   //, {domain: /jable.tv.com/i}
-// );
-mapkey("aa", "add to view later", function () {
-    var btn = document.querySelectorAll('[data-fav-type="1"]')[0];
-    if (btn) btn.click();
-}
-  //, {domain: /jable.tv.com/i}
-);
-mapkey("as", "add to view later", function () {
-    var btn = document.querySelectorAll('[data-fav-type="0"]')[0];
-    if (btn) btn.click();
-}
-  //, {domain: /jable.tv.com/i}
-);
+//// mapkey("aa", "add to view later or extract audio source of first audio", function () {
+////   var domain = document.domain;
+////   var meta = document.querySelector('meta[name="generator"]').content;
+////   if (domain == 'nekodict.com') {
+////     console.log('neko');
+////     Clipboard.write(document.getElementsByTagName('audio')[0].src);
+////   } else {
+////     if (meta && meta.startsWith('AList')) {
+////       console.log('alist');
+////       document.getElementsByClassName('art-control-fullscreen')[0].click();
+////     } else {
+////       console.log('jav');
+////       var btn = document.querySelectorAll('[data-fav-type="1"]')[0];
+////       if (btn) btn.click();
+////     }
+////   }
+//// }
+////   //, {domain: /jable.tv.com/i}
+//// );
+//mapkey("aa", "add to view later", function () {
+//    var btn = document.querySelectorAll('[data-fav-type="1"]')[0];
+//    if (btn) btn.click();
+//}
+//  //, {domain: /jable.tv.com/i}
+//);
+//mapkey("as", "add to view later", function () {
+//    var btn = document.querySelectorAll('[data-fav-type="0"]')[0];
+//    if (btn) btn.click();
+//}
+//  //, {domain: /jable.tv.com/i}
+//);
 
 mapkey('oal', 'call 猫狸盘搜 search', function () {
   Front.openOmnibar({
