@@ -560,35 +560,35 @@ mapkey("-e", "google translate", () => {
   }
 });
 
-mapkey("gva", "Open XXX", () => {
-    tabOpenLink(
-      `https://www.javbus.com/forum/
-      https://t66y.com/thread0806.php?fid=16
-      https://t1002.9p47p.com/forumdisplay.php?fid=19&filter=digest
-      https://t1002.9p47p.com/forumdisplay.php?fid=21&filter=digest
-      https://t1002.9p47p.com/forumdisplay.php?fid=4&filter=digest
-      https://jable.tv/latest-updates/`
-    );
-  });
+//mapkey("gva", "Open XXX", () => {
+//    tabOpenLink(
+//      `https://www.javbus.com/forum/
+//      https://t66y.com/thread0806.php?fid=16
+//      https://t1002.9p47p.com/forumdisplay.php?fid=19&filter=digest
+//      https://t1002.9p47p.com/forumdisplay.php?fid=21&filter=digest
+//      https://t1002.9p47p.com/forumdisplay.php?fid=4&filter=digest
+//      https://jable.tv/latest-updates/`
+//    );
+//  });
 
-mapkey("gvj", "Open Japanese", () => {
-    tabOpenLink(
-      `https://omnivore.app/home
-      https://note.com/topic/career
-      https://news.yahoo.co.jp/
-      https://www.nhk.or.jp/radio/
-      https://newspicks.com/theme-news/education/`
-    );
-  });
+//mapkey("gvj", "Open Japanese", () => {
+//    tabOpenLink(
+//      `https://omnivore.app/home
+//      https://note.com/topic/career
+//      https://news.yahoo.co.jp/
+//      https://www.nhk.or.jp/radio/
+//      https://newspicks.com/theme-news/education/`
+//    );
+//  });
 
-mapkey("gvs", "Open Service", () => {
-    tabOpenLink(
-      `https://yacd.metacubex.one/#/proxies
-      https://ql.unionall.fun/crontab
-      https://dnsnext.console.aliyun.com/pubDNS/requestStatistics
-      https://1panel.unionall.fun/2063bbbce8 `
-    );
-  });
+//mapkey("gvs", "Open Service", () => {
+//    tabOpenLink(
+//      `https://yacd.metacubex.one/#/proxies
+//      https://ql.unionall.fun/crontab
+//      https://dnsnext.console.aliyun.com/pubDNS/requestStatistics
+//      https://1panel.unionall.fun/2063bbbce8 `
+//    );
+//  });
 
 Front.registerInlineQuery({
   url: function (q) {
