@@ -83,7 +83,6 @@ unmap('se');
 unmap('sh');
 unmap('sy');
 unmap('ow');
-unmap('<Ctrl-6>');
 lmap('w', '<Alt-i>');
 //map('<Alt-1>', '<Alt-s>');
 map('ap', '<Alt-p>');
