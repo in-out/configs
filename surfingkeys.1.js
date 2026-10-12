@@ -142,6 +142,9 @@ addSearchAlias('te', 'ext', 'https://ext.to/browse/?with_adult=1&q=', 's');
 addSearchAlias('sh', 'seedhub', 'https://sidhub.cc/s/{0}/', 's');
 addSearchAlias('p3', '123', 'https://pan1.me/?search-{0}.htm', 's',  {favicon_url: 'https://pan1.me/view/img/favicon.ico'});
 
+mapkey('g1', 'open pornrips.to', function() {
+    tabOpenLink("https://pornrips.to/category/1080p/");
+});
 //mapkey('osx', 'call searx', function() {
 //	Front.openOmnibar({
 //		type: "SearchEngine",
